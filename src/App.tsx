@@ -10,6 +10,7 @@ import { StudyPage } from "./pages/StudyPage";
 
 export default function App() {
   const basename = import.meta.env.BASE_URL === "/" ? undefined : import.meta.env.BASE_URL;
+  const logoUrl = `${import.meta.env.BASE_URL}logo-dw.png`;
   const data = useMemo(() => normalizeQuestionData(rawQuestions), []);
   const initialProgress = useMemo(() => readProgress(), []);
   const [progress, setProgress] = useState<StudyProgress>(initialProgress.progress);
@@ -29,7 +30,9 @@ export default function App() {
       <div className="app-shell">
         <header className="topbar">
           <NavLink to="/study" className="brand" aria-label="Về màn ôn tập">
-            <span className="brand-mark">DW</span>
+            <span className="brand-mark">
+              <img className="brand-logo" src={logoUrl} alt="" />
+            </span>
             <span>
               <strong>Ôn tập trắc nghiệm</strong>
               <small>{data.questions.length} câu đã sẵn sàng</small>

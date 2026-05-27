@@ -105,10 +105,17 @@ code {
   height: 42px;
   flex: 0 0 auto;
   place-items: center;
-  border: 2px solid var(--ink);
+  overflow: hidden;
+  border: 1px solid var(--hairline);
   border-radius: 8px;
-  background: var(--yellow);
-  font-weight: 800;
+  background: var(--canvas);
+}
+
+.brand-logo {
+  display: block;
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
 }
 
 .brand strong,
