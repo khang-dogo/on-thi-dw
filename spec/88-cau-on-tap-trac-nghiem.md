@@ -138,10 +138,6 @@ Theo William H. Inmon, đâu là một yêu cầu công nghệ then chốt nhằ
 
 **Giải thích:** Kho dữ liệu phải cung cấp một giao diện ngôn ngữ mạnh mẽ, phong phú và dễ sử dụng để cả các lập trình viên lẫn người dùng cuối DSS (những nhà phân tích, quản lý) đều có thể dễ dàng thiết lập câu hỏi truy vấn và tiếp cận dữ liệu một cách linh hoạt theo nhu cầu của họ.
 
-=================================================================
-
-Dưới đây là **20 câu tiếp theo** (từ câu 11 đến câu 30) được định dạng đầy đủ, chuẩn hóa bao gồm: Câu hỏi, các lựa chọn (A, B, C, D, E), đáp án chính xác và phần giải thích chi tiết từ bài giảng trong video.
-
 **Câu 11:**
 
 Theo William H. Inmon, đâu là yếu tố quan trọng nhất cần được xem xét trong quá trình thiết kế kho dữ liệu (DW)?
@@ -422,10 +418,6 @@ Kho dữ liệu hỗ trợ quá trình "khoan sâu" (drill-down) trong phân tí
 
 **Giải thích:** Cấu trúc khóa trong DW cho phép người dùng từ một con số tổng quát (như tổng doanh thu năm) có thể truy ngược lại các thành phần chi tiết (như doanh thu theo quý, tháng, ngày, cửa hàng) một cách tự nhiên.
 
-=============================================================
-
-Dưới đây là **10 câu tiếp theo** (từ câu 31 đến câu 40) được định dạng đầy đủ, chuẩn hóa bao gồm: Câu hỏi, các lựa chọn (A, B, C, D, E), đáp án chính xác và phần giải thích chi tiết từ bài giảng trong video.
-
 **Câu 31:**
 
 In hệ hỗ trợ ra quyết định (DSS), vai trò của Kho dữ liệu bộ phận (Data Mart) khác gì so với Kho dữ liệu doanh nghiệp (EDW)?
@@ -565,10 +557,6 @@ Vì sao các hệ thống MSS thường được thiết kế để xử lý cá
 **Đáp án đúng:** C
 
 **Giải thích:** Kiến trúc Web-based MSS giải phóng người dùng khỏi các ràng buộc phần cứng phức tạp tại văn phòng. Chỉ với một trình duyệt Web tiêu chuẩn và kết nối mạng, nhà quản lý có thể khai thác toàn bộ sức mạnh phân tích của hệ thống từ xa, giúp giảm đáng kể chi phí triển khai, đào tạo và bảo trì của doanh nghiệp.
-
-==================================================================
-
-Dưới đây là **10 câu tiếp theo** (từ câu 41 đến câu 50) được định dạng đầy đủ, chuẩn hóa bao gồm: Câu hỏi, các lựa chọn (A, B, C, D, E), đáp án chính xác và phần giải thích chi tiết từ bài giảng trong video.
 
 **Câu 41:**
 
@@ -721,10 +709,6 @@ Nếu một mô hình phân lớp y tế được dùng để dự báo bệnh (
 **Giải thích:** Độ bao phủ (Recall hay Sensitivity) đo lường khả năng tìm sót dữ liệu của mô hình, tức là trong số tất cả các trường hợp thực tế là tích cực (thực tế mắc bệnh), mô hình đã tìm ra được bao nhiêu trường hợp. Công thức là:
 
 $$Recall = \frac{\text{Số trường hợp mắc bệnh dự báo đúng (TP)}}{\text{Tổng số trường hợp thực tế mắc bệnh (TP + FN)}} = \frac{90}{100}$$
-
-===========================================
-
-Dưới đây là **10 câu tiếp theo** (từ câu 51 đến câu 60) được định dạng đầy đủ, chuẩn hóa bao gồm: Câu hỏi, các lựa chọn (A, B, C, D, E), đáp án chính xác và phần giải thích chi tiết từ bài giảng trong video.
 
 **Câu 51:**
 
@@ -899,10 +883,6 @@ Trong một siêu thị có tổng cộng 100 giao dịch (hóa đơn) mua sắm
 
 $$Support(\text{Bánh mì}) = \frac{\text{Số giao dịch chứa Bánh mì}}{\text{Tổng số giao dịch}} = \frac{40}{100} = 0.4 \text{ (hoặc } 40\%)$$
 
-================================
-
-Dưới đây là **10 câu tiếp theo** (từ câu 61 đến câu 70) được định dạng đầy đủ, chuẩn hóa bao gồm: Câu hỏi, các lựa chọn (A, B, C, D, E), đáp án chính xác và phần giải thích chi tiết từ bài giảng trong video.
-
 **Câu 61:**
 
 Xét luật kết hợp trong khai phá dữ liệu có dạng: $\{A\} \rightarrow \{B\}$. Nếu hệ thống ghi nhận có 50 giao dịch chứa đồng thời cả hai mặt hàng A và B, và có tổng cộng 80 giao dịch chứa mặt hàng A. Hãy tính Độ tin cậy (Confidence) của luật kết hợp này.
@@ -1047,10 +1027,6 @@ Việc ứng dụng các công cụ công nghệ hiện đại như phân tích 
 **Đáp án đúng:** C
 
 **Giải thích:** Các công nghệ dữ liệu lớn giúp nhà quản lý xử lý thông tin thông minh: DW và Data Mining giúp tìm ra các xu hướng ẩn, các bất thường trong kinh doanh (phục vụ giai đoạn **Intelligence**). Sau đó, các mô hình giả lập, phân tích "What-if" trên OLAP giúp họ tính toán nhanh các kịch bản của từng phương án (phục vụ giai đoạn **Design**).
-
-=======================
-
-Dưới đây là **18 câu cuối cùng** (từ câu 71 đến câu 88) để hoàn thành trọn vẹn toàn bộ danh sách câu hỏi trong video của bạn, được định dạng đầy đủ và chuẩn hóa:
 
 **Câu 71:**
 

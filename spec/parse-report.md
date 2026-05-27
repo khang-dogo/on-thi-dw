@@ -5,12 +5,13 @@
 - Expected questions: 88
 - Parsed questions: 88
 - Status: PASS
-- Generated at: 2026-05-27T17:17:00.748Z
+- Generated at: 2026-05-27T17:21:50.960Z
 
 ## Checklist
 
 - [x] File nguồn đọc được và không rỗng
 - [x] Không có text ngoài câu hỏi
+- [x] Không có đoạn prompt/phân cách sinh tự động lẫn vào nội dung
 - [x] Số câu parse được khớp kỳ vọng
 - [x] Không thiếu số câu trong chuỗi
 - [x] Không có câu trùng số

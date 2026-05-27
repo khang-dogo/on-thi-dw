@@ -162,4 +162,14 @@ describe("parseQuestionsMarkdown", () => {
     expect(result.errors.map((error) => error.code)).toContain("duplicate-answer");
     expect(result.errors.map((error) => error.code)).toContain("duplicate-explanation");
   });
+
+  it("reports generated separator and prompt text inside an explanation", () => {
+    const result = parseQuestionsMarkdown(
+      `**Câu 1:**\n\nNội dung\n\n- A. Một\n- B. Hai\n\n**Đáp án đúng:** A\n\n**Giải thích:** Có.\n\n====================\n\nDưới đây là **10 câu tiếp theo** được định dạng đầy đủ.`,
+      { expectedCount: 1 },
+    );
+
+    expect(result.errors.map((error) => error.code)).toContain("generated-separator-line");
+    expect(result.errors.map((error) => error.code)).toContain("generated-prompt-text");
+  });
 });

@@ -87,6 +87,10 @@ function buildParseReport(input: {
     "",
     checklist("File nguồn đọc được và không rỗng", input.errors, ["source-read-failed", "source-empty"]),
     checklist("Không có text ngoài câu hỏi", input.errors, ["text-outside-question"]),
+    checklist("Không có đoạn prompt/phân cách sinh tự động lẫn vào nội dung", input.errors, [
+      "generated-separator-line",
+      "generated-prompt-text",
+    ]),
     checklist("Số câu parse được khớp kỳ vọng", input.errors, ["question-count-mismatch"]),
     checklist("Không thiếu số câu trong chuỗi", input.errors, ["missing-question-id"]),
     checklist("Không có câu trùng số", input.errors, ["duplicate-question-id"]),

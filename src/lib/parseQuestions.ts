@@ -4,6 +4,8 @@ const QUESTION_MARKER = /^\*\*Câu\s+(\d+):\*\*\s*$/u;
 const OPTION_MARKER = /^-\s+([A-E])\.\s*(.*)$/u;
 const ANSWER_MARKER = /^\*\*Đáp án đúng:\*\*\s*([A-E])\s*$/u;
 const EXPLANATION_MARKER = /^\*\*Giải thích:\*\*\s*(.*)$/u;
+const SEPARATOR_LINE = /^={8,}$/u;
+const GENERATED_PROMPT_LINE = /^Dưới đây là\s+\*\*\d+\s+câu/u;
 
 export interface ParseConfig {
   expectedCount: number;
@@ -174,6 +176,8 @@ function parseQuestionBlock(block: QuestionBlock, errors: ParseIssue[]): Questio
     const optionMarker = OPTION_MARKER.exec(line);
     const answerMarker = ANSWER_MARKER.exec(line);
     const explanationMarker = EXPLANATION_MARKER.exec(line);
+
+    detectGeneratedTextLine(line, lineNumber, block.id, errors);
 
     if (optionMarker) {
       if (answer) {
@@ -429,6 +433,36 @@ function validateQuestionSequence(
     errors.push({
       code: "question-id-out-of-range",
       message: `Có số câu nằm ngoài khoảng 1-${expectedCount}.`,
+    });
+  }
+}
+
+function detectGeneratedTextLine(
+  line: string,
+  lineNumber: number,
+  questionId: number,
+  errors: ParseIssue[],
+): void {
+  const trimmed = line.trim();
+  if (trimmed === "") {
+    return;
+  }
+
+  if (SEPARATOR_LINE.test(trimmed)) {
+    errors.push({
+      code: "generated-separator-line",
+      message: `Câu ${questionId} có dòng phân cách sinh tự động không thuộc dữ liệu câu hỏi.`,
+      line: lineNumber,
+      questionId,
+    });
+  }
+
+  if (GENERATED_PROMPT_LINE.test(trimmed)) {
+    errors.push({
+      code: "generated-prompt-text",
+      message: `Câu ${questionId} có đoạn mô tả sinh tự động lẫn vào nội dung.`,
+      line: lineNumber,
+      questionId,
     });
   }
 }
