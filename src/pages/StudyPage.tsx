@@ -70,6 +70,7 @@ export function StudyPage({
   const safePage = Math.min(currentPage, totalPages);
   const pageStart = (safePage - 1) * PAGE_SIZE;
   const pagedQuestions = filteredQuestions.slice(pageStart, pageStart + PAGE_SIZE);
+  const canResetPage = pagedQuestions.some((question) => answers[question.id]);
 
   function setFilterAndResetPage(nextFilter: StudyFilter) {
     setFilter(nextFilter);
@@ -95,6 +96,21 @@ export function StudyPage({
       const next = { ...current };
       delete next[questionId];
       return next;
+    });
+  }
+
+  function resetCurrentPage() {
+    const pageIds = new Set(pagedQuestions.map((question) => question.id));
+    setAnswers((current) => {
+      let changed = false;
+      const next = { ...current };
+      for (const questionId of pageIds) {
+        if (next[questionId]) {
+          delete next[questionId];
+          changed = true;
+        }
+      }
+      return changed ? next : current;
     });
   }
 
@@ -168,7 +184,13 @@ export function StudyPage({
             ))}
           </section>
 
-          <PaginationControls currentPage={safePage} setPage={setCurrentPage} totalPages={totalPages} />
+          <PaginationControls
+            canResetPage={canResetPage}
+            currentPage={safePage}
+            resetPage={resetCurrentPage}
+            setPage={setCurrentPage}
+            totalPages={totalPages}
+          />
         </>
       )}
     </div>
@@ -278,11 +300,15 @@ function StudyQuestionCard({
 }
 
 function PaginationControls({
+  canResetPage,
   currentPage,
+  resetPage,
   totalPages,
   setPage,
 }: {
+  canResetPage: boolean;
   currentPage: number;
+  resetPage: () => void;
   totalPages: number;
   setPage: (page: number) => void;
 }) {
@@ -308,6 +334,9 @@ function PaginationControls({
       >
         Sau
         <ChevronRight size={16} />
+      </button>
+      <button className="secondary-button compact" disabled={!canResetPage} onClick={resetPage} type="button">
+        Reset trang này
       </button>
     </nav>
   );

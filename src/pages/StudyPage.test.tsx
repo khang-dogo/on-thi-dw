@@ -74,4 +74,42 @@ describe("StudyPage", () => {
     expect(screen.queryByText("Đáp án đúng: B")).not.toBeInTheDocument();
     expect(within(choices).getByRole("button", { name: "A Lựa chọn A 1" })).toBeEnabled();
   });
+
+  it("can reset all selected answers on the current page only", async () => {
+    const user = userEvent.setup();
+    render(
+      <MemoryRouter>
+        <StudyPage data={makeData(12)} progress={makeProgress()} updateProgress={() => undefined} />
+      </MemoryRouter>,
+    );
+
+    const resetPageButton = screen.getByRole("button", { name: "Reset trang này" });
+    expect(resetPageButton).toBeDisabled();
+
+    await user.click(
+      within(screen.getByRole("group", { name: "Lựa chọn câu 1" })).getByRole("button", {
+        name: "A Lựa chọn A 1",
+      }),
+    );
+    expect(resetPageButton).toBeEnabled();
+
+    await user.click(screen.getByRole("button", { name: "Sau" }));
+    await user.click(
+      within(screen.getByRole("group", { name: "Lựa chọn câu 11" })).getByRole("button", {
+        name: "A Lựa chọn A 11",
+      }),
+    );
+    expect(screen.getByText("Bạn chọn: A")).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: "Reset trang này" }));
+
+    expect(screen.queryByText("Bạn chọn: A")).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Reset trang này" })).toBeDisabled();
+
+    await user.click(screen.getByRole("button", { name: "Trước" }));
+
+    expect(screen.getByText("Câu 1")).toBeInTheDocument();
+    expect(screen.getByText("Bạn chọn: A")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Reset trang này" })).toBeEnabled();
+  });
 });
