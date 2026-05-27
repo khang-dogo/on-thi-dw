@@ -32,3 +32,21 @@ test("shows a clear shortage state for the 90-question mode", async ({ page }, t
   await expect(page.getByRole("button", { name: "Bắt đầu" })).toBeDisabled();
   await page.screenshot({ fullPage: true, path: testInfo.outputPath("quiz-90-shortage.png") });
 });
+
+test("centers the active quiz panel on desktop", async ({ page }) => {
+  const viewport = page.viewportSize();
+  test.skip(!viewport || viewport.width < 1024, "Desktop-only layout assertion");
+
+  await page.goto("/quiz");
+  await page.getByRole("button", { name: "Bắt đầu" }).click();
+  await expect(page.locator(".quiz-runner")).toBeVisible();
+
+  const runnerBox = await page.locator(".quiz-runner").boundingBox();
+  const headingBox = await page.locator(".quiz-page .page-heading").boundingBox();
+  expect(runnerBox).not.toBeNull();
+  expect(headingBox).not.toBeNull();
+
+  const runnerCenter = runnerBox!.x + runnerBox!.width / 2;
+  expect(Math.abs(runnerCenter - viewport!.width / 2)).toBeLessThanOrEqual(2);
+  expect(Math.abs(headingBox!.x - runnerBox!.x)).toBeLessThanOrEqual(2);
+});

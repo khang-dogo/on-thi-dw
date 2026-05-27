@@ -179,7 +179,7 @@ export function QuizPage({
   }
 
   return (
-    <div className="page-stack">
+    <div className="page-stack quiz-page">
       <section className="page-heading">
         <p className="eyebrow">Màn làm trắc nghiệm</p>
         <h1>Đảo câu và đáp án, chấm từng câu sau khi chọn.</h1>

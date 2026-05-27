@@ -829,6 +829,16 @@ code {
     gap: 22px;
   }
 
+  .quiz-page .page-heading,
+  .quiz-page .issue-panel,
+  .quiz-page .quiz-setup,
+  .quiz-page .quiz-runner,
+  .quiz-page .result-panel {
+    width: 100%;
+    max-width: 820px;
+    margin-inline: auto;
+  }
+
   .quiz-setup,
   .quiz-runner,
   .result-panel,
