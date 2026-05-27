@@ -511,8 +511,14 @@ code {
   list-style: none;
 }
 
+.study-answer-grid {
+  display: grid;
+  gap: 8px;
+}
+
 .option-list li,
-.answer-option {
+.answer-option,
+.study-answer-option {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px;
@@ -523,6 +529,15 @@ code {
   background: var(--surface-soft);
   padding: 11px;
   text-align: left;
+}
+
+.study-answer-option {
+  width: 100%;
+}
+
+.study-answer-option:not(:disabled):hover {
+  border-color: var(--ink);
+  background: var(--canvas);
 }
 
 .option-key {
@@ -537,23 +552,28 @@ code {
 }
 
 .correct-option,
-.answer-option.correct {
+.answer-option.correct,
+.study-answer-option.correct {
   border-color: var(--green);
   background: #f0fff9;
 }
 
-.answer-option.wrong {
+.answer-option.wrong,
+.study-answer-option.wrong {
   border-color: #d24d57;
   background: #fff6f6;
 }
 
-.answer-option.selected {
+.answer-option.selected,
+.study-answer-option.selected {
   outline: 2px solid var(--blue);
   outline-offset: 2px;
 }
 
-.answer-option:disabled {
+.answer-option:disabled,
+.study-answer-option:disabled {
   color: var(--ink);
+  opacity: 1;
 }
 
 .answer-panel,
@@ -584,6 +604,17 @@ code {
   display: inline-flex;
   align-items: center;
   gap: 7px;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
 }
 
 .note-box {
@@ -796,11 +827,6 @@ code {
 @media (min-width: 1024px) {
   .page-stack {
     gap: 22px;
-  }
-
-  .question-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: start;
   }
 
   .quiz-setup,

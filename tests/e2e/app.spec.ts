@@ -6,6 +6,17 @@ test("renders the study screen with validated questions without horizontal overf
   await expect(page.getByText("88 câu đã sẵn sàng")).toBeVisible();
   await expect(page.getByText("Câu 1").first()).toBeVisible();
   await expect(page.getByPlaceholder("Tìm trong câu hỏi, đáp án, giải thích...")).toBeVisible();
+  await expect(page.getByText("Câu 10", { exact: true })).toBeVisible();
+  await expect(page.getByText("Câu 11", { exact: true })).not.toBeVisible();
+
+  const firstCard = await page.locator(".question-card").nth(0).boundingBox();
+  const secondCard = await page.locator(".question-card").nth(1).boundingBox();
+  expect(firstCard).not.toBeNull();
+  expect(secondCard).not.toBeNull();
+  expect(secondCard!.y).toBeGreaterThan(firstCard!.y + 8);
+
+  await page.getByRole("button", { name: "Sau", exact: true }).click();
+  await expect(page.getByText("Câu 11", { exact: true })).toBeVisible();
 
   const hasOverflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
   expect(hasOverflow).toBe(false);

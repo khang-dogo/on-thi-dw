@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { ListFilter, Search, Star } from "lucide-react";
+import { CheckCircle2, ChevronLeft, ChevronRight, ListFilter, Search, Star, XCircle } from "lucide-react";
 import { useSearchParams } from "react-router-dom";
 import { DataIssuePanel } from "../components/DataIssuePanel";
 import { MarkdownContent } from "../components/MarkdownContent";
@@ -12,9 +12,12 @@ import {
   updateNote,
   type StudyProgress,
 } from "../lib/storage";
-import type { Question } from "../types";
+import type { OptionKey, Question } from "../types";
 
 type StudyFilter = "all" | "starred" | "wrong" | "unseen";
+type StudyAnswerState = Partial<Record<number, OptionKey>>;
+
+const PAGE_SIZE = 10;
 
 const filterLabels: Record<StudyFilter, string> = {
   all: "Tất cả",
@@ -36,8 +39,8 @@ export function StudyPage({
   const initialFilter = (searchParams.get("filter") as StudyFilter | null) ?? "all";
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<StudyFilter>(filterLabels[initialFilter] ? initialFilter : "all");
-  const [hideAnswers, setHideAnswers] = useState(false);
-  const [expandedIds, setExpandedIds] = useState<Set<number>>(new Set());
+  const [currentPage, setCurrentPage] = useState(1);
+  const [answers, setAnswers] = useState<StudyAnswerState>({});
   const wrongIds = useMemo(() => new Set(getWrongQuestionIds(progress)), [progress]);
   const unseenIds = useMemo(
     () => new Set(getUnseenQuestionIds(progress, data.questions.map((question) => question.id))),
@@ -63,14 +66,34 @@ export function StudyPage({
     });
   }, [data.questions, filter, query, starredIds, unseenIds, wrongIds]);
 
-  function toggleExpanded(id: number) {
-    setExpandedIds((current) => {
-      const next = new Set(current);
-      if (next.has(id)) {
-        next.delete(id);
-      } else {
-        next.add(id);
+  const totalPages = Math.max(1, Math.ceil(filteredQuestions.length / PAGE_SIZE));
+  const safePage = Math.min(currentPage, totalPages);
+  const pageStart = (safePage - 1) * PAGE_SIZE;
+  const pagedQuestions = filteredQuestions.slice(pageStart, pageStart + PAGE_SIZE);
+
+  function setFilterAndResetPage(nextFilter: StudyFilter) {
+    setFilter(nextFilter);
+    setCurrentPage(1);
+  }
+
+  function setQueryAndResetPage(value: string) {
+    setQuery(value);
+    setCurrentPage(1);
+  }
+
+  function answerQuestion(questionId: number, key: OptionKey) {
+    setAnswers((current) => {
+      if (current[questionId]) {
+        return current;
       }
+      return { ...current, [questionId]: key };
+    });
+  }
+
+  function resetQuestion(questionId: number) {
+    setAnswers((current) => {
+      const next = { ...current };
+      delete next[questionId];
       return next;
     });
   }
@@ -90,7 +113,7 @@ export function StudyPage({
           <span className="sr-only">Tìm kiếm câu hỏi</span>
           <input
             value={query}
-            onChange={(event) => setQuery(event.target.value)}
+            onChange={(event) => setQueryAndResetPage(event.target.value)}
             placeholder="Tìm trong câu hỏi, đáp án, giải thích..."
           />
         </label>
@@ -102,21 +125,22 @@ export function StudyPage({
               key={item}
               className={`pill-tab${filter === item ? " active" : ""}`}
               type="button"
-              onClick={() => setFilter(item)}
+              onClick={() => setFilterAndResetPage(item)}
             >
               {filterLabels[item]}
             </button>
           ))}
         </div>
-
-        <label className="switch-row">
-          <input checked={hideAnswers} onChange={(event) => setHideAnswers(event.target.checked)} type="checkbox" />
-          <span>Ẩn đáp án ở trang ôn tập</span>
-        </label>
       </section>
 
       <section className="result-meta" aria-live="polite">
-        <span>{filteredQuestions.length} câu đang hiển thị</span>
+        <span>{filteredQuestions.length} câu phù hợp</span>
+        {filteredQuestions.length > 0 ? (
+          <span>
+            Đang xem câu {pageStart + 1}-{Math.min(pageStart + PAGE_SIZE, filteredQuestions.length)}
+          </span>
+        ) : null}
+        <span>Trang {safePage}/{totalPages}</span>
         <span>{progress.starredIds.length} câu đã đánh dấu sao</span>
       </section>
 
@@ -126,22 +150,26 @@ export function StudyPage({
           <p>Thử đổi bộ lọc hoặc xóa nội dung tìm kiếm.</p>
         </section>
       ) : (
-        <section className="question-list" aria-label="Danh sách câu hỏi">
-          {filteredQuestions.map((question) => (
-            <StudyQuestionCard
-              key={question.id}
-              expanded={expandedIds.has(question.id)}
-              hideAnswers={hideAnswers}
-              isStarred={starredIds.has(question.id)}
-              mastery={getMasteryLabel(progress, question.id)}
-              note={progress.notes[String(question.id)] ?? ""}
-              question={question}
-              toggleExpanded={() => toggleExpanded(question.id)}
-              toggleStar={() => updateProgress((current) => toggleStar(current, question.id))}
-              updateNote={(note) => updateProgress((current) => updateNote(current, question.id, note))}
-            />
-          ))}
-        </section>
+        <>
+          <section className="question-list" aria-label="Danh sách câu hỏi">
+            {pagedQuestions.map((question) => (
+              <StudyQuestionCard
+                key={question.id}
+                isStarred={starredIds.has(question.id)}
+                mastery={getMasteryLabel(progress, question.id)}
+                note={progress.notes[String(question.id)] ?? ""}
+                question={question}
+                selectedKey={answers[question.id]}
+                onAnswer={(key) => answerQuestion(question.id, key)}
+                onReset={() => resetQuestion(question.id)}
+                toggleStar={() => updateProgress((current) => toggleStar(current, question.id))}
+                updateNote={(note) => updateProgress((current) => updateNote(current, question.id, note))}
+              />
+            ))}
+          </section>
+
+          <PaginationControls currentPage={safePage} setPage={setCurrentPage} totalPages={totalPages} />
+        </>
       )}
     </div>
   );
@@ -151,24 +179,25 @@ function StudyQuestionCard({
   question,
   isStarred,
   mastery,
-  expanded,
-  hideAnswers,
   note,
-  toggleExpanded,
+  selectedKey,
+  onAnswer,
+  onReset,
   toggleStar,
   updateNote: onUpdateNote,
 }: {
   question: Question;
   isStarred: boolean;
   mastery: string;
-  expanded: boolean;
-  hideAnswers: boolean;
   note: string;
-  toggleExpanded: () => void;
+  selectedKey?: OptionKey;
+  onAnswer: (key: OptionKey) => void;
+  onReset: () => void;
   toggleStar: () => void;
   updateNote: (note: string) => void;
 }) {
-  const showAnswer = !hideAnswers || expanded;
+  const isAnswered = Boolean(selectedKey);
+  const isCorrect = selectedKey === question.answer;
 
   return (
     <article className="question-card">
@@ -191,31 +220,47 @@ function StudyQuestionCard({
         <MarkdownContent>{question.question}</MarkdownContent>
       </div>
 
-      <ol className="option-list">
+      <div className="study-answer-grid" role="group" aria-label={`Lựa chọn câu ${question.id}`}>
         {question.options.map((option) => (
-          <li key={option.key} className={showAnswer && option.key === question.answer ? "correct-option" : ""}>
+          <button
+            key={option.key}
+            aria-label={`${option.key} ${option.text}`}
+            className={getStudyOptionClass({
+              isAnswered,
+              isCorrectOption: option.key === question.answer,
+              isSelected: selectedKey === option.key,
+            })}
+            disabled={isAnswered}
+            onClick={() => onAnswer(option.key)}
+            type="button"
+          >
             <span className="option-key">{option.key}</span>
-            <div className="markdown">
+            <span className="markdown">
               <MarkdownContent>{option.text}</MarkdownContent>
-            </div>
-          </li>
+            </span>
+          </button>
         ))}
-      </ol>
+      </div>
 
-      {showAnswer ? (
-        <div className="answer-panel">
-          <strong>Đáp án đúng: {question.answer}</strong>
-          {expanded ? (
-            <div className="markdown explanation">
-              <MarkdownContent>{question.explanation}</MarkdownContent>
-            </div>
-          ) : null}
+      {isAnswered ? (
+        <div className={`feedback-panel${isCorrect ? " correct" : " wrong"}`} aria-live="polite">
+          <div className="feedback-title">
+            {isCorrect ? <CheckCircle2 size={20} /> : <XCircle size={20} />}
+            <strong>{isCorrect ? "Đúng" : "Chưa đúng"}</strong>
+          </div>
+          <p>Bạn chọn: {selectedKey}</p>
+          <p>
+            <strong>Đáp án đúng: {question.answer}</strong>
+          </p>
+          <div className="markdown explanation">
+            <MarkdownContent>{question.explanation}</MarkdownContent>
+          </div>
         </div>
       ) : null}
 
       <div className="card-actions">
-        <button className="secondary-button" onClick={toggleExpanded} type="button">
-          {expanded ? "Thu gọn giải thích" : hideAnswers ? "Mở đáp án và giải thích" : "Mở giải thích"}
+        <button className="secondary-button" disabled={!isAnswered} onClick={onReset} type="button">
+          Reset câu này
         </button>
       </div>
 
@@ -230,6 +275,60 @@ function StudyQuestionCard({
       </label>
     </article>
   );
+}
+
+function PaginationControls({
+  currentPage,
+  totalPages,
+  setPage,
+}: {
+  currentPage: number;
+  totalPages: number;
+  setPage: (page: number) => void;
+}) {
+  return (
+    <nav className="pagination" aria-label="Phân trang câu hỏi ôn tập">
+      <button
+        className="secondary-button compact"
+        disabled={currentPage <= 1}
+        onClick={() => setPage(currentPage - 1)}
+        type="button"
+      >
+        <ChevronLeft size={16} />
+        Trước
+      </button>
+      <span>
+        Trang {currentPage}/{totalPages}
+      </span>
+      <button
+        className="secondary-button compact"
+        disabled={currentPage >= totalPages}
+        onClick={() => setPage(currentPage + 1)}
+        type="button"
+      >
+        Sau
+        <ChevronRight size={16} />
+      </button>
+    </nav>
+  );
+}
+
+function getStudyOptionClass(input: {
+  isAnswered: boolean;
+  isCorrectOption: boolean;
+  isSelected: boolean;
+}): string {
+  const classes = ["study-answer-option"];
+  if (input.isSelected) {
+    classes.push("selected");
+  }
+  if (input.isAnswered && input.isCorrectOption) {
+    classes.push("correct");
+  }
+  if (input.isAnswered && input.isSelected && !input.isCorrectOption) {
+    classes.push("wrong");
+  }
+  return classes.join(" ");
 }
 
 function searchText(question: Question): string {
