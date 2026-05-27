@@ -1,0 +1,2554 @@
+[
+  {
+    "id": 1,
+    "question": "Mô hình dữ liệu nào là nền tảng tối ưu và linh hoạt nhất để xây dựng một kho dữ liệu trung tâm (Central Data Warehouse) theo quan điểm của William H. Inmon?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Mô hình đa chiều (Multidimensional/Star Join)."
+      },
+      {
+        "key": "B",
+        "text": "Mô hình phân cấp (Hierarchical model)."
+      },
+      {
+        "key": "C",
+        "text": "Mô hình quan hệ chuẩn hóa (Normalized Relational model)."
+      },
+      {
+        "key": "D",
+        "text": "Mô hình mạng (Network model)."
+      },
+      {
+        "key": "E",
+        "text": "Mô hình tệp tin phẳng (Flat file)."
+      }
+    ],
+    "answer": "C",
+    "explanation": "William H. Inmon khẳng định rằng cách tiếp cận chuẩn hóa hoặc quan hệ là thiết kế tối ưu cho kho dữ liệu trung tâm vì nó mang lại tính linh hoạt cao, không bị ràng buộc vào một yêu cầu xử lý cụ thể nào và có khả năng phục vụ nhiều cộng đồng người dùng khác nhau với các mục đích khác nhau.",
+    "raw": "**Câu 1:**\n\nMô hình dữ liệu nào là nền tảng tối ưu và linh hoạt nhất để xây dựng một kho dữ liệu trung tâm (Central Data Warehouse) theo quan điểm của William H. Inmon?\n\n- A. Mô hình đa chiều (Multidimensional/Star Join).\n- B. Mô hình phân cấp (Hierarchical model).\n- C. Mô hình quan hệ chuẩn hóa (Normalized Relational model).\n- D. Mô hình mạng (Network model).\n- E. Mô hình tệp tin phẳng (Flat file).\n\n**Đáp án đúng:** C\n\n**Giải thích:** William H. Inmon khẳng định rằng cách tiếp cận chuẩn hóa hoặc quan hệ là thiết kế tối ưu cho kho dữ liệu trung tâm vì nó mang lại tính linh hoạt cao, không bị ràng buộc vào một yêu cầu xử lý cụ thể nào và có khả năng phục vụ nhiều cộng đồng người dùng khác nhau với các mục đích khác nhau."
+  },
+  {
+    "id": 2,
+    "question": "Khi kho dữ liệu mở rộng đến quy mô rất lớn, giải pháp công nghệ nào nên được áp dụng để nâng cao hiệu quả lưu trữ đồng thời giảm chi phí?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Lưu trữ toàn bộ dữ liệu trên đĩa cứng tốc độ cao (DASD)."
+      },
+      {
+        "key": "B",
+        "text": "Sử dụng phân cấp lưu trữ (Storage Hierarchy), đưa dữ liệu ít truy cập sang các phương tiện lưu trữ thay thế (alternate/near-line storage)."
+      },
+      {
+        "key": "C",
+        "text": "Xóa bỏ dữ liệu cũ sau 1 năm để tiết kiệm không gian."
+      },
+      {
+        "key": "D",
+        "text": "Chỉ sử dụng băng từ để lưu trữ toàn bộ kho dữ liệu."
+      },
+      {
+        "key": "E",
+        "text": "Nén dữ liệu nhưng vẫn giữ nguyên trên đĩa cứng đắt tiền."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Tài liệu chỉ ra rằng việc đặt toàn bộ dữ liệu trên đĩa là không tối ưu về kinh phí. Thay vào đó, dữ liệu thường xuyên sử dụng nên nằm trên đĩa hiệu suất cao, còn dữ liệu ít dùng (dormant data) nên được chuyển sang các phương tiện lưu trữ rẻ hơn như near-line storage để giảm chi phí và tăng tốc độ xử lý tổng thể của hệ thống.",
+    "raw": "**Câu 2:**\n\nKhi kho dữ liệu mở rộng đến quy mô rất lớn, giải pháp công nghệ nào nên được áp dụng để nâng cao hiệu quả lưu trữ đồng thời giảm chi phí?\n\n- A. Lưu trữ toàn bộ dữ liệu trên đĩa cứng tốc độ cao (DASD).\n- B. Sử dụng phân cấp lưu trữ (Storage Hierarchy), đưa dữ liệu ít truy cập sang các phương tiện lưu trữ thay thế (alternate/near-line storage).\n- C. Xóa bỏ dữ liệu cũ sau 1 năm để tiết kiệm không gian.\n- D. Chỉ sử dụng băng từ để lưu trữ toàn bộ kho dữ liệu.\n- E. Nén dữ liệu nhưng vẫn giữ nguyên trên đĩa cứng đắt tiền.\n\n**Đáp án đúng:** B\n\n**Giải thích:** Tài liệu chỉ ra rằng việc đặt toàn bộ dữ liệu trên đĩa là không tối ưu về kinh phí. Thay vào đó, dữ liệu thường xuyên sử dụng nên nằm trên đĩa hiệu suất cao, còn dữ liệu ít dùng (dormant data) nên được chuyển sang các phương tiện lưu trữ rẻ hơn như near-line storage để giảm chi phí và tăng tốc độ xử lý tổng thể của hệ thống."
+  },
+  {
+    "id": 3,
+    "question": "Thuộc tính công nghệ nào là điều kiện bắt buộc để kho dữ liệu có thể quản lý hiệu quả khối lượng dữ liệu cực lớn (ở mức terabyte/petabyte) mà không bị ràng buộc bởi giới hạn quy mô về mặt lý thuyết?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Khả năng mã hóa dữ liệu."
+      },
+      {
+        "key": "B",
+        "text": "Giao diện người dùng đồ họa (GUI)."
+      },
+      {
+        "key": "C",
+        "text": "Khả năng quản lý và lưu trữ dữ liệu song song (Parallel storage and management)."
+      },
+      {
+        "key": "D",
+        "text": "Khả năng tích hợp với Microsoft Excel."
+      },
+      {
+        "key": "E",
+        "text": "Sử dụng hệ điều hành 32-bit."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Quản lý dữ liệu song song cho phép phân tán dữ liệu trên nhiều thiết bị vật lý, giúp tăng hiệu suất và loại bỏ giới hạn kỹ thuật về dung lượng. Khi dữ liệu tăng, hệ thống có thể mở rộng dễ dàng bằng cách thêm bộ xử lý hoặc thiết bị lưu trữ vào mạng lưới mà không cần thay đổi kiến trúc cốt lõi.",
+    "raw": "**Câu 3:**\n\nThuộc tính công nghệ nào là điều kiện bắt buộc để kho dữ liệu có thể quản lý hiệu quả khối lượng dữ liệu cực lớn (ở mức terabyte/petabyte) mà không bị ràng buộc bởi giới hạn quy mô về mặt lý thuyết?\n\n- A. Khả năng mã hóa dữ liệu.\n- B. Giao diện người dùng đồ họa (GUI).\n- C. Khả năng quản lý và lưu trữ dữ liệu song song (Parallel storage and management).\n- D. Khả năng tích hợp với Microsoft Excel.\n- E. Sử dụng hệ điều hành 32-bit.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Quản lý dữ liệu song song cho phép phân tán dữ liệu trên nhiều thiết bị vật lý, giúp tăng hiệu suất và loại bỏ giới hạn kỹ thuật về dung lượng. Khi dữ liệu tăng, hệ thống có thể mở rộng dễ dàng bằng cách thêm bộ xử lý hoặc thiết bị lưu trữ vào mạng lưới mà không cần thay đổi kiến trúc cốt lõi."
+  },
+  {
+    "id": 4,
+    "question": "Trong kiến trúc kho dữ liệu hỗ trợ môi trường Web, thành phần công nghệ nào đóng vai trò như một \"bộ đệm trung gian\" nhằm đảm bảo phản hồi ở mức mili giây cho các yêu cầu giao dịch trực tuyến?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Máy chủ kho dữ liệu chính (Data Warehouse Server)."
+      },
+      {
+        "key": "B",
+        "text": "Kho dữ liệu bộ phận (Data Mart)."
+      },
+      {
+        "key": "C",
+        "text": "Hệ thống lưu trữ dữ liệu tác nghiệp (Operational Data Store - ODS)."
+      },
+      {
+        "key": "D",
+        "text": "Công cụ khai phá dữ liệu (Data Mining tools)."
+      },
+      {
+        "key": "E",
+        "text": "Siêu dữ liệu (Metadata repository)."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Kho dữ liệu (DW) thông thường không được thiết kế để hỗ trợ thời gian phản hồi dưới 1 giây. ODS là cấu trúc lưu chứa dữ liệu tích hợp, có khả năng hỗ trợ các giao dịch hiệu suất cao và phản hồi cực nhanh, đóng vai trò giảm tải cho DW trước các truy cập dồn dập từ môi trường Web.",
+    "raw": "**Câu 4:**\n\nTrong kiến trúc kho dữ liệu hỗ trợ môi trường Web, thành phần công nghệ nào đóng vai trò như một \"bộ đệm trung gian\" nhằm đảm bảo phản hồi ở mức mili giây cho các yêu cầu giao dịch trực tuyến?\n\n- A. Máy chủ kho dữ liệu chính (Data Warehouse Server).\n- B. Kho dữ liệu bộ phận (Data Mart).\n- C. Hệ thống lưu trữ dữ liệu tác nghiệp (Operational Data Store - ODS).\n- D. Công cụ khai phá dữ liệu (Data Mining tools).\n- E. Siêu dữ liệu (Metadata repository).\n\n**Đáp án đúng:** C\n\n**Giải thích:** Kho dữ liệu (DW) thông thường không được thiết kế để hỗ trợ thời gian phản hồi dưới 1 giây. ODS là cấu trúc lưu chứa dữ liệu tích hợp, có khả năng hỗ trợ các giao dịch hiệu suất cao và phản hồi cực nhanh, đóng vai trò giảm tải cho DW trước các truy cập dồn dập từ môi trường Web."
+  },
+  {
+    "id": 5,
+    "question": "Công nghệ nào nên được lựa chọn để thực hiện việc tích hợp dữ liệu từ các hệ thống kế thừa (legacy systems) một cách hiệu quả và tự động hóa cao nhất?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Viết code thủ công bằng ngôn ngữ COBOL hoặc C."
+      },
+      {
+        "key": "B",
+        "text": "Sử dụng phần mềm trích xuất, biến đổi và nạp (ETL software)."
+      },
+      {
+        "key": "C",
+        "text": "Sử dụng các lệnh sao chép (Copy) trực tiếp của hệ điều hành."
+      },
+      {
+        "key": "D",
+        "text": "Nhập liệu thủ công bằng tay vào kho dữ liệu."
+      },
+      {
+        "key": "E",
+        "text": "Sử dụng các tệp tin trung gian (Flat files) mà không cần biến đổi."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Mặc dù có thể viết code tay để chuyển đổi dữ liệu, nhưng phần mềm ETL chuyên dụng giúp tự động hóa quy trình phức tạp, tốn thời gian và lặp đi lặp lại của việc tích hợp dữ liệu, đồng thời giúp quản lý các quy tắc biến đổi dữ liệu một cách tập trung và có hệ thống hơn.",
+    "raw": "**Câu 5:**\n\nCông nghệ nào nên được lựa chọn để thực hiện việc tích hợp dữ liệu từ các hệ thống kế thừa (legacy systems) một cách hiệu quả và tự động hóa cao nhất?\n\n- A. Viết code thủ công bằng ngôn ngữ COBOL hoặc C.\n- B. Sử dụng phần mềm trích xuất, biến đổi và nạp (ETL software).\n- C. Sử dụng các lệnh sao chép (Copy) trực tiếp của hệ điều hành.\n- D. Nhập liệu thủ công bằng tay vào kho dữ liệu.\n- E. Sử dụng các tệp tin trung gian (Flat files) mà không cần biến đổi.\n\n**Đáp án đúng:** B\n\n**Giải thích:** Mặc dù có thể viết code tay để chuyển đổi dữ liệu, nhưng phần mềm ETL chuyên dụng giúp tự động hóa quy trình phức tạp, tốn thời gian và lặp đi lặp lại của việc tích hợp dữ liệu, đồng thời giúp quản lý các quy tắc biến đổi dữ liệu một cách tập trung và có hệ thống hơn."
+  },
+  {
+    "id": 6,
+    "question": "Trong thực tế triển khai, lợi thế nổi bật nhất của công nghệ MOLAP (Multidimensional OLAP) so với ROLAP (Relational OLAP) là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Khả năng lưu trữ dữ liệu lớn hơn nhiều lần."
+      },
+      {
+        "key": "B",
+        "text": "Khả năng cập nhật dữ liệu liên tục theo thời gian thực."
+      },
+      {
+        "key": "C",
+        "text": "Hiệu suất truy vấn tối ưu cho các thao tác \"slice and dice\" nhờ dữ liệu đã được tính toán sẵn trong các khối (cubes)."
+      },
+      {
+        "key": "D",
+        "text": "Chi phí bản quyền phần mềm thấp hơn."
+      },
+      {
+        "key": "E",
+        "text": "Dễ dàng thay đổi cấu trúc chiều dữ liệu mà không cần nạp lại."
+      }
+    ],
+    "answer": "C",
+    "explanation": "MOLAP sử dụng cấu trúc khối đa chiều giúp truy cập dữ liệu cực nhanh và được tối ưu hóa sẵn cho các phân tích DSS (hệ hỗ trợ ra quyết định). Tuy nhiên, nhược điểm của nó là thường bị giới hạn về dung lượng và tính linh hoạt so với nền tảng quan hệ (ROLAP).",
+    "raw": "**Câu 6:**\n\nTrong thực tế triển khai, lợi thế nổi bật nhất của công nghệ MOLAP (Multidimensional OLAP) so với ROLAP (Relational OLAP) là gì?\n\n- A. Khả năng lưu trữ dữ liệu lớn hơn nhiều lần.\n- B. Khả năng cập nhật dữ liệu liên tục theo thời gian thực.\n- C. Hiệu suất truy vấn tối ưu cho các thao tác \"slice and dice\" nhờ dữ liệu đã được tính toán sẵn trong các khối (cubes).\n- D. Chi phí bản quyền phần mềm thấp hơn.\n- E. Dễ dàng thay đổi cấu trúc chiều dữ liệu mà không cần nạp lại.\n\n**Đáp án đúng:** C\n\n**Giải thích:** MOLAP sử dụng cấu trúc khối đa chiều giúp truy cập dữ liệu cực nhanh và được tối ưu hóa sẵn cho các phân tích DSS (hệ hỗ trợ ra quyết định). Tuy nhiên, nhược điểm của nó là thường bị giới hạn về dung lượng và tính linh hoạt so với nền tảng quan hệ (ROLAP)."
+  },
+  {
+    "id": 7,
+    "question": "Khi một tổ chức cần kết nối và tích hợp nhiều hệ thống phần mềm khác nhau (chẳng hạn ERP, CRM, DW) từ các nhà cung cấp đa dạng, nên áp dụng công nghệ nào để thực hiện hiệu quả?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Enterprise Application Integration (EAI) - Tích hợp ứng dụng doanh nghiệp."
+      },
+      {
+        "key": "B",
+        "text": "Xóa bỏ toàn bộ và cài đặt lại một hệ thống duy nhất."
+      },
+      {
+        "key": "C",
+        "text": "Sử dụng duy nhất phần mềm Microsoft Access."
+      },
+      {
+        "key": "D",
+        "text": "Chạy các hệ thống độc lập và không cần kết nối."
+      },
+      {
+        "key": "E",
+        "text": "Chỉ sử dụng trình duyệt Web làm công cụ lưu trữ."
+      }
+    ],
+    "answer": "A",
+    "explanation": "EAI cung cấp các công cụ tích hợp (middleware) đóng vai trò trung gian kết nối các hệ thống \"tốt nhất trong phân khúc\" (best-of-breed) từ nhiều nguồn khác nhau, giúp dữ liệu và quy trình nghiệp vụ có thể lưu thông mượt mà giữa các phòng ban.",
+    "raw": "**Câu 7:**\n\nKhi một tổ chức cần kết nối và tích hợp nhiều hệ thống phần mềm khác nhau (chẳng hạn ERP, CRM, DW) từ các nhà cung cấp đa dạng, nên áp dụng công nghệ nào để thực hiện hiệu quả?\n\n- A. Enterprise Application Integration (EAI) - Tích hợp ứng dụng doanh nghiệp.\n- B. Xóa bỏ toàn bộ và cài đặt lại một hệ thống duy nhất.\n- C. Sử dụng duy nhất phần mềm Microsoft Access.\n- D. Chạy các hệ thống độc lập và không cần kết nối.\n- E. Chỉ sử dụng trình duyệt Web làm công cụ lưu trữ.\n\n**Đáp án đúng:** A\n\n**Giải thích:** EAI cung cấp các công cụ tích hợp (middleware) đóng vai trò trung gian kết nối các hệ thống \"tốt nhất trong phân khúc\" (best-of-breed) từ nhiều nguồn khác nhau, giúp dữ liệu và quy trình nghiệp vụ có thể lưu thông mượt mà giữa các phòng ban."
+  },
+  {
+    "id": 8,
+    "question": "Trong các hệ hỗ trợ ra quyết định (DSS) hiện đại, tiêu chuẩn nào được xem là chuẩn mực thực tế đối với giao diện người dùng (User Interface)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Các báo cáo in ra giấy."
+      },
+      {
+        "key": "B",
+        "text": "Giao diện dòng lệnh (Command line)."
+      },
+      {
+        "key": "C",
+        "text": "Trình duyệt Web (Web browser)."
+      },
+      {
+        "key": "D",
+        "text": "Các bảng tính (Spreadsheets) không có kết nối mạng."
+      },
+      {
+        "key": "E",
+        "text": "Các thiết bị điều khiển bằng giọng nói chuyên dụng."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Trình duyệt Web cung cấp một giao diện đồ họa (GUI) quen thuộc, dễ học, chi phí triển khai thấp và cho phép người dùng truy cập dữ liệu một cách linh hoạt, cơ động từ máy tính cá nhân cho đến các thiết bị di động (như PDA hoặc điện thoại thông minh).",
+    "raw": "**Câu 8:**\n\nTrong các hệ hỗ trợ ra quyết định (DSS) hiện đại, tiêu chuẩn nào được xem là chuẩn mực thực tế đối với giao diện người dùng (User Interface)?\n\n- A. Các báo cáo in ra giấy.\n- B. Giao diện dòng lệnh (Command line).\n- C. Trình duyệt Web (Web browser).\n- D. Các bảng tính (Spreadsheets) không có kết nối mạng.\n- E. Các thiết bị điều khiển bằng giọng nói chuyên dụng.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Trình duyệt Web cung cấp một giao diện đồ họa (GUI) quen thuộc, dễ học, chi phí triển khai thấp và cho phép người dùng truy cập dữ liệu một cách linh hoạt, cơ động từ máy tính cá nhân cho đến các thiết bị di động (như PDA hoặc điện thoại thông minh)."
+  },
+  {
+    "id": 9,
+    "question": "Trong quản lý siêu dữ liệu (metadata), công nghệ nào đang dần trở thành ngôn ngữ tiêu chuẩn cho việc tích hợp dữ liệu giữa kho dữ liệu (DW) và các thiết bị di động (m-commerce)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "COBOL."
+      },
+      {
+        "key": "B",
+        "text": "XML."
+      },
+      {
+        "key": "C",
+        "text": "SQL."
+      },
+      {
+        "key": "D",
+        "text": "C++."
+      },
+      {
+        "key": "E",
+        "text": "EBCDIC."
+      }
+    ],
+    "answer": "B",
+    "explanation": "XML đang nhanh chóng trở thành ngôn ngữ tiêu chuẩn chung cho việc tích hợp cơ sở dữ liệu và chuyển giao dữ liệu, đặc biệt tối ưu khi trao đổi thông tin với các thiết bị di động và các ứng dụng thương mại điện tử hiện đại.",
+    "raw": "**Câu 9:**\n\nTrong quản lý siêu dữ liệu (metadata), công nghệ nào đang dần trở thành ngôn ngữ tiêu chuẩn cho việc tích hợp dữ liệu giữa kho dữ liệu (DW) và các thiết bị di động (m-commerce)?\n\n- A. COBOL.\n- B. XML.\n- C. SQL.\n- D. C++.\n- E. EBCDIC.\n\n**Đáp án đúng:** B\n\n**Giải thích:** XML đang nhanh chóng trở thành ngôn ngữ tiêu chuẩn chung cho việc tích hợp cơ sở dữ liệu và chuyển giao dữ liệu, đặc biệt tối ưu khi trao đổi thông tin với các thiết bị di động và các ứng dụng thương mại điện tử hiện đại."
+  },
+  {
+    "id": 10,
+    "question": "Theo William H. Inmon, đâu là một yêu cầu công nghệ then chốt nhằm hỗ trợ khả năng truy cập dữ liệu trong kho dữ liệu (DW) một cách linh hoạt?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Chỉ cho phép truy cập qua một ứng dụng duy nhất."
+      },
+      {
+        "key": "B",
+        "text": "Chỉ sử dụng các báo cáo đã được định nghĩa sẵn (static reports)."
+      },
+      {
+        "key": "C",
+        "text": "Bắt buộc người dùng phải biết lập trình C++."
+      },
+      {
+        "key": "D",
+        "text": "Giới hạn số lượng câu hỏi mà người dùng có thể đặt ra."
+      },
+      {
+        "key": "E",
+        "text": "Giao diện ngôn ngữ phong phú và mạnh mẽ (Rich language interface)."
+      }
+    ],
+    "answer": "E",
+    "explanation": "Kho dữ liệu phải cung cấp một giao diện ngôn ngữ mạnh mẽ, phong phú và dễ sử dụng để cả các lập trình viên lẫn người dùng cuối DSS (những nhà phân tích, quản lý) đều có thể dễ dàng thiết lập câu hỏi truy vấn và tiếp cận dữ liệu một cách linh hoạt theo nhu cầu của họ.\n\n=================================================================\n\nDưới đây là **20 câu tiếp theo** (từ câu 11 đến câu 30) được định dạng đầy đủ, chuẩn hóa bao gồm: Câu hỏi, các lựa chọn (A, B, C, D, E), đáp án chính xác và phần giải thích chi tiết từ bài giảng trong video.",
+    "raw": "**Câu 10:**\n\nTheo William H. Inmon, đâu là một yêu cầu công nghệ then chốt nhằm hỗ trợ khả năng truy cập dữ liệu trong kho dữ liệu (DW) một cách linh hoạt?\n\n- A. Chỉ cho phép truy cập qua một ứng dụng duy nhất.\n- B. Chỉ sử dụng các báo cáo đã được định nghĩa sẵn (static reports).\n- C. Bắt buộc người dùng phải biết lập trình C++.\n- D. Giới hạn số lượng câu hỏi mà người dùng có thể đặt ra.\n- E. Giao diện ngôn ngữ phong phú và mạnh mẽ (Rich language interface).\n\n**Đáp án đúng:** E\n\n**Giải thích:** Kho dữ liệu phải cung cấp một giao diện ngôn ngữ mạnh mẽ, phong phú và dễ sử dụng để cả các lập trình viên lẫn người dùng cuối DSS (những nhà phân tích, quản lý) đều có thể dễ dàng thiết lập câu hỏi truy vấn và tiếp cận dữ liệu một cách linh hoạt theo nhu cầu của họ.\n\n=================================================================\n\nDưới đây là **20 câu tiếp theo** (từ câu 11 đến câu 30) được định dạng đầy đủ, chuẩn hóa bao gồm: Câu hỏi, các lựa chọn (A, B, C, D, E), đáp án chính xác và phần giải thích chi tiết từ bài giảng trong video."
+  },
+  {
+    "id": 11,
+    "question": "Theo William H. Inmon, đâu là yếu tố quan trọng nhất cần được xem xét trong quá trình thiết kế kho dữ liệu (DW)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Lựa chọn công nghệ phần cứng mạnh mẽ nhất."
+      },
+      {
+        "key": "B",
+        "text": "Tốc độ của mạng truyền tải dữ liệu."
+      },
+      {
+        "key": "C",
+        "text": "Thiết lập các quy tắc bảo mật tường lửa."
+      },
+      {
+        "key": "D",
+        "text": "Lựa chọn ngôn ngữ lập trình cho các ứng dụng phía khách (front-end)."
+      },
+      {
+        "key": "E",
+        "text": "Xác định độ mịn (Granularity) của dữ liệu."
+      }
+    ],
+    "answer": "E",
+    "explanation": "William H. Inmon khẳng định rõ ràng rằng khía cạnh quan trọng nhất của thiết kế kho dữ liệu là vấn đề độ mịn (Granularity). Nó ảnh hưởng trực tiếp đến khối lượng dữ liệu lưu trữ trong kho và khả năng trả lời các truy vấn chi tiết của người dùng.",
+    "raw": "**Câu 11:**\n\nTheo William H. Inmon, đâu là yếu tố quan trọng nhất cần được xem xét trong quá trình thiết kế kho dữ liệu (DW)?\n\n- A. Lựa chọn công nghệ phần cứng mạnh mẽ nhất.\n- B. Tốc độ của mạng truyền tải dữ liệu.\n- C. Thiết lập các quy tắc bảo mật tường lửa.\n- D. Lựa chọn ngôn ngữ lập trình cho các ứng dụng phía khách (front-end).\n- E. Xác định độ mịn (Granularity) của dữ liệu.\n\n**Đáp án đúng:** E\n\n**Giải thích:** William H. Inmon khẳng định rõ ràng rằng khía cạnh quan trọng nhất của thiết kế kho dữ liệu là vấn đề độ mịn (Granularity). Nó ảnh hưởng trực tiếp đến khối lượng dữ liệu lưu trữ trong kho và khả năng trả lời các truy vấn chi tiết của người dùng."
+  },
+  {
+    "id": 12,
+    "question": "Vì sao phương pháp xây dựng kho dữ liệu theo kiểu \"Big Bang\" (triển khai toàn bộ trong một lần) lại bị xem là không phù hợp trong thực tế?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Vì chi phí phần cứng sẽ quá đắt đỏ."
+      },
+      {
+        "key": "B",
+        "text": "Vì nó đòi hỏi quá nhiều nhân viên lập trình cùng lúc."
+      },
+      {
+        "key": "C",
+        "text": "Vì kho dữ liệu mang tính tiến hóa và người dùng hoạt động theo chế độ \"khám phá\", họ chỉ biết yêu cầu thực sự sau khi thấy các kết quả ban đầu."
+      },
+      {
+        "key": "D",
+        "text": "Vì các hệ thống nguồn không thể cung cấp dữ liệu đồng thời."
+      },
+      {
+        "key": "E",
+        "text": "Vì nó làm gián đoạn các hoạt động tác nghiệp hàng ngày của công ty."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Kho dữ liệu được thiết kế theo từng bước và mang tính tiến hóa. Người dùng cuối thường không thể xác định chính xác yêu cầu của mình cho đến khi họ nhìn thấy các báo cáo đầu tiên (Mindset of discovery). Do đó, cách tiếp cận lặp lại (iterative/spiral) là quy tắc bắt buộc để tránh thất bại.",
+    "raw": "**Câu 12:**\n\nVì sao phương pháp xây dựng kho dữ liệu theo kiểu \"Big Bang\" (triển khai toàn bộ trong một lần) lại bị xem là không phù hợp trong thực tế?\n\n- A. Vì chi phí phần cứng sẽ quá đắt đỏ.\n- B. Vì nó đòi hỏi quá nhiều nhân viên lập trình cùng lúc.\n- C. Vì kho dữ liệu mang tính tiến hóa và người dùng hoạt động theo chế độ \"khám phá\", họ chỉ biết yêu cầu thực sự sau khi thấy các kết quả ban đầu.\n- D. Vì các hệ thống nguồn không thể cung cấp dữ liệu đồng thời.\n- E. Vì nó làm gián đoạn các hoạt động tác nghiệp hàng ngày của công ty.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Kho dữ liệu được thiết kế theo từng bước và mang tính tiến hóa. Người dùng cuối thường không thể xác định chính xác yêu cầu của mình cho đến khi họ nhìn thấy các báo cáo đầu tiên (Mindset of discovery). Do đó, cách tiếp cận lặp lại (iterative/spiral) là quy tắc bắt buộc để tránh thất bại."
+  },
+  {
+    "id": 13,
+    "question": "Đặc tính \"Hướng chủ đề\" (Subject-oriented) trong thiết kế kho dữ liệu có nghĩa là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dữ liệu được tổ chức theo các ứng dụng chức năng như bảo hiểm xe, bảo hiểm nhân thọ."
+      },
+      {
+        "key": "B",
+        "text": "Mỗi bộ phận trong công ty có một máy chủ riêng."
+      },
+      {
+        "key": "C",
+        "text": "Dữ liệu được tổ chức xung quanh các thực thể chính của doanh nghiệp như Khách hàng, Sản phẩm, Đơn hàng."
+      },
+      {
+        "key": "D",
+        "text": "Dữ liệu liệu chỉ chứa các thông tin về kế hoạch chiến lược."
+      },
+      {
+        "key": "E",
+        "text": "Dữ liệu được sắp xếp theo thứ tự bảng chữ cái của tên nhân viên."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Khác với các hệ thống tác nghiệp được tổ chức theo ứng dụng chức năng, kho dữ liệu được thiết kế xoay quanh các chủ đề cốt lõi của doanh nghiệp (subjects) để hỗ trợ phân tích toàn diện về các thực thể đó.",
+    "raw": "**Câu 13:**\n\nĐặc tính \"Hướng chủ đề\" (Subject-oriented) trong thiết kế kho dữ liệu có nghĩa là:\n\n- A. Dữ liệu được tổ chức theo các ứng dụng chức năng như bảo hiểm xe, bảo hiểm nhân thọ.\n- B. Mỗi bộ phận trong công ty có một máy chủ riêng.\n- C. Dữ liệu được tổ chức xung quanh các thực thể chính của doanh nghiệp như Khách hàng, Sản phẩm, Đơn hàng.\n- D. Dữ liệu liệu chỉ chứa các thông tin về kế hoạch chiến lược.\n- E. Dữ liệu được sắp xếp theo thứ tự bảng chữ cái của tên nhân viên.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Khác với các hệ thống tác nghiệp được tổ chức theo ứng dụng chức năng, kho dữ liệu được thiết kế xoay quanh các chủ đề cốt lõi của doanh nghiệp (subjects) để hỗ trợ phân tích toàn diện về các thực thể đó."
+  },
+  {
+    "id": 14,
+    "question": "Quy tắc nào là yêu cầu bắt buộc đối với cấu trúc khóa (key structure) của tất cả các bản ghi trong kho dữ liệu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Khóa phải là một số nguyên tự tăng."
+      },
+      {
+        "key": "B",
+        "text": "Khóa phải giống hệt với khóa trong hệ thống tác nghiệp nguồn."
+      },
+      {
+        "key": "C",
+        "text": "Khóa luôn luôn phải chứa một yếu tố thời gian (Time variant)."
+      },
+      {
+        "key": "D",
+        "text": "Khóa không được phép chứa các ký tự từ chữ cái."
+      },
+      {
+        "key": "E",
+        "text": "Khóa phải được mã hóa bằng công nghệ blockchain."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Mọi đơn vị dữ liệu trong kho dữ liệu đều gắn liền với một thời điểm nhất định. Do đó, cấu trúc khóa của kho dữ liệu luôn luôn phải bao gồm yếu tố thời gian (như ngày, tháng, năm hoặc mốc thời gian) để theo dõi lịch sử.",
+    "raw": "**Câu 14:**\n\nQuy tắc nào là yêu cầu bắt buộc đối với cấu trúc khóa (key structure) của tất cả các bản ghi trong kho dữ liệu?\n\n- A. Khóa phải là một số nguyên tự tăng.\n- B. Khóa phải giống hệt với khóa trong hệ thống tác nghiệp nguồn.\n- C. Khóa luôn luôn phải chứa một yếu tố thời gian (Time variant).\n- D. Khóa không được phép chứa các ký tự từ chữ cái.\n- E. Khóa phải được mã hóa bằng công nghệ blockchain.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Mọi đơn vị dữ liệu trong kho dữ liệu đều gắn liền với một thời điểm nhất định. Do đó, cấu trúc khóa của kho dữ liệu luôn luôn phải bao gồm yếu tố thời gian (như ngày, tháng, năm hoặc mốc thời gian) để theo dõi lịch sử."
+  },
+  {
+    "id": 15,
+    "question": "\"Phân mảnh dữ liệu\" (Partitioning) được coi là vấn đề thiết kế quan trọng thứ hai sau độ mịn vì:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nó giúp chia nhỏ dữ liệu thành các đơn vị vật lý có thể quản lý độc lập để tăng tính linh hoạt và hiệu suất."
+      },
+      {
+        "key": "B",
+        "text": "Nó giúp mã hóa dữ liệu thành các phần không thể đọc được."
+      },
+      {
+        "key": "C",
+        "text": "Nó bắt buộc người dùng phải truy cập dữ liệu theo thứ tự thời gian."
+      },
+      {
+        "key": "D",
+        "text": "Nó làm giảm số lượng băng cần thiết trong cơ sở dữ liệu."
+      },
+      {
+        "key": "E",
+        "text": "Nó loại bỏ nhu cầu sử dụng siêu dữ liệu (metadata)."
+      }
+    ],
+    "answer": "A",
+    "explanation": "Phân mảnh giúp chia khối dữ liệu khổng lồ thành các phần nhỏ hơn (thường theo ngày/tháng/năm). Điều này cho phép đội ngũ vận hành linh hoạt hơn trong việc tái cấu trúc dữ liệu, lập chỉ mục và quản lý lưu trữ hiệu suất hệ thống.",
+    "raw": "**Câu 15:**\n\n\"Phân mảnh dữ liệu\" (Partitioning) được coi là vấn đề thiết kế quan trọng thứ hai sau độ mịn vì:\n\n- A. Nó giúp chia nhỏ dữ liệu thành các đơn vị vật lý có thể quản lý độc lập để tăng tính linh hoạt và hiệu suất.\n- B. Nó giúp mã hóa dữ liệu thành các phần không thể đọc được.\n- C. Nó bắt buộc người dùng phải truy cập dữ liệu theo thứ tự thời gian.\n- D. Nó làm giảm số lượng băng cần thiết trong cơ sở dữ liệu.\n- E. Nó loại bỏ nhu cầu sử dụng siêu dữ liệu (metadata).\n\n**Đáp án đúng:** A\n\n**Giải thích:** Phân mảnh giúp chia khối dữ liệu khổng lồ thành các phần nhỏ hơn (thường theo ngày/tháng/năm). Điều này cho phép đội ngũ vận hành linh hoạt hơn trong việc tái cấu trúc dữ liệu, lập chỉ mục và quản lý lưu trữ hiệu suất hệ thống."
+  },
+  {
+    "id": 16,
+    "question": "Trong thiết kế kho dữ liệu (DW), theo William H. Inmon, mô hình nào được khuyến nghị làm nền tảng tối ưu cho kho dữ liệu trung tâm vì tính linh hoạt và khả năng đáp ứng các nhu cầu chưa được xác định trước?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Mô hình đa chiều (Star Join)."
+      },
+      {
+        "key": "B",
+        "text": "Mô hình phân cấp (Hierarchical model)."
+      },
+      {
+        "key": "C",
+        "text": "Mô hình quan hệ chuẩn hóa (Normalized Relational model)."
+      },
+      {
+        "key": "D",
+        "text": "Mô hình tệp tin phẳng (Flat files)."
+      },
+      {
+        "key": "E",
+        "text": "Mô hình mạng (Network model)."
+      }
+    ],
+    "answer": "C",
+    "explanation": "William H. Inmon khẳng định rằng mô hình quan hệ chuẩn hóa là thiết kế tối ưu cho kho dữ liệu trung tâm vì tính linh hoạt của nó. Hệ thống không bị tối ưu hóa cho riêng một nhóm người dùng nào và dễ dàng thích ứng với các thay đổi trong tương lai.",
+    "raw": "**Câu 16:**\n\nTrong thiết kế kho dữ liệu (DW), theo William H. Inmon, mô hình nào được khuyến nghị làm nền tảng tối ưu cho kho dữ liệu trung tâm vì tính linh hoạt và khả năng đáp ứng các nhu cầu chưa được xác định trước?\n\n- A. Mô hình đa chiều (Star Join).\n- B. Mô hình phân cấp (Hierarchical model).\n- C. Mô hình quan hệ chuẩn hóa (Normalized Relational model).\n- D. Mô hình tệp tin phẳng (Flat files).\n- E. Mô hình mạng (Network model).\n\n**Đáp án đúng:** C\n\n**Giải thích:** William H. Inmon khẳng định rằng mô hình quan hệ chuẩn hóa là thiết kế tối ưu cho kho dữ liệu trung tâm vì tính linh hoạt của nó. Hệ thống không bị tối ưu hóa cho riêng một nhóm người dùng nào và dễ dàng thích ứng với các thay đổi trong tương lai."
+  },
+  {
+    "id": 17,
+    "question": "Quy trình xác định \"Hệ thống hồ sơ\" (System of Record) trong thiết kế kho dữ liệu nhằm mục đích gì?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tìm ra hệ thống nguồn có tốc độ xử lý nhanh nhất."
+      },
+      {
+        "key": "B",
+        "text": "Xác định nguồn dữ liệu \"tốt nhất\" (chính xác, kịp thời, đầy đủ nhất) để nạp vào kho dữ liệu."
+      },
+      {
+        "key": "C",
+        "text": "Ghi lại tên của tất cả nhân viên đã nhập liệu."
+      },
+      {
+        "key": "D",
+        "text": "Xóa bỏ các hệ thống cũ không còn sử dụng."
+      },
+      {
+        "key": "E",
+        "text": "Tạo ra một bản sao lưu dự phòng cho hệ thống tác nghiệp."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Việc xác định \"System of Record\" là bước quan trọng để chọn lọc ra nguồn dữ liệu đáng tin cậy nhất trong số các hệ thống nguồn rời rạc, đảm bảo tính tích hợp và chính xác cho kho dữ liệu.",
+    "raw": "**Câu 17:**\n\nQuy trình xác định \"Hệ thống hồ sơ\" (System of Record) trong thiết kế kho dữ liệu nhằm mục đích gì?\n\n- A. Tìm ra hệ thống nguồn có tốc độ xử lý nhanh nhất.\n- B. Xác định nguồn dữ liệu \"tốt nhất\" (chính xác, kịp thời, đầy đủ nhất) để nạp vào kho dữ liệu.\n- C. Ghi lại tên của tất cả nhân viên đã nhập liệu.\n- D. Xóa bỏ các hệ thống cũ không còn sử dụng.\n- E. Tạo ra một bản sao lưu dự phòng cho hệ thống tác nghiệp.\n\n**Đáp án đúng:** B\n\n**Giải thích:** Việc xác định \"System of Record\" là bước quan trọng để chọn lọc ra nguồn dữ liệu đáng tin cậy nhất trong số các hệ thống nguồn rời rạc, đảm bảo tính tích hợp và chính xác cho kho dữ liệu."
+  },
+  {
+    "id": 18,
+    "question": "Trong môi trường kho dữ liệu, các ràng buộc toàn vẹn tham chiếu (referential integrity) thường được xử lý ra sao sau khi thiết kế mối quan hệ giữa các dữ liệu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Được duy trì nghiêm ngặt bằng các khóa ngoại giống như trong OLTP."
+      },
+      {
+        "key": "B",
+        "text": "Bị loại bỏ hoàn toàn để tiết kiệm dung lượng."
+      },
+      {
+        "key": "C",
+        "text": "Được chuyển thành các \"hiện vật\" (artifacts) của mối quan hệ lịch sử, vì dữ liệu trong kho không biến động và liên quan đến thời gian."
+      },
+      {
+        "key": "D",
+        "text": "Chỉ được áp dụng cho dữ liệu của năm hiện tại."
+      },
+      {
+        "key": "E",
+        "text": "Do người dùng tự kiểm tra thủ công sau mỗi lần truy vấn."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Do dữ liệu kho dữ liệu phản ánh các nghiệp vụ tại các thời điểm khác nhau trong quá khứ và không được cập nhật, các mối quan hệ được lưu trữ dưới dạng các \"artifacts\" lịch sử thay vì các ràng buộc động.",
+    "raw": "**Câu 18:**\n\nTrong môi trường kho dữ liệu, các ràng buộc toàn vẹn tham chiếu (referential integrity) thường được xử lý ra sao sau khi thiết kế mối quan hệ giữa các dữ liệu?\n\n- A. Được duy trì nghiêm ngặt bằng các khóa ngoại giống như trong OLTP.\n- B. Bị loại bỏ hoàn toàn để tiết kiệm dung lượng.\n- C. Được chuyển thành các \"hiện vật\" (artifacts) của mối quan hệ lịch sử, vì dữ liệu trong kho không biến động và liên quan đến thời gian.\n- D. Chỉ được áp dụng cho dữ liệu của năm hiện tại.\n- E. Do người dùng tự kiểm tra thủ công sau mỗi lần truy vấn.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Do dữ liệu kho dữ liệu phản ánh các nghiệp vụ tại các thời điểm khác nhau trong quá khứ và không được cập nhật, các mối quan hệ được lưu trữ dưới dạng các \"artifacts\" lịch sử thay vì các ràng buộc động."
+  },
+  {
+    "id": 19,
+    "question": "Ba cấp độ nào của mô hình dữ liệu cần được xác định để xây dựng kho dữ liệu theo đúng quy trình chuẩn?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Cấp độ doanh nghiệp, Cấp độ bộ phận, Cấp độ cá nhân."
+      },
+      {
+        "key": "B",
+        "text": "Mô hình ý niệm, Mô hình logic, Mô hình vật lý."
+      },
+      {
+        "key": "C",
+        "text": "Mô hình cao (High-level), Mô hình trung (Mid-level), Mô hình thấp/vật lý (Physical/Low-level)."
+      },
+      {
+        "key": "D",
+        "text": "Mô hình đầu vào, Mô hình xử lý, Mô hình đầu ra."
+      },
+      {
+        "key": "E",
+        "text": "Mô hình dữ liệu thô, Mô hình dữ liệu tóm tắt, Mô hình báo cáo."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Quy trình thiết kế DW tiêu chuẩn của Inmon bao gồm ba cấp độ: Mô hình cấp cao (xác định các chủ đề chính), Mô hình cấp trung (chi tiết hóa thuộc tính và mối quan hệ) và Mô hình cấp thấp/vật lý (để thực hiện thiết kế cơ sở dữ liệu thực tế).",
+    "raw": "**Câu 19:**\n\nBa cấp độ nào của mô hình dữ liệu cần được xác định để xây dựng kho dữ liệu theo đúng quy trình chuẩn?\n\n- A. Cấp độ doanh nghiệp, Cấp độ bộ phận, Cấp độ cá nhân.\n- B. Mô hình ý niệm, Mô hình logic, Mô hình vật lý.\n- C. Mô hình cao (High-level), Mô hình trung (Mid-level), Mô hình thấp/vật lý (Physical/Low-level).\n- D. Mô hình đầu vào, Mô hình xử lý, Mô hình đầu ra.\n- E. Mô hình dữ liệu thô, Mô hình dữ liệu tóm tắt, Mô hình báo cáo.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Quy trình thiết kế DW tiêu chuẩn của Inmon bao gồm ba cấp độ: Mô hình cấp cao (xác định các chủ đề chính), Mô hình cấp trung (chi tiết hóa thuộc tính và mối quan hệ) và Mô hình cấp thấp/vật lý (để thực hiện thiết kế cơ sở dữ liệu thực tế)."
+  },
+  {
+    "id": 20,
+    "question": "Một quy tắc thiết kế quan trọng nào cần được tuân thủ để kiểm soát và quản lý sự phát triển của kho dữ liệu theo thời gian?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Không bao giờ được xóa dữ liệu khỏi kho."
+      },
+      {
+        "key": "B",
+        "text": "Luôn lưu trữ tất cả dữ liệu trên đĩa cứng tốc độ cao đắt tiền."
+      },
+      {
+        "key": "C",
+        "text": "Thiết lập các tiêu chí thanh lọc dữ liệu (Purge criteria) để di chuyển dữ liệu cũ, ít dùng sang các phương tiện lưu trữ rẻ hơn (near-line storage)."
+      },
+      {
+        "key": "D",
+        "text": "Chỉ cho phép nạp dữ liệu mới một lần mỗi năm."
+      },
+      {
+        "key": "E",
+        "text": "Giới hạn dung lượng kho ở mức 1 Terabyte."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Dữ liệu không thể tích lũy mãi mãi trên đĩa cứng đắt tiền. Một quy tắc thiết kế bền vững là phải có cơ chế thanh lọc hoặc chuyển dữ liệu cũ (dormant data) sang các phương tiện lưu trữ thay thế rẻ hơn để duy trì hiệu suất hệ thống.",
+    "raw": "**Câu 20:**\n\nMột quy tắc thiết kế quan trọng nào cần được tuân thủ để kiểm soát và quản lý sự phát triển của kho dữ liệu theo thời gian?\n\n- A. Không bao giờ được xóa dữ liệu khỏi kho.\n- B. Luôn lưu trữ tất cả dữ liệu trên đĩa cứng tốc độ cao đắt tiền.\n- C. Thiết lập các tiêu chí thanh lọc dữ liệu (Purge criteria) để di chuyển dữ liệu cũ, ít dùng sang các phương tiện lưu trữ rẻ hơn (near-line storage).\n- D. Chỉ cho phép nạp dữ liệu mới một lần mỗi năm.\n- E. Giới hạn dung lượng kho ở mức 1 Terabyte.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Dữ liệu không thể tích lũy mãi mãi trên đĩa cứng đắt tiền. Một quy tắc thiết kế bền vững là phải có cơ chế thanh lọc hoặc chuyển dữ liệu cũ (dormant data) sang các phương tiện lưu trữ thay thế rẻ hơn để duy trì hiệu suất hệ thống."
+  },
+  {
+    "id": 21,
+    "question": "Theo William H. Inmon, vị trí của kho dữ liệu trong môi trường kiến trúc thông tin được xác định như thế nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Là một hệ thống phụ trợ chỉ dùng để sao lưu dữ liệu tác nghiệp."
+      },
+      {
+        "key": "B",
+        "text": "Là một công cụ chỉ dành riêng cho nhân viên nhập liệu ghi chép (clerical community)."
+      },
+      {
+        "key": "C",
+        "text": "Là một phần mềm dùng để thay thế hoàn toàn các hệ thống di sản (legacy systems)."
+      },
+      {
+        "key": "D",
+        "text": "Là \"trái tim\" của môi trường có kiến trúc và là nền tảng của mọi quá trình xử lý DSS."
+      },
+      {
+        "key": "E",
+        "text": "Là một cơ sở dữ liệu tạm thời phục vụ cho việc in báo cáo cuối ngày."
+      }
+    ],
+    "answer": "D",
+    "explanation": "Kho dữ liệu được coi là trung tâm của môi trường thông tin doanh nghiệp, cung cấp nguồn dữ liệu tích hợp duy nhất để hỗ trợ các nhà phân tích DSS đưa ra quyết định dựa trên dữ liệu thống nhất toàn doanh nghiệp.",
+    "raw": "**Câu 21:**\n\nTheo William H. Inmon, vị trí của kho dữ liệu trong môi trường kiến trúc thông tin được xác định như thế nào?\n\n- A. Là một hệ thống phụ trợ chỉ dùng để sao lưu dữ liệu tác nghiệp.\n- B. Là một công cụ chỉ dành riêng cho nhân viên nhập liệu ghi chép (clerical community).\n- C. Là một phần mềm dùng để thay thế hoàn toàn các hệ thống di sản (legacy systems).\n- D. Là \"trái tim\" của môi trường có kiến trúc và là nền tảng của mọi quá trình xử lý DSS.\n- E. Là một cơ sở dữ liệu tạm thời phục vụ cho việc in báo cáo cuối ngày.\n\n**Đáp án đúng:** D\n\n**Giải thích:** Kho dữ liệu được coi là trung tâm của môi trường thông tin doanh nghiệp, cung cấp nguồn dữ liệu tích hợp duy nhất để hỗ trợ các nhà phân tích DSS đưa ra quyết định dựa trên dữ liệu thống nhất toàn doanh nghiệp."
+  },
+  {
+    "id": 22,
+    "question": "Đặc điểm nào của kho dữ liệu đóng vai trò then chốt trong việc hình thành \"một phiên bản sự thật duy nhất\" (single version of the truth) cho các hệ hỗ trợ ra quyết định (DSS)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Biến động theo thời gian (Time-variant)."
+      },
+      {
+        "key": "B",
+        "text": "Không biến động (Non-volatile)."
+      },
+      {
+        "key": "C",
+        "text": "Tích hợp (Integrated)."
+      },
+      {
+        "key": "D",
+        "text": "Hướng chủ đề (Subject-oriented)."
+      },
+      {
+        "key": "E",
+        "text": "Tính chi tiết (Granularity)."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Tích hợp là khía cạnh quan trọng nhất vì nó loại bỏ các bộ mẫu mâu thuẫn về định dạng, mã hóa và tên gọi từ nhiều nguồn dữ liệu khác nhau, đảm bảo DSS dựa trên dữ liệu thống nhất toàn doanh nghiệp.",
+    "raw": "**Câu 22:**\n\nĐặc điểm nào của kho dữ liệu đóng vai trò then chốt trong việc hình thành \"một phiên bản sự thật duy nhất\" (single version of the truth) cho các hệ hỗ trợ ra quyết định (DSS)?\n\n- A. Biến động theo thời gian (Time-variant).\n- B. Không biến động (Non-volatile).\n- C. Tích hợp (Integrated).\n- D. Hướng chủ đề (Subject-oriented).\n- E. Tính chi tiết (Granularity).\n\n**Đáp án đúng:** C\n\n**Giải thích:** Tích hợp là khía cạnh quan trọng nhất vì nó loại bỏ các bộ mẫu mâu thuẫn về định dạng, mã hóa và tên gọi từ nhiều nguồn dữ liệu khác nhau, đảm bảo DSS dựa trên dữ liệu thống nhất toàn doanh nghiệp."
+  },
+  {
+    "id": 23,
+    "question": "Việc tách rời kho dữ liệu khỏi môi trường tác nghiệp (operational environment) giúp giải quyết vấn đề nào đối với các hệ hỗ trợ ra quyết định (DSS)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Giảm chi phí mua bản quyền hệ quản trị cơ sở dữ liệu."
+      },
+      {
+        "key": "B",
+        "text": "Ngăn chặn việc người dùng DSS truy cập vào internet."
+      },
+      {
+        "key": "C",
+        "text": "Bảo vệ hiệu suất của các hệ thống giao dịch (OLTP) khỏi các truy vấn phân tích phức tạp vốn đòi hỏi truy cập lượng lớn bản ghi."
+      },
+      {
+        "key": "D",
+        "text": "Loại bỏ nhu cầu sử dụng nhân viên quản trị cơ sở dữ liệu (DBA)."
+      },
+      {
+        "key": "E",
+        "text": "Làm cho dữ liệu trở nên khó truy cập hơn đối với các đối thủ cạnh tranh."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Các hệ thống tác nghiệp được tối ưu cho các giao dịch nhỏ lẻ, trong khi DSS yêu cầu truy cập lượng dữ liệu rất lớn. Việc tách biệt giúp cả hai hệ thống hoạt động hiệu quả theo đúng mục đích riêng mà không gây xung đột hiệu năng.",
+    "raw": "**Câu 23:**\n\nViệc tách rời kho dữ liệu khỏi môi trường tác nghiệp (operational environment) giúp giải quyết vấn đề nào đối với các hệ hỗ trợ ra quyết định (DSS)?\n\n- A. Giảm chi phí mua bản quyền hệ quản trị cơ sở dữ liệu.\n- B. Ngăn chặn việc người dùng DSS truy cập vào internet.\n- C. Bảo vệ hiệu suất của các hệ thống giao dịch (OLTP) khỏi các truy vấn phân tích phức tạp vốn đòi hỏi truy cập lượng lớn bản ghi.\n- D. Loại bỏ nhu cầu sử dụng nhân viên quản trị cơ sở dữ liệu (DBA).\n- E. Làm cho dữ liệu trở nên khó truy cập hơn đối với các đối thủ cạnh tranh.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Các hệ thống tác nghiệp được tối ưu cho các giao dịch nhỏ lẻ, trong khi DSS yêu cầu truy cập lượng dữ liệu rất lớn. Việc tách biệt giúp cả hai hệ thống hoạt động hiệu quả theo đúng mục đích riêng mà không gây xung đột hiệu năng."
+  },
+  {
+    "id": 24,
+    "question": "Vì sao dữ liệu chi tiết (granular data) trong kho dữ liệu được xem là nền tảng quan trọng để đáp ứng các nhu cầu của DSS trong tương lai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Vì dữ liệu chi tiết chiếm ít không gian lưu trữ nhất."
+      },
+      {
+        "key": "B",
+        "text": "Vì dữ liệu chi tiết không bao giờ chứa yếu tố thời gian."
+      },
+      {
+        "key": "C",
+        "text": "Vì người dùng DSS chỉ muốn xem dữ liệu chi tiết nhất."
+      },
+      {
+        "key": "D",
+        "text": "Vì nó giúp hệ thống chạy nhanh hơn so với dữ liệu tóm tắt."
+      },
+      {
+        "key": "E",
+        "text": "Vì nó cho phép dữ liệu được định hình lại và tái sử dụng cho các yêu cầu chưa được xác định ở hiện tại."
+      }
+    ],
+    "answer": "E",
+    "explanation": "Dữ liệu ở mức độ mịn (nguyên tử) cho phép DSS linh hoạt trong việc tổng hợp dữ liệu theo nhiều cách khác nhau để đáp ứng các thay đổi về quy định hoặc nhu cầu kinh doanh mới phát sinh.",
+    "raw": "**Câu 24:**\n\nVì sao dữ liệu chi tiết (granular data) trong kho dữ liệu được xem là nền tảng quan trọng để đáp ứng các nhu cầu của DSS trong tương lai?\n\n- A. Vì dữ liệu chi tiết chiếm ít không gian lưu trữ nhất.\n- B. Vì dữ liệu chi tiết không bao giờ chứa yếu tố thời gian.\n- C. Vì người dùng DSS chỉ muốn xem dữ liệu chi tiết nhất.\n- D. Vì nó giúp hệ thống chạy nhanh hơn so với dữ liệu tóm tắt.\n- E. Vì nó cho phép dữ liệu được định hình lại và tái sử dụng cho các yêu cầu chưa được xác định ở hiện tại.\n\n**Đáp án đúng:** E\n\n**Giải thích:** Dữ liệu ở mức độ mịn (nguyên tử) cho phép DSS linh hoạt trong việc tổng hợp dữ liệu theo nhiều cách khác nhau để đáp ứng các thay đổi về quy định hoặc nhu cầu kinh doanh mới phát sinh."
+  },
+  {
+    "id": 25,
+    "question": "Vai trò then chốt của kho dữ liệu đối với Hệ thống thông tin điều hành (EIS) là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Làm nền tảng hạ tầng cung cấp dữ liệu tích hợp, lịch sử và khả năng \"khoan sâu\" (drill-down) vào chi tiết."
+      },
+      {
+        "key": "B",
+        "text": "Cung cấp các báo cáo giấy truyền thống cho giám đốc."
+      },
+      {
+        "key": "C",
+        "text": "Thay thế các giám đốc trong việc đưa ra quyết định cuối cùng."
+      },
+      {
+        "key": "D",
+        "text": "Tự động gửi email quảng cáo cho khách hàng."
+      },
+      {
+        "key": "E",
+        "text": "Chỉ cung cấp dữ liệu về đối thủ cạnh tranh từ internet."
+      }
+    ],
+    "answer": "A",
+    "explanation": "Kho dữ liệu cung cấp hạ tầng cần thiết để EIS hỗ trợ các nhà điều hành truy cập thông tin nhanh chóng, phân tích xu hướng lịch sử và tìm hiểu nguyên nhân gốc rễ của vấn đề qua dữ liệu khoan sâu (drill-down).",
+    "raw": "**Câu 25:**\n\nVai trò then chốt của kho dữ liệu đối với Hệ thống thông tin điều hành (EIS) là gì?\n\n- A. Làm nền tảng hạ tầng cung cấp dữ liệu tích hợp, lịch sử và khả năng \"khoan sâu\" (drill-down) vào chi tiết.\n- B. Cung cấp các báo cáo giấy truyền thống cho giám đốc.\n- C. Thay thế các giám đốc trong việc đưa ra quyết định cuối cùng.\n- D. Tự động gửi email quảng cáo cho khách hàng.\n- E. Chỉ cung cấp dữ liệu về đối thủ cạnh tranh từ internet.\n\n**Đáp án đúng:** A\n\n**Giải thích:** Kho dữ liệu cung cấp hạ tầng cần thiết để EIS hỗ trợ các nhà điều hành truy cập thông tin nhanh chóng, phân tích xu hướng lịch sử và tìm hiểu nguyên nhân gốc rễ của vấn đề qua dữ liệu khoan sâu (drill-down)."
+  },
+  {
+    "id": 26,
+    "question": "Kho dữ liệu hỗ trợ tổ chức chuyển đổi từ trạng thái \"phản ứng\" (reactive) sang \"chủ động\" (proactive) trong quá trình ra quyết định bằng cách nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bằng cách tự động hóa tất cả các quy trình sản xuất."
+      },
+      {
+        "key": "B",
+        "text": "Bằng cách loại bỏ hoàn toàn các sai sót trong dữ liệu."
+      },
+      {
+        "key": "C",
+        "text": "Nhờ việc lưu trữ sẵn dữ liệu chi tiết, tích hợp để sẵn sàng phân tích ngay khi các nhu cầu thông tin mới phát sinh."
+      },
+      {
+        "key": "D",
+        "text": "Bằng cách giảm số lượng nhân viên trong bộ phận IT."
+      },
+      {
+        "key": "E",
+        "text": "Nhờ việc cập nhật dữ liệu theo từng giây như hệ thống giao dịch."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Với một kho dữ liệu đầy đủ dữ liệu chi tiết, các nhà phân tích không còn phải đóng vai trò kỹ sư dữ liệu đi tìm kiếm thông tin mới khi có yêu cầu, mà có thể tập trung ngay vào việc phân tích dữ liệu để đưa ra quyết định kịp thời.",
+    "raw": "**Câu 26:**\n\nKho dữ liệu hỗ trợ tổ chức chuyển đổi từ trạng thái \"phản ứng\" (reactive) sang \"chủ động\" (proactive) trong quá trình ra quyết định bằng cách nào?\n\n- A. Bằng cách tự động hóa tất cả các quy trình sản xuất.\n- B. Bằng cách loại bỏ hoàn toàn các sai sót trong dữ liệu.\n- C. Nhờ việc lưu trữ sẵn dữ liệu chi tiết, tích hợp để sẵn sàng phân tích ngay khi các nhu cầu thông tin mới phát sinh.\n- D. Bằng cách giảm số lượng nhân viên trong bộ phận IT.\n- E. Nhờ việc cập nhật dữ liệu theo từng giây như hệ thống giao dịch.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Với một kho dữ liệu đầy đủ dữ liệu chi tiết, các nhà phân tích không còn phải đóng vai trò kỹ sư dữ liệu đi tìm kiếm thông tin mới khi có yêu cầu, mà có thể tập trung ngay vào việc phân tích dữ liệu để đưa ra quyết định kịp thời."
+  },
+  {
+    "id": 27,
+    "question": "Metadata (Siêu dữ liệu) trong môi trường kho dữ liệu đóng vai trò gì đối với nhà phân tích DSS?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Là một tệp tin rác không có giá trị sử dụng."
+      },
+      {
+        "key": "B",
+        "text": "Là công cụ dùng để nén dữ liệu nhằm tiết kiệm dung lượng đĩa."
+      },
+      {
+        "key": "C",
+        "text": "Là danh mục và bản đồ giúp người dùng định hướng, hiểu cấu trúc và nguồn gốc của dữ liệu trong kho."
+      },
+      {
+        "key": "D",
+        "text": "Là phần mềm dùng để mã hóa mật khẩu người dùng."
+      },
+      {
+        "key": "E",
+        "text": "Là các quy định về việc tuyển dụng nhân sự cho dự án DW."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Siêu dữ liệu giúp nhà phân tích DSS biết dữ liệu nào đang tồn tại, nó đến từ đâu và đã được chuyển đổi như thế nào, từ đó tiết kiệm thời gian tìm kiếm và tăng sự tin cậy vào kết quả phân tích.",
+    "raw": "**Câu 27:**\n\nMetadata (Siêu dữ liệu) trong môi trường kho dữ liệu đóng vai trò gì đối với nhà phân tích DSS?\n\n- A. Là một tệp tin rác không có giá trị sử dụng.\n- B. Là công cụ dùng để nén dữ liệu nhằm tiết kiệm dung lượng đĩa.\n- C. Là danh mục và bản đồ giúp người dùng định hướng, hiểu cấu trúc và nguồn gốc của dữ liệu trong kho.\n- D. Là phần mềm dùng để mã hóa mật khẩu người dùng.\n- E. Là các quy định về việc tuyển dụng nhân sự cho dự án DW.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Siêu dữ liệu giúp nhà phân tích DSS biết dữ liệu nào đang tồn tại, nó đến từ đâu và đã được chuyển đổi như thế nào, từ đó tiết kiệm thời gian tìm kiếm và tăng sự tin cậy vào kết quả phân tích."
+  },
+  {
+    "id": 28,
+    "question": "Mối quan hệ giữa kho dữ liệu và Khai phá dữ liệu (Data Mining) là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Cả hai là một hệ thống duy nhất không thể tách rời."
+      },
+      {
+        "key": "B",
+        "text": "Kho dữ liệu là nguồn cung cấp dữ liệu sạch, tích hợp và khổng lồ để các thuật toán khai phá dữ liệu tìm kiếm các mẫu ẩn và quy luật."
+      },
+      {
+        "key": "C",
+        "text": "Khai phá dữ liệu được dùng để xây dựng cấu trúc bảng cho kho dữ liệu."
+      },
+      {
+        "key": "D",
+        "text": "Kho dữ liệu chỉ chứa dữ liệu tóm tắt nên không thể dùng cho khai phá dữ liệu."
+      },
+      {
+        "key": "E",
+        "text": "Khai phá dữ liệu là một bước bắt buộc phải thực hiện trước khi nạp dữ liệu vào kho."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Kho dữ liệu cung cấp nền tảng dữ liệu ổn định và phong phú, giúp các công cụ khai phá dữ liệu hoạt động hiệu quả hơn trong việc phát hiện tri thức mới phục vụ DSS.",
+    "raw": "**Câu 28:**\n\nMối quan hệ giữa kho dữ liệu và Khai phá dữ liệu (Data Mining) là gì?\n\n- A. Cả hai là một hệ thống duy nhất không thể tách rời.\n- B. Kho dữ liệu là nguồn cung cấp dữ liệu sạch, tích hợp và khổng lồ để các thuật toán khai phá dữ liệu tìm kiếm các mẫu ẩn và quy luật.\n- C. Khai phá dữ liệu được dùng để xây dựng cấu trúc bảng cho kho dữ liệu.\n- D. Kho dữ liệu chỉ chứa dữ liệu tóm tắt nên không thể dùng cho khai phá dữ liệu.\n- E. Khai phá dữ liệu là một bước bắt buộc phải thực hiện trước khi nạp dữ liệu vào kho.\n\n**Đáp án đúng:** B\n\n**Giải thích:** Kho dữ liệu cung cấp nền tảng dữ liệu ổn định và phong phú, giúp các công cụ khai phá dữ liệu hoạt động hiệu quả hơn trong việc phát hiện tri thức mới phục vụ DSS."
+  },
+  {
+    "id": 29,
+    "question": "Trong bối cảnh hỗ trợ ra quyết định, vì sao đặc tính \"có yếu tố thời gian\" (time-variant) của kho dữ liệu lại giữ vai trò quan trọng hơn so với các hệ thống tác nghiệp?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Vì hệ thống tác nghiệp không quan tâm đến thời gian."
+      },
+      {
+        "key": "B",
+        "text": "Vì kho dữ liệu cần biết chính xác giây phút nạp dữ liệu để tính tiền điện."
+      },
+      {
+        "key": "C",
+        "text": "Vì kho dữ liệu cho phép phân tích xu hướng và so sánh hiệu suất qua các giai đoạn lịch sử khác nhau."
+      },
+      {
+        "key": "D",
+        "text": "Vì nhà quản lý chỉ quan tâm đến những gì đang xảy ra ở hiện tại."
+      },
+      {
+        "key": "E",
+        "text": "Vì nó giúp xóa bỏ dữ liệu một cách tự động mỗi ngày."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Khác với hệ thống tác nghiệp tập trung vào giá trị hiện tại, kho dữ liệu lưu trữ lịch sử giúp nhà quản lý thấy được sự thay đổi của doanh nghiệp theo thời gian, từ đó đưa ra các dự báo chính xác hơn.",
+    "raw": "**Câu 29:**\n\nTrong bối cảnh hỗ trợ ra quyết định, vì sao đặc tính \"có yếu tố thời gian\" (time-variant) của kho dữ liệu lại giữ vai trò quan trọng hơn so với các hệ thống tác nghiệp?\n\n- A. Vì hệ thống tác nghiệp không quan tâm đến thời gian.\n- B. Vì kho dữ liệu cần biết chính xác giây phút nạp dữ liệu để tính tiền điện.\n- C. Vì kho dữ liệu cho phép phân tích xu hướng và so sánh hiệu suất qua các giai đoạn lịch sử khác nhau.\n- D. Vì nhà quản lý chỉ quan tâm đến những gì đang xảy ra ở hiện tại.\n- E. Vì nó giúp xóa bỏ dữ liệu một cách tự động mỗi ngày.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Khác với hệ thống tác nghiệp tập trung vào giá trị hiện tại, kho dữ liệu lưu trữ lịch sử giúp nhà quản lý thấy được sự thay đổi của doanh nghiệp theo thời gian, từ đó đưa ra các dự báo chính xác hơn."
+  },
+  {
+    "id": 30,
+    "question": "Kho dữ liệu hỗ trợ quá trình \"khoan sâu\" (drill-down) trong phân tích quyết định bằng cách nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bằng cách liên kết dữ liệu tóm tắt với dữ liệu chi tiết cấu thành thông qua cấu trúc khóa nhất quán."
+      },
+      {
+        "key": "B",
+        "text": "Bằng cách tự động tăng tốc độ xử lý của CPU khi người dùng yêu cầu xem chi tiết."
+      },
+      {
+        "key": "C",
+        "text": "Bằng cách chỉ hiển thị dữ liệu chi tiết và ẩn đi các con số tổng hợp."
+      },
+      {
+        "key": "D",
+        "text": "Bằng cách chuyển câu hỏi của người dùng sang cho các chuyên gia tư vấn bên ngoài."
+      },
+      {
+        "key": "E",
+        "text": "Bằng cách xóa bỏ các bảng dữ liệu để tập trung vào bảng sự kiện."
+      }
+    ],
+    "answer": "A",
+    "explanation": "Cấu trúc khóa trong DW cho phép người dùng từ một con số tổng quát (như tổng doanh thu năm) có thể truy ngược lại các thành phần chi tiết (như doanh thu theo quý, tháng, ngày, cửa hàng) một cách tự nhiên.\n\n=============================================================\n\nDưới đây là **10 câu tiếp theo** (từ câu 31 đến câu 40) được định dạng đầy đủ, chuẩn hóa bao gồm: Câu hỏi, các lựa chọn (A, B, C, D, E), đáp án chính xác và phần giải thích chi tiết từ bài giảng trong video.",
+    "raw": "**Câu 30:**\n\nKho dữ liệu hỗ trợ quá trình \"khoan sâu\" (drill-down) trong phân tích quyết định bằng cách nào?\n\n- A. Bằng cách liên kết dữ liệu tóm tắt với dữ liệu chi tiết cấu thành thông qua cấu trúc khóa nhất quán.\n- B. Bằng cách tự động tăng tốc độ xử lý của CPU khi người dùng yêu cầu xem chi tiết.\n- C. Bằng cách chỉ hiển thị dữ liệu chi tiết và ẩn đi các con số tổng hợp.\n- D. Bằng cách chuyển câu hỏi của người dùng sang cho các chuyên gia tư vấn bên ngoài.\n- E. Bằng cách xóa bỏ các bảng dữ liệu để tập trung vào bảng sự kiện.\n\n**Đáp án đúng:** A\n\n**Giải thích:** Cấu trúc khóa trong DW cho phép người dùng từ một con số tổng quát (như tổng doanh thu năm) có thể truy ngược lại các thành phần chi tiết (như doanh thu theo quý, tháng, ngày, cửa hàng) một cách tự nhiên.\n\n=============================================================\n\nDưới đây là **10 câu tiếp theo** (từ câu 31 đến câu 40) được định dạng đầy đủ, chuẩn hóa bao gồm: Câu hỏi, các lựa chọn (A, B, C, D, E), đáp án chính xác và phần giải thích chi tiết từ bài giảng trong video."
+  },
+  {
+    "id": 31,
+    "question": "In hệ hỗ trợ ra quyết định (DSS), vai trò của Kho dữ liệu bộ phận (Data Mart) khác gì so với Kho dữ liệu doanh nghiệp (EDW)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Data Mart chứa toàn bộ dữ liệu lịch sử của tất cả các phòng ban nhưng có tốc độ xử lý chậm hơn."
+      },
+      {
+        "key": "B",
+        "text": "Data Mart là các tập con dữ liệu từ EDW, được định hình riêng cho nhu cầu phân tích của một bộ phận cụ thể để tăng tốc độ và tính tiện dụng."
+      },
+      {
+        "key": "C",
+        "text": "Data Mart chỉ dùng để lưu trữ dữ liệu rác đã bị loại bỏ khỏi EDW."
+      },
+      {
+        "key": "D",
+        "text": "Data Mart là hệ thống phần cứng độc lập hoàn toàn và không có mối liên kết nào với EDW."
+      },
+      {
+        "key": "E",
+        "text": "Data Mart chỉ phục vụ cho nhân viên nhập liệu cấp cơ sở thay vì nhà quản lý."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Kho dữ liệu doanh nghiệp (EDW) mang tính tập trung và chứa dữ liệu của toàn bộ tập đoàn, khiến cấu trúc của nó rất lớn và phức tạp. Để tăng hiệu suất truy vấn, người ta trích xuất các tập con dữ liệu theo từng chủ đề chuyên biệt (như Tài chính, Nhân sự, Marketing) thành các Data Mart để phục vụ riêng cho nhu cầu của từng bộ phận đó.",
+    "raw": "**Câu 31:**\n\nIn hệ hỗ trợ ra quyết định (DSS), vai trò của Kho dữ liệu bộ phận (Data Mart) khác gì so với Kho dữ liệu doanh nghiệp (EDW)?\n\n- A. Data Mart chứa toàn bộ dữ liệu lịch sử của tất cả các phòng ban nhưng có tốc độ xử lý chậm hơn.\n- B. Data Mart là các tập con dữ liệu từ EDW, được định hình riêng cho nhu cầu phân tích của một bộ phận cụ thể để tăng tốc độ và tính tiện dụng.\n- C. Data Mart chỉ dùng để lưu trữ dữ liệu rác đã bị loại bỏ khỏi EDW.\n- D. Data Mart là hệ thống phần cứng độc lập hoàn toàn và không có mối liên kết nào với EDW.\n- E. Data Mart chỉ phục vụ cho nhân viên nhập liệu cấp cơ sở thay vì nhà quản lý.\n\n**Đáp án đúng:** B\n\n**Giải thích:** Kho dữ liệu doanh nghiệp (EDW) mang tính tập trung và chứa dữ liệu của toàn bộ tập đoàn, khiến cấu trúc của nó rất lớn và phức tạp. Để tăng hiệu suất truy vấn, người ta trích xuất các tập con dữ liệu theo từng chủ đề chuyên biệt (như Tài chính, Nhân sự, Marketing) thành các Data Mart để phục vụ riêng cho nhu cầu của từng bộ phận đó."
+  },
+  {
+    "id": 32,
+    "question": "Việc triển khai kho dữ liệu giúp giảm tải công tác bảo trì cho môi trường sản xuất (production environment) bằng cách nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bằng cách chuyển các yêu cầu xử lý thông tin và báo cáo sang môi trường kho dữ liệu."
+      },
+      {
+        "key": "B",
+        "text": "Bằng cách tự động hóa quy trình sửa lỗi code trên hệ thống sản xuất."
+      },
+      {
+        "key": "C",
+        "text": "Bằng cách xóa bỏ các dữ liệu cũ trực tiếp trên môi trường sản xuất mà không cần lưu trữ."
+      },
+      {
+        "key": "D",
+        "text": "Bằng cách giới hạn thời gian sử dụng hệ thống sản xuất của nhân viên dưới 4 tiếng một ngày."
+      },
+      {
+        "key": "E",
+        "text": "Bằng cách ngăn chặn hoàn toàn việc người dùng cuối truy cập vào hệ thống sản xuất."
+      }
+    ],
+    "answer": "A",
+    "explanation": "Trong kiến trúc cũ, các báo cáo phân tích nặng nề phải chạy trực tiếp trên cơ sở dữ liệu sản xuất (vận hành), gây nghẽn mạch hệ thống và đòi hỏi bảo trì liên tục. Khi kho dữ liệu (DW) ra đời, toàn bộ các tác vụ báo cáo, phân tích dài hạn được đẩy sang môi trường DW, trả lại sự mượt mà và giảm tải áp lực vận hành lẫn bảo trì cho hệ thống gốc.",
+    "raw": "**Câu 32:**\n\nViệc triển khai kho dữ liệu giúp giảm tải công tác bảo trì cho môi trường sản xuất (production environment) bằng cách nào?\n\n- A. Bằng cách chuyển các yêu cầu xử lý thông tin và báo cáo sang môi trường kho dữ liệu.\n- B. Bằng cách tự động hóa quy trình sửa lỗi code trên hệ thống sản xuất.\n- C. Bằng cách xóa bỏ các dữ liệu cũ trực tiếp trên môi trường sản xuất mà không cần lưu trữ.\n- D. Bằng cách giới hạn thời gian sử dụng hệ thống sản xuất của nhân viên dưới 4 tiếng một ngày.\n- E. Bằng cách ngăn chặn hoàn toàn việc người dùng cuối truy cập vào hệ thống sản xuất.\n\n**Đáp án đúng:** A\n\n**Giải thích:** Trong kiến trúc cũ, các báo cáo phân tích nặng nề phải chạy trực tiếp trên cơ sở dữ liệu sản xuất (vận hành), gây nghẽn mạch hệ thống và đòi hỏi bảo trì liên tục. Khi kho dữ liệu (DW) ra đời, toàn bộ các tác vụ báo cáo, phân tích dài hạn được đẩy sang môi trường DW, trả lại sự mượt mà và giảm tải áp lực vận hành lẫn bảo trì cho hệ thống gốc."
+  },
+  {
+    "id": 33,
+    "question": "Trong lĩnh vực hệ thống thông tin, thuật ngữ \"Hệ thống hỗ trợ quản lý\" (MSS) thường được hiểu theo nghĩa nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Là một thuật ngữ bao quát (umbrella term) chỉ việc ứng dụng bất kỳ công nghệ nào để hỗ trợ các nhiệm vụ quản lý và ra quyết định."
+      },
+      {
+        "key": "B",
+        "text": "Là một phần mềm kế toán chuyên dụng để tính lương cho nhân viên."
+      },
+      {
+        "key": "C",
+        "text": "Là hệ thống phần cứng bao gồm máy chủ và thiết bị mạng của phòng IT."
+      },
+      {
+        "key": "D",
+        "text": "Là các quy định hành chính về việc quản lý giờ giấc làm việc của công ty."
+      },
+      {
+        "key": "E",
+        "text": "Là một ứng dụng chỉ chạy trên điện thoại di động của các giám đốc."
+      }
+    ],
+    "answer": "A",
+    "explanation": "Management Support Systems (MSS) là một khái niệm mang tính bao quát (umbrella term). Nó không chỉ đích danh một phần mềm cụ thể nào mà đại diện cho một nhóm các công nghệ, công cụ (bao gồm cả DSS, EIS, Expert Systems) được thiết kế với mục đích chung là hỗ trợ hoạt động quản lý và ra quyết định.",
+    "raw": "**Câu 33:**\n\nTrong lĩnh vực hệ thống thông tin, thuật ngữ \"Hệ thống hỗ trợ quản lý\" (MSS) thường được hiểu theo nghĩa nào?\n\n- A. Là một thuật ngữ bao quát (umbrella term) chỉ việc ứng dụng bất kỳ công nghệ nào để hỗ trợ các nhiệm vụ quản lý và ra quyết định.\n- B. Là một phần mềm kế toán chuyên dụng để tính lương cho nhân viên.\n- C. Là hệ thống phần cứng bao gồm máy chủ và thiết bị mạng của phòng IT.\n- D. Là các quy định hành chính về việc quản lý giờ giấc làm việc của công ty.\n- E. Là một ứng dụng chỉ chạy trên điện thoại di động của các giám đốc.\n\n**Đáp án đúng:** A\n\n**Giải thích:** Management Support Systems (MSS) là một khái niệm mang tính bao quát (umbrella term). Nó không chỉ đích danh một phần mềm cụ thể nào mà đại diện cho một nhóm các công nghệ, công cụ (bao gồm cả DSS, EIS, Expert Systems) được thiết kế với mục đích chung là hỗ trợ hoạt động quản lý và ra quyết định."
+  },
+  {
+    "id": 34,
+    "question": "Một đặc tính quan trọng phân biệt MSS với các hệ thống xử lý giao dịch (TPS) truyền thống là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "MSS tập trung vào tốc độ nhập liệu của nhân viên."
+      },
+      {
+        "key": "B",
+        "text": "MSS tập trung vào tính hiệu quả (Effectiveness) của quyết định được đưa ra."
+      },
+      {
+        "key": "C",
+        "text": "MSS chỉ xử lý các dữ liệu dạng văn bản thô."
+      },
+      {
+        "key": "D",
+        "text": "MSS yêu cầu phần cứng phải đặt tại văn phòng trung tâm của doanh nghiệp."
+      },
+      {
+        "key": "E",
+        "text": "MSS hoạt động hoàn toàn tự động mà không cần sự can thiệp của con người."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Các hệ thống xử lý giao dịch truyền thống (TPS/OLTP) tập trung vào tính hiệu năng và hiệu suất (Efficiency) – tức là làm thế nào để xử lý được nhiều giao dịch nhất trong thời gian ngắn nhất. Ngược lại, MSS tập trung vào tính hiệu quả (Effectiveness) – tức là giúp nhà quản lý lựa chọn được phương án hành động đúng đắn và chất lượng nhất.",
+    "raw": "**Câu 34:**\n\nMột đặc tính quan trọng phân biệt MSS với các hệ thống xử lý giao dịch (TPS) truyền thống là:\n\n- A. MSS tập trung vào tốc độ nhập liệu của nhân viên.\n- B. MSS tập trung vào tính hiệu quả (Effectiveness) của quyết định được đưa ra.\n- C. MSS chỉ xử lý các dữ liệu dạng văn bản thô.\n- D. MSS yêu cầu phần cứng phải đặt tại văn phòng trung tâm của doanh nghiệp.\n- E. MSS hoạt động hoàn toàn tự động mà không cần sự can thiệp của con người.\n\n**Đáp án đúng:** B\n\n**Giải thích:** Các hệ thống xử lý giao dịch truyền thống (TPS/OLTP) tập trung vào tính hiệu năng và hiệu suất (Efficiency) – tức là làm thế nào để xử lý được nhiều giao dịch nhất trong thời gian ngắn nhất. Ngược lại, MSS tập trung vào tính hiệu quả (Effectiveness) – tức là giúp nhà quản lý lựa chọn được phương án hành động đúng đắn và chất lượng nhất."
+  },
+  {
+    "id": 35,
+    "question": "Theo mô hình của Simon (1977), quá trình ra quyết định được hỗ trợ bởi MSS bao gồm 3 giai đoạn chính là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nhập liệu, Xử lý, Xuất báo cáo."
+      },
+      {
+        "key": "B",
+        "text": "Thu thập, Lưu trữ, Phân tích."
+      },
+      {
+        "key": "C",
+        "text": "Thông minh (Intelligence), Thiết kế (Design), và Lựa chọn (Choice)."
+      },
+      {
+        "key": "D",
+        "text": "Lập kế hoạch, Tổ chức, Kiểm tra."
+      },
+      {
+        "key": "E",
+        "text": "Khảo sát, Lập trình, Triển khai."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Mô hình kinh điển của Herbert A. Simon chia quá trình ra quyết định thành các giai đoạn cốt lõi: Intelligence (tìm hiểu môi trường để nhận diện vấn đề/cơ hội), Design (xây dựng và phân tích các phương án khả thi), và Choice (lựa chọn phương án tối ưu để cam kết thực hiện).",
+    "raw": "**Câu 35:**\n\nTheo mô hình của Simon (1977), quá trình ra quyết định được hỗ trợ bởi MSS bao gồm 3 giai đoạn chính là:\n\n- A. Nhập liệu, Xử lý, Xuất báo cáo.\n- B. Thu thập, Lưu trữ, Phân tích.\n- C. Thông minh (Intelligence), Thiết kế (Design), và Lựa chọn (Choice).\n- D. Lập kế hoạch, Tổ chức, Kiểm tra.\n- E. Khảo sát, Lập trình, Triển khai.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Mô hình kinh điển của Herbert A. Simon chia quá trình ra quyết định thành các giai đoạn cốt lõi: Intelligence (tìm hiểu môi trường để nhận diện vấn đề/cơ hội), Design (xây dựng và phân tích các phương án khả thi), và Choice (lựa chọn phương án tối ưu để cam kết thực hiện)."
+  },
+  {
+    "id": 36,
+    "question": "Theo phân loại các hoạt động quản lý của Robert N. Anthony (1965), MSS thường được thiết kế để hỗ trợ những cấp độ quản lý nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Chỉ hỗ trợ công việc bàn giấy của nhân viên hành chính (clerical staff)."
+      },
+      {
+        "key": "B",
+        "text": "Lập kế hoạch chiến lược, Kiểm soát quản lý và Kiểm soát tác nghiệp."
+      },
+      {
+        "key": "C",
+        "text": "Chỉ hỗ trợ việc lập kế hoạch sản xuất của kỹ sư phân xưởng."
+      },
+      {
+        "key": "D",
+        "text": "Quản lý an ninh tòa nhà và giám sát camera."
+      },
+      {
+        "key": "E",
+        "text": "Chỉ dành riêng cho các cổ đông bên ngoài doanh nghiệp."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Khung lý thuyết của Anthony phân cấp quản lý thành 3 tầng: Strategic Planning (Chiến lược - cấp cao), Management Control (Chiến thuật/Quản lý - cấp trung), và Operational Control (Tác nghiệp - cấp cơ sở). Hệ thống MSS hiện đại có cấu trúc linh hoạt để cung cấp thông tin phù hợp cho cả 3 cấp độ này.",
+    "raw": "**Câu 36:**\n\nTheo phân loại các hoạt động quản lý của Robert N. Anthony (1965), MSS thường được thiết kế để hỗ trợ những cấp độ quản lý nào?\n\n- A. Chỉ hỗ trợ công việc bàn giấy của nhân viên hành chính (clerical staff).\n- B. Lập kế hoạch chiến lược, Kiểm soát quản lý và Kiểm soát tác nghiệp.\n- C. Chỉ hỗ trợ việc lập kế hoạch sản xuất của kỹ sư phân xưởng.\n- D. Quản lý an ninh tòa nhà và giám sát camera.\n- E. Chỉ dành riêng cho các cổ đông bên ngoài doanh nghiệp.\n\n**Đáp án đúng:** B\n\n**Giải thích:** Khung lý thuyết của Anthony phân cấp quản lý thành 3 tầng: Strategic Planning (Chiến lược - cấp cao), Management Control (Chiến thuật/Quản lý - cấp trung), và Operational Control (Tác nghiệp - cấp cơ sở). Hệ thống MSS hiện đại có cấu trúc linh hoạt để cung cấp thông tin phù hợp cho cả 3 cấp độ này."
+  },
+  {
+    "id": 37,
+    "question": "Ba thành phần cốt lõi nào bắt buộc phải có trong kiến trúc của một hệ DSS/MSS tiêu chuẩn?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bàn phím, Chuột, Màn hình máy tính."
+      },
+      {
+        "key": "B",
+        "text": "Cáp mạng, Bộ định tuyến, Máy chủ lưu trữ."
+      },
+      {
+        "key": "C",
+        "text": "Phần hệ quản lý dữ liệu, Phần hệ quản lý mô hình và Giao diện người dùng."
+      },
+      {
+        "key": "D",
+        "text": "Hệ điều hành Windows, Phần mềm Excel, Trình duyệt Chrome."
+      },
+      {
+        "key": "E",
+        "text": "Bộ mã hóa dữ liệu, Bộ nén dữ liệu, Bộ sao lưu dữ liệu."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Một kiến trúc DSS tiêu chuẩn bao gồm: (1) Data Management Subsystem (quản lý và cung cấp dữ liệu sạch), (2) Model Management Subsystem (chứa các mô hình toán học, tài chính, thống kê để phân tích), và (3) User Interface (giao diện tương tác giúp người dùng điều khiển hệ thống).",
+    "raw": "**Câu 37:**\n\nBa thành phần cốt lõi nào bắt buộc phải có trong kiến trúc của một hệ DSS/MSS tiêu chuẩn?\n\n- A. Bàn phím, Chuột, Màn hình máy tính.\n- B. Cáp mạng, Bộ định tuyến, Máy chủ lưu trữ.\n- C. Phần hệ quản lý dữ liệu, Phần hệ quản lý mô hình và Giao diện người dùng.\n- D. Hệ điều hành Windows, Phần mềm Excel, Trình duyệt Chrome.\n- E. Bộ mã hóa dữ liệu, Bộ nén dữ liệu, Bộ sao lưu dữ liệu.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Một kiến trúc DSS tiêu chuẩn bao gồm: (1) Data Management Subsystem (quản lý và cung cấp dữ liệu sạch), (2) Model Management Subsystem (chứa các mô hình toán học, tài chính, thống kê để phân tích), và (3) User Interface (giao diện tương tác giúp người dùng điều khiển hệ thống)."
+  },
+  {
+    "id": 38,
+    "question": "Vì sao các hệ thống MSS thường được thiết kế để xử lý các vấn đề \"bán cấu trúc\" (semistructured)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Vì máy tính không thể xử lý được các vấn đề có cấu trúc rõ ràng."
+      },
+      {
+        "key": "B",
+        "text": "Vì các vấn đề phi cấu trúc hoàn toàn không có giá trị kinh doanh đối với doanh nghiệp."
+      },
+      {
+        "key": "C",
+        "text": "Vì các vấn đề này đòi hỏi sự kết hợp giữa các quy trình giải quyết tiêu chuẩn của máy tính và sự phán đoán của con người."
+      },
+      {
+        "key": "D",
+        "text": "Vì lập trình viên không biết cách viết code cho các bài toán kinh tế phức tạp."
+      },
+      {
+        "key": "E",
+        "text": "Vì dữ liệu đầu vào của hệ thống luôn luôn bị thiếu sót một nửa."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Vấn đề bán cấu trúc nằm ở khoảng giữa: một phần bài toán có thể giải quyết bằng thuật toán máy tính (ví dụ: tính toán chi phí, tối ưu tuyến đường), phần còn lại phụ thuộc vào kinh nghiệm, trực giác và phán đoán cá nhân của nhà quản lý. MSS đóng vai trò trợ lý đắc lực để xử lý phần tính toán, giúp con người đưa ra quyết định tốt hơn.",
+    "raw": "**Câu 38:**\n\nVì sao các hệ thống MSS thường được thiết kế để xử lý các vấn đề \"bán cấu trúc\" (semistructured)?\n\n- A. Vì máy tính không thể xử lý được các vấn đề có cấu trúc rõ ràng.\n- B. Vì các vấn đề phi cấu trúc hoàn toàn không có giá trị kinh doanh đối với doanh nghiệp.\n- C. Vì các vấn đề này đòi hỏi sự kết hợp giữa các quy trình giải quyết tiêu chuẩn của máy tính và sự phán đoán của con người.\n- D. Vì lập trình viên không biết cách viết code cho các bài toán kinh tế phức tạp.\n- E. Vì dữ liệu đầu vào của hệ thống luôn luôn bị thiếu sót một nửa.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Vấn đề bán cấu trúc nằm ở khoảng giữa: một phần bài toán có thể giải quyết bằng thuật toán máy tính (ví dụ: tính toán chi phí, tối ưu tuyến đường), phần còn lại phụ thuộc vào kinh nghiệm, trực giác và phán đoán cá nhân của nhà quản lý. MSS đóng vai trò trợ lý đắc lực để xử lý phần tính toán, giúp con người đưa ra quyết định tốt hơn."
+  },
+  {
+    "id": 39,
+    "question": "Đặc tính \"tương tác\" (interactive) của MSS mang ý nghĩa gì đối với người ra quyết định?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hệ thống sẽ tự động gửi tin nhắn rác cho người dùng mỗi giờ."
+      },
+      {
+        "key": "B",
+        "text": "Bắt buộc người dùng phải nhấn chuột liên tục để hệ thống không bị tắt."
+      },
+      {
+        "key": "C",
+        "text": "Cho phép người dùng giao tiếp trực tiếp, ra lệnh và nhận phản hồi từ hệ thống để khám phá các khía cạnh khác nhau của vấn đề."
+      },
+      {
+        "key": "D",
+        "text": "Hệ thống có khả năng tự động gọi điện thoại cho khách hàng khi có sự cố."
+      },
+      {
+        "key": "E",
+        "text": "Người dùng có thể chơi trò chơi điện tử trực tiếp trên giao diện báo cáo."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Tính tương tác (Interactive) đảm bảo nhà quản lý không phải là người nhận báo cáo tĩnh một chiều. Họ có thể chủ động thay đổi tham số, đặt câu hỏi truy vấn mới, đổi góc nhìn dữ liệu và nhận kết quả phản hồi ngay lập tức từ hệ thống để phục vụ quá trình suy nghĩ liên tục.",
+    "raw": "**Câu 39:**\n\nĐặc tính \"tương tác\" (interactive) của MSS mang ý nghĩa gì đối với người ra quyết định?\n\n- A. Hệ thống sẽ tự động gửi tin nhắn rác cho người dùng mỗi giờ.\n- B. Bắt buộc người dùng phải nhấn chuột liên tục để hệ thống không bị tắt.\n- C. Cho phép người dùng giao tiếp trực tiếp, ra lệnh và nhận phản hồi từ hệ thống để khám phá các khía cạnh khác nhau của vấn đề.\n- D. Hệ thống có khả năng tự động gọi điện thoại cho khách hàng khi có sự cố.\n- E. Người dùng có thể chơi trò chơi điện tử trực tiếp trên giao diện báo cáo.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Tính tương tác (Interactive) đảm bảo nhà quản lý không phải là người nhận báo cáo tĩnh một chiều. Họ có thể chủ động thay đổi tham số, đặt câu hỏi truy vấn mới, đổi góc nhìn dữ liệu và nhận kết quả phản hồi ngay lập tức từ hệ thống để phục vụ quá trình suy nghĩ liên tục."
+  },
+  {
+    "id": 40,
+    "question": "Điểm khác biệt cốt lõi giữa MSS dựa trên Web (Web-based MSS) và các hệ thống truyền thống là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Web-based MSS yêu cầu máy tính phải cài đặt hệ điều hành Linux mới chạy được."
+      },
+      {
+        "key": "B",
+        "text": "Web-based MSS không cần sử dụng cơ sở dữ liệu để lưu trữ thông tin."
+      },
+      {
+        "key": "C",
+        "text": "Web-based MSS sử dụng trình duyệt Web làm giao diện người dùng thống nhất, giúp truy cập dữ liệu và mô hình mọi lúc, mọi nơi với chi phí thấp."
+      },
+      {
+        "key": "D",
+        "text": "Web-based MSS chỉ hiển thị hình ảnh và video chứ không hiển thị các con số."
+      },
+      {
+        "key": "E",
+        "text": "Web-based MSS chạy chậm hơn rất nhiều so với các phần mềm cài đặt trên máy trạm cũ."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Kiến trúc Web-based MSS giải phóng người dùng khỏi các ràng buộc phần cứng phức tạp tại văn phòng. Chỉ với một trình duyệt Web tiêu chuẩn và kết nối mạng, nhà quản lý có thể khai thác toàn bộ sức mạnh phân tích của hệ thống từ xa, giúp giảm đáng kể chi phí triển khai, đào tạo và bảo trì của doanh nghiệp.\n\n==================================================================\n\nDưới đây là **10 câu tiếp theo** (từ câu 41 đến câu 50) được định dạng đầy đủ, chuẩn hóa bao gồm: Câu hỏi, các lựa chọn (A, B, C, D, E), đáp án chính xác và phần giải thích chi tiết từ bài giảng trong video.",
+    "raw": "**Câu 40:**\n\nĐiểm khác biệt cốt lõi giữa MSS dựa trên Web (Web-based MSS) và các hệ thống truyền thống là gì?\n\n- A. Web-based MSS yêu cầu máy tính phải cài đặt hệ điều hành Linux mới chạy được.\n- B. Web-based MSS không cần sử dụng cơ sở dữ liệu để lưu trữ thông tin.\n- C. Web-based MSS sử dụng trình duyệt Web làm giao diện người dùng thống nhất, giúp truy cập dữ liệu và mô hình mọi lúc, mọi nơi với chi phí thấp.\n- D. Web-based MSS chỉ hiển thị hình ảnh và video chứ không hiển thị các con số.\n- E. Web-based MSS chạy chậm hơn rất nhiều so với các phần mềm cài đặt trên máy trạm cũ.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Kiến trúc Web-based MSS giải phóng người dùng khỏi các ràng buộc phần cứng phức tạp tại văn phòng. Chỉ với một trình duyệt Web tiêu chuẩn và kết nối mạng, nhà quản lý có thể khai thác toàn bộ sức mạnh phân tích của hệ thống từ xa, giúp giảm đáng kể chi phí triển khai, đào tạo và bảo trì của doanh nghiệp.\n\n==================================================================\n\nDưới đây là **10 câu tiếp theo** (từ câu 41 đến câu 50) được định dạng đầy đủ, chuẩn hóa bao gồm: Câu hỏi, các lựa chọn (A, B, C, D, E), đáp án chính xác và phần giải thích chi tiết từ bài giảng trong video."
+  },
+  {
+    "id": 41,
+    "question": "\"Hệ thống hỗ trợ hỗn hợp\" (Hybrid Support Systems) được hiểu là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Việc sử dụng các máy tính chạy cả hai hệ điều hành Windows và macOS cùng lúc."
+      },
+      {
+        "key": "B",
+        "text": "Việc tích hợp nhiều loại công nghệ MSS khác nhau (như DSS, ES, AI) để tận dụng ưu điểm của từng loại nhằm giải quyết vấn đề tốt hơn."
+      },
+      {
+        "key": "C",
+        "text": "Hệ thống chỉ hoạt động khi có sự kết hợp giữa một nhân viên nam và một nhân viên nữ."
+      },
+      {
+        "key": "D",
+        "text": "Việc kết hợp giữa phần mềm kế toán cũ và phần mềm quản trị nhân sự mới mà không có sự liên kết dữ liệu."
+      },
+      {
+        "key": "E",
+        "text": "Hệ thống máy tính vừa dùng để xử lý dữ liệu vừa dùng để điều khiển dây chuyền sản xuất tự động."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Trong thực tế quản lý, các bài toán kinh doanh thường rất phức tạp. Hệ thống hỗ trợ hỗn hợp (Hybrid Support Systems) ra đời nhằm kết hợp điểm mạnh của các công nghệ khác nhau: ví dụ DSS xử lý tính toán số liệu, Hệ chuyên gia (Expert Systems - ES) hay Trí tuệ nhân tạo (AI) cung cấp các luật suy diễn thông minh, từ đó tạo ra một giải pháp toàn diện hơn.",
+    "raw": "**Câu 41:**\n\n\"Hệ thống hỗ trợ hỗn hợp\" (Hybrid Support Systems) được hiểu là gì?\n\n- A. Việc sử dụng các máy tính chạy cả hai hệ điều hành Windows và macOS cùng lúc.\n- B. Việc tích hợp nhiều loại công nghệ MSS khác nhau (như DSS, ES, AI) để tận dụng ưu điểm của từng loại nhằm giải quyết vấn đề tốt hơn.\n- C. Hệ thống chỉ hoạt động khi có sự kết hợp giữa một nhân viên nam và một nhân viên nữ.\n- D. Việc kết hợp giữa phần mềm kế toán cũ và phần mềm quản trị nhân sự mới mà không có sự liên kết dữ liệu.\n- E. Hệ thống máy tính vừa dùng để xử lý dữ liệu vừa dùng để điều khiển dây chuyền sản xuất tự động.\n\n**Đáp án đúng:** B\n\n**Giải thích:** Trong thực tế quản lý, các bài toán kinh doanh thường rất phức tạp. Hệ thống hỗ trợ hỗn hợp (Hybrid Support Systems) ra đời nhằm kết hợp điểm mạnh của các công nghệ khác nhau: ví dụ DSS xử lý tính toán số liệu, Hệ chuyên gia (Expert Systems - ES) hay Trí tuệ nhân tạo (AI) cung cấp các luật suy diễn thông minh, từ đó tạo ra một giải pháp toàn diện hơn."
+  },
+  {
+    "id": 42,
+    "question": "Đặc tính nào của MSS giúp nhà quản lý đánh giá rõ hơn các rủi ro và những tác động tiềm ẩn của các phương án khác nhau trước khi ra quyết định?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Khả năng thực hiện phân tích \"What-if\" (Nếu-thì) và phân tích độ nhạy (Sensitivity analysis)."
+      },
+      {
+        "key": "B",
+        "text": "Khả năng tự động khóa tài khoản của nhân viên khi họ làm sai quy trình."
+      },
+      {
+        "key": "C",
+        "text": "Khả năng gửi báo cáo hàng loạt đến tất cả các cổ đông qua email."
+      },
+      {
+        "key": "D",
+        "text": "Khả năng hoạt động liên tục mà không cần bảo trì phần cứng."
+      },
+      {
+        "key": "E",
+        "text": "Khả năng chuyển đổi giao diện báo cáo sang nhiều ngôn ngữ khác nhau."
+      }
+    ],
+    "answer": "A",
+    "explanation": "Các công cụ MSS/DSS hiện đại cung cấp khả năng giả lập mạnh mẽ. Nhà quản lý có thể thay đổi các biến số đầu vào (ví dụ: *\"Nếu giá nguyên vật liệu tăng 5% và ngân sách marketing giảm 10% thì lợi nhuận sẽ thay đổi ra sao?\"*). Việc phân tích \"What-if\" và phân tích độ nhạy này giúp họ lường trước các kịch bản rủi ro để chuẩn bị phương án đối phó.",
+    "raw": "**Câu 42:**\n\nĐặc tính nào của MSS giúp nhà quản lý đánh giá rõ hơn các rủi ro và những tác động tiềm ẩn của các phương án khác nhau trước khi ra quyết định?\n\n- A. Khả năng thực hiện phân tích \"What-if\" (Nếu-thì) và phân tích độ nhạy (Sensitivity analysis).\n- B. Khả năng tự động khóa tài khoản của nhân viên khi họ làm sai quy trình.\n- C. Khả năng gửi báo cáo hàng loạt đến tất cả các cổ đông qua email.\n- D. Khả năng hoạt động liên tục mà không cần bảo trì phần cứng.\n- E. Khả năng chuyển đổi giao diện báo cáo sang nhiều ngôn ngữ khác nhau.\n\n**Đáp án đúng:** A\n\n**Giải thích:** Các công cụ MSS/DSS hiện đại cung cấp khả năng giả lập mạnh mẽ. Nhà quản lý có thể thay đổi các biến số đầu vào (ví dụ: *\"Nếu giá nguyên vật liệu tăng 5% và ngân sách marketing giảm 10% thì lợi nhuận sẽ thay đổi ra sao?\"*). Việc phân tích \"What-if\" và phân tích độ nhạy này giúp họ lường trước các kịch bản rủi ro để chuẩn bị phương án đối phó."
+  },
+  {
+    "id": 43,
+    "question": "Bài toán nào sau đây là một bài toán điển hình của kỹ thuật Hồi quy (Regression) trong khai phá dữ liệu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dự đoán một giao dịch thẻ tín dụng là hợp lệ hay gian lận."
+      },
+      {
+        "key": "B",
+        "text": "Phân loại khách hàng thành các nhóm: Phù hợp vay vốn hoặc Không phù hợp vay vốn."
+      },
+      {
+        "key": "C",
+        "text": "Dự đoán doanh số bán hàng của tháng tới (dạng con số cụ thể) dựa trên ngân sách quảng cáo."
+      },
+      {
+        "key": "D",
+        "text": "Tự động nhóm các bài báo có nội dung tương tự nhau về cùng một chuyên mục."
+      },
+      {
+        "key": "E",
+        "text": "Phát hiện mối liên hệ giữa việc mua bia và mua tã giấy của khách hàng."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Mục tiêu của bài toán Hồi quy (Regression) là dự đoán một giá trị số liên tục (continuous numeric value). Trong các phương án trên, việc dự đoán doanh số bán hàng (ví dụ: 150 triệu, 200 triệu...) chính là giá trị số liên tục, trong khi phân loại gian lận hay phân loại hồ sơ vay vốn thuộc bài toán Phân lớp (Classification).",
+    "raw": "**Câu 43:**\n\nBài toán nào sau đây là một bài toán điển hình của kỹ thuật Hồi quy (Regression) trong khai phá dữ liệu?\n\n- A. Dự đoán một giao dịch thẻ tín dụng là hợp lệ hay gian lận.\n- B. Phân loại khách hàng thành các nhóm: Phù hợp vay vốn hoặc Không phù hợp vay vốn.\n- C. Dự đoán doanh số bán hàng của tháng tới (dạng con số cụ thể) dựa trên ngân sách quảng cáo.\n- D. Tự động nhóm các bài báo có nội dung tương tự nhau về cùng một chuyên mục.\n- E. Phát hiện mối liên hệ giữa việc mua bia và mua tã giấy của khách hàng.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Mục tiêu của bài toán Hồi quy (Regression) là dự đoán một giá trị số liên tục (continuous numeric value). Trong các phương án trên, việc dự đoán doanh số bán hàng (ví dụ: 150 triệu, 200 triệu...) chính là giá trị số liên tục, trong khi phân loại gian lận hay phân loại hồ sơ vay vốn thuộc bài toán Phân lớp (Classification)."
+  },
+  {
+    "id": 44,
+    "question": "Trong phương trình hồi quy tuyến tính đơn giản $Y = 2X + 5$, nếu biến độc lập $X = 10$ thì giá trị dự báo $Y$ thu được là bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "15"
+      },
+      {
+        "key": "B",
+        "text": "25"
+      },
+      {
+        "key": "C",
+        "text": "20"
+      },
+      {
+        "key": "D",
+        "text": "30"
+      },
+      {
+        "key": "E",
+        "text": "10"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Đây là bài toán tính toán cơ bản theo mô hình hồi quy tuyến tính. Ta thay giá trị $X = 10$ vào phương trình:\n\n$$Y = 2 \\times 10 + 5 = 20 + 5 = 25$$",
+    "raw": "**Câu 44:**\n\nTrong phương trình hồi quy tuyến tính đơn giản $Y = 2X + 5$, nếu biến độc lập $X = 10$ thì giá trị dự báo $Y$ thu được là bao nhiêu?\n\n- A. 15\n- B. 25\n- C. 20\n- D. 30\n- E. 10\n\n**Đáp án đúng:** B\n\n**Giải thích:** Đây là bài toán tính toán cơ bản theo mô hình hồi quy tuyến tính. Ta thay giá trị $X = 10$ vào phương trình:\n\n$$Y = 2 \\times 10 + 5 = 20 + 5 = 25$$"
+  },
+  {
+    "id": 45,
+    "question": "Một mô hình hồi quy dự báo giá nhà dựa trên diện tích có phương trình $Price = 10 \\times Area + 100$. Nếu diện tích nhà là $50m^2$, giá nhà dự báo sẽ là bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "500"
+      },
+      {
+        "key": "B",
+        "text": "150"
+      },
+      {
+        "key": "C",
+        "text": "600"
+      },
+      {
+        "key": "D",
+        "text": "550"
+      },
+      {
+        "key": "E",
+        "text": "400"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Tương tự câu trên, ta áp dụng công thức của mô hình hồi quy tuyến tính bằng cách thay giá trị biến độc lập $Area = 50$ vào phương trình:\n\n$$Price = 10 \\times 50 + 100 = 500 + 100 = 600$$",
+    "raw": "**Câu 45:**\n\nMột mô hình hồi quy dự báo giá nhà dựa trên diện tích có phương trình $Price = 10 \\times Area + 100$. Nếu diện tích nhà là $50m^2$, giá nhà dự báo sẽ là bao nhiêu?\n\n- A. 500\n- B. 150\n- C. 600\n- D. 550\n- E. 400\n\n**Đáp án đúng:** C\n\n**Giải thích:** Tương tự câu trên, ta áp dụng công thức của mô hình hồi quy tuyến tính bằng cách thay giá trị biến độc lập $Area = 50$ vào phương trình:\n\n$$Price = 10 \\times 50 + 100 = 500 + 100 = 600$$"
+  },
+  {
+    "id": 46,
+    "question": "Đặc điểm cốt lõi nào dùng để phân biệt giữa kỹ thuật Hồi quy (Regression) và kỹ thuật Phân lớp (Classification) trong khai phá dữ liệu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hồi quy chỉ xử lý được dữ liệu dạng văn bản, còn phân lớp xử lý dữ liệu dạng số."
+      },
+      {
+        "key": "B",
+        "text": "Phân lớp yêu cầu thuật toán chạy chậm hơn rất nhiều so với hồi quy."
+      },
+      {
+        "key": "C",
+        "text": "Hồi quy dùng để nhóm dữ liệu tự động mà không cần nhãn từ trước."
+      },
+      {
+        "key": "D",
+        "text": "Hồi quy chỉ áp dụng cho dữ liệu tài chính, còn phân lớp áp dụng cho dữ liệu y tế."
+      },
+      {
+        "key": "E",
+        "text": "Hồi quy dự báo giá trị số liên tục (continuous), phân lớp dự báo nhãn lớp rời rạc (discrete)."
+      }
+    ],
+    "answer": "E",
+    "explanation": "Đây là điểm phân biệt căn bản trong Học máy có giám sát (Supervised Learning). Cả hai đều cần dữ liệu dán nhãn để học, nhưng điểm khác nhau nằm ở mục tiêu đầu ra: Hồi quy dự báo một con số liên tục (như nhiệt độ, giá cả, doanh thu), còn Phân lớp dự báo một danh mục rời rạc/nhãn lớp (như Đúng/Sai, Đạt/Không đạt, Thấp/Trung bình/Cao).",
+    "raw": "**Câu 46:**\n\nĐặc điểm cốt lõi nào dùng để phân biệt giữa kỹ thuật Hồi quy (Regression) và kỹ thuật Phân lớp (Classification) trong khai phá dữ liệu?\n\n- A. Hồi quy chỉ xử lý được dữ liệu dạng văn bản, còn phân lớp xử lý dữ liệu dạng số.\n- B. Phân lớp yêu cầu thuật toán chạy chậm hơn rất nhiều so với hồi quy.\n- C. Hồi quy dùng để nhóm dữ liệu tự động mà không cần nhãn từ trước.\n- D. Hồi quy chỉ áp dụng cho dữ liệu tài chính, còn phân lớp áp dụng cho dữ liệu y tế.\n- E. Hồi quy dự báo giá trị số liên tục (continuous), phân lớp dự báo nhãn lớp rời rạc (discrete).\n\n**Đáp án đúng:** E\n\n**Giải thích:** Đây là điểm phân biệt căn bản trong Học máy có giám sát (Supervised Learning). Cả hai đều cần dữ liệu dán nhãn để học, nhưng điểm khác nhau nằm ở mục tiêu đầu ra: Hồi quy dự báo một con số liên tục (như nhiệt độ, giá cả, doanh thu), còn Phân lớp dự báo một danh mục rời rạc/nhãn lớp (như Đúng/Sai, Đạt/Không đạt, Thấp/Trung bình/Cao)."
+  },
+  {
+    "id": 47,
+    "question": "Trong đánh giá mô hình phân lớp tìm kiếm thông tin, nếu một thuật toán tìm kiếm trả về 210 trang web, trong đó có 190 trang thực sự liên quan đến chủ đề yêu cầu, thì Độ chính xác (Precision) của mô hình được tính như thế nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "190/210"
+      },
+      {
+        "key": "B",
+        "text": "20/210"
+      },
+      {
+        "key": "C",
+        "text": "210/190"
+      },
+      {
+        "key": "D",
+        "text": "190/(210 + 190)"
+      },
+      {
+        "key": "E",
+        "text": "20/190"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Độ chính xác (Precision) đo lường tỷ lệ giữa số kết quả dự đoán đúng trên tổng số kết quả mà hệ thống đã trả về. Công thức tính là:\n\n$$Precision = \\frac{\\text{Số kết quả đúng thực tế}}{\\text{Tổng số kết quả hệ thống trả về}} = \\frac{190}{210}$$",
+    "raw": "**Câu 47:**\n\nTrong đánh giá mô hình phân lớp tìm kiếm thông tin, nếu một thuật toán tìm kiếm trả về 210 trang web, trong đó có 190 trang thực sự liên quan đến chủ đề yêu cầu, thì Độ chính xác (Precision) của mô hình được tính như thế nào?\n\n- A. 190/210\n- B. 20/210\n- C. 210/190\n- D. 190/(210 + 190)\n- E. 20/190\n\n**Đáp án đúng:** A\n\n**Giải thích:** Độ chính xác (Precision) đo lường tỷ lệ giữa số kết quả dự đoán đúng trên tổng số kết quả mà hệ thống đã trả về. Công thức tính là:\n\n$$Precision = \\frac{\\text{Số kết quả đúng thực tế}}{\\text{Tổng số kết quả hệ thống trả về}} = \\frac{190}{210}$$"
+  },
+  {
+    "id": 48,
+    "question": "Thành phần nào sau đây trong kiến trúc Cây quyết định (Decision Tree) đại diện cho nhãn lớp (kết quả dự báo cuối cùng)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nút gốc (Root node)."
+      },
+      {
+        "key": "B",
+        "text": "Các nhánh của cây (Branches)."
+      },
+      {
+        "key": "C",
+        "text": "Nút quyết định trung gian (Internal nodes)."
+      },
+      {
+        "key": "D",
+        "text": "Nút lá (Leaf nodes)."
+      },
+      {
+        "key": "E",
+        "text": "Độ sâu của cây (Tree depth)."
+      }
+    ],
+    "answer": "D",
+    "explanation": "Trong cấu trúc Cây quyết định (Decision Tree):\n\n- **Nút gốc và nút trung gian:** Đại diện cho các thuộc tính dữ liệu được dùng để kiểm tra điều kiện (ví dụ: Thu nhập > 10 triệu?).\n- **Các nhánh:** Đại diện cho các kết quả của phép kiểm tra (Đúng/Sai).\n- **Nút lá (Leaf nodes):** Nằm ở cuối cùng của các nhánh, đại diện cho nhãn lớp hoặc quyết định cuối cùng của mô hình (ví dụ: Cho vay / Từ chối).",
+    "raw": "**Câu 48:**\n\nThành phần nào sau đây trong kiến trúc Cây quyết định (Decision Tree) đại diện cho nhãn lớp (kết quả dự báo cuối cùng)?\n\n- A. Nút gốc (Root node).\n- B. Các nhánh của cây (Branches).\n- C. Nút quyết định trung gian (Internal nodes).\n- D. Nút lá (Leaf nodes).\n- E. Độ sâu của cây (Tree depth).\n\n**Đáp án đúng:** D\n\n**Giải thích:** Trong cấu trúc Cây quyết định (Decision Tree):\n\n- **Nút gốc và nút trung gian:** Đại diện cho các thuộc tính dữ liệu được dùng để kiểm tra điều kiện (ví dụ: Thu nhập > 10 triệu?).\n- **Các nhánh:** Đại diện cho các kết quả của phép kiểm tra (Đúng/Sai).\n- **Nút lá (Leaf nodes):** Nằm ở cuối cùng của các nhánh, đại diện cho nhãn lớp hoặc quyết định cuối cùng của mô hình (ví dụ: Cho vay / Từ chối)."
+  },
+  {
+    "id": 49,
+    "question": "Thuật toán phân lớp nổi tiếng Naive Bayes được xây dựng dựa trên định lý nào trong toán học xác suất?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Định lý Pitago."
+      },
+      {
+        "key": "B",
+        "text": "Định lý Bayes."
+      },
+      {
+        "key": "C",
+        "text": "Định lý giới hạn trung tâm."
+      },
+      {
+        "key": "D",
+        "text": "Định lý Thales."
+      },
+      {
+        "key": "E",
+        "text": "Định lý Fermat."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Thuật toán Naive Bayes là một mô hình phân lớp xác suất dựa trên việc áp dụng Định lý Bayes (Bayes' Theorem) với một giả định \"ngây thơ\" (naive) rằng các thuộc tính đầu vào hoàn toàn độc lập với nhau khi biết nhãn lớp.",
+    "raw": "**Câu 49:**\n\nThuật toán phân lớp nổi tiếng Naive Bayes được xây dựng dựa trên định lý nào trong toán học xác suất?\n\n- A. Định lý Pitago.\n- B. Định lý Bayes.\n- C. Định lý giới hạn trung tâm.\n- D. Định lý Thales.\n- E. Định lý Fermat.\n\n**Đáp án đúng:** B\n\n**Giải thích:** Thuật toán Naive Bayes là một mô hình phân lớp xác suất dựa trên việc áp dụng Định lý Bayes (Bayes' Theorem) với một giả định \"ngây thơ\" (naive) rằng các thuộc tính đầu vào hoàn toàn độc lập với nhau khi biết nhãn lớp."
+  },
+  {
+    "id": 50,
+    "question": "Nếu một mô hình phân lớp y tế được dùng để dự báo bệnh (\"Có bệnh\" hoặc \"Không bệnh\"). Thực tế trong tập dữ liệu có 100 người mắc bệnh, mô hình dự báo đúng được 90 người trong số đó. Chỉ số Độ bao phủ (Recall) của mô hình này là bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "10/100"
+      },
+      {
+        "key": "B",
+        "text": "90/10"
+      },
+      {
+        "key": "C",
+        "text": "90/100"
+      },
+      {
+        "key": "D",
+        "text": "10/90"
+      },
+      {
+        "key": "E",
+        "text": "100/90"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Độ bao phủ (Recall hay Sensitivity) đo lường khả năng tìm sót dữ liệu của mô hình, tức là trong số tất cả các trường hợp thực tế là tích cực (thực tế mắc bệnh), mô hình đã tìm ra được bao nhiêu trường hợp. Công thức là:\n\n$$Recall = \\frac{\\text{Số trường hợp mắc bệnh dự báo đúng (TP)}}{\\text{Tổng số trường hợp thực tế mắc bệnh (TP + FN)}} = \\frac{90}{100}$$\n\n===========================================\n\nDưới đây là **10 câu tiếp theo** (từ câu 51 đến câu 60) được định dạng đầy đủ, chuẩn hóa bao gồm: Câu hỏi, các lựa chọn (A, B, C, D, E), đáp án chính xác và phần giải thích chi tiết từ bài giảng trong video.",
+    "raw": "**Câu 50:**\n\nNếu một mô hình phân lớp y tế được dùng để dự báo bệnh (\"Có bệnh\" hoặc \"Không bệnh\"). Thực tế trong tập dữ liệu có 100 người mắc bệnh, mô hình dự báo đúng được 90 người trong số đó. Chỉ số Độ bao phủ (Recall) của mô hình này là bao nhiêu?\n\n- A. 10/100\n- B. 90/10\n- C. 90/100\n- D. 10/90\n- E. 100/90\n\n**Đáp án đúng:** C\n\n**Giải thích:** Độ bao phủ (Recall hay Sensitivity) đo lường khả năng tìm sót dữ liệu của mô hình, tức là trong số tất cả các trường hợp thực tế là tích cực (thực tế mắc bệnh), mô hình đã tìm ra được bao nhiêu trường hợp. Công thức là:\n\n$$Recall = \\frac{\\text{Số trường hợp mắc bệnh dự báo đúng (TP)}}{\\text{Tổng số trường hợp thực tế mắc bệnh (TP + FN)}} = \\frac{90}{100}$$\n\n===========================================\n\nDưới đây là **10 câu tiếp theo** (từ câu 51 đến câu 60) được định dạng đầy đủ, chuẩn hóa bao gồm: Câu hỏi, các lựa chọn (A, B, C, D, E), đáp án chính xác và phần giải thích chi tiết từ bài giảng trong video."
+  },
+  {
+    "id": 51,
+    "question": "Một mô hình phân lớp bệnh (disease classification) cho kết quả thực nghiệm được thống kê qua các chỉ số sau:\n\n- True Positive (TP) = 40 (Thực tế có bệnh và mô hình dự báo đúng là có bệnh)\n- True Negative (TN) = 50 (Thực tế không bệnh và mô hình dự báo đúng là không bệnh)\n- False Positive (FP) = 10 (Thực tế không bệnh nhưng mô hình dự báo sai là có bệnh)\n- False Negative (FN) = 20 (Thực tế có bệnh nhưng mô hình dự báo sai là không bệnh)\n\nHãy tính chỉ số F-Measure (F1-score) của mô hình này.",
+    "options": [
+      {
+        "key": "A",
+        "text": "0.65"
+      },
+      {
+        "key": "B",
+        "text": "0.80"
+      },
+      {
+        "key": "C",
+        "text": "0.72"
+      },
+      {
+        "key": "D",
+        "text": "0.55"
+      },
+      {
+        "key": "E",
+        "text": "0.85"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Để tính $F1\\text{-score}$, trước hết ta cần tính Độ chính xác ($Precision$) và Độ bao phủ ($Recall$):\n\n$$Precision = \\frac{TP}{TP + FP} = \\frac{40}{40 + 10} = \\frac{40}{50} = 0.8$$\n\n$$Recall = \\frac{TP}{TP + FN} = \\frac{40}{40 + 20} = \\frac{40}{60} \\approx 0.667$$\n\nSau đó, áp dụng công thức tính trung bình điều hòa giữa hai chỉ số này để ra $F1\\text{-score}$:\n\n$$F1 = 2 \\times \\frac{Precision \\times Recall}{Precision + Recall} = 2 \\times \\frac{0.8 \\times 0.667}{0.8 + 0.667} = 2 \\times \\frac{0.5336}{1.467} \\approx 0.727$$\n\nLàm tròn số ta thu được kết quả gần đúng nhất là 0.72.",
+    "raw": "**Câu 51:**\n\nMột mô hình phân lớp bệnh (disease classification) cho kết quả thực nghiệm được thống kê qua các chỉ số sau:\n\n- True Positive (TP) = 40 (Thực tế có bệnh và mô hình dự báo đúng là có bệnh)\n- True Negative (TN) = 50 (Thực tế không bệnh và mô hình dự báo đúng là không bệnh)\n- False Positive (FP) = 10 (Thực tế không bệnh nhưng mô hình dự báo sai là có bệnh)\n- False Negative (FN) = 20 (Thực tế có bệnh nhưng mô hình dự báo sai là không bệnh)\n\nHãy tính chỉ số F-Measure (F1-score) của mô hình này.\n\n- A. 0.65\n- B. 0.80\n- C. 0.72\n- D. 0.55\n- E. 0.85\n\n**Đáp án đúng:** C\n\n**Giải thích:** Để tính $F1\\text{-score}$, trước hết ta cần tính Độ chính xác ($Precision$) và Độ bao phủ ($Recall$):\n\n$$Precision = \\frac{TP}{TP + FP} = \\frac{40}{40 + 10} = \\frac{40}{50} = 0.8$$\n\n$$Recall = \\frac{TP}{TP + FN} = \\frac{40}{40 + 20} = \\frac{40}{60} \\approx 0.667$$\n\nSau đó, áp dụng công thức tính trung bình điều hòa giữa hai chỉ số này để ra $F1\\text{-score}$:\n\n$$F1 = 2 \\times \\frac{Precision \\times Recall}{Precision + Recall} = 2 \\times \\frac{0.8 \\times 0.667}{0.8 + 0.667} = 2 \\times \\frac{0.5336}{1.467} \\approx 0.727$$\n\nLàm tròn số ta thu được kết quả gần đúng nhất là 0.72."
+  },
+  {
+    "id": 52,
+    "question": "\"Giả định ngây thơ\" (Naive) trong thuật toán Naive Bayes có nghĩa là gì về mặt toán học và thuộc tính dữ liệu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Giả định rằng tất cả người dùng hệ thống đều không biết lập trình."
+      },
+      {
+        "key": "B",
+        "text": "Giả định rằng kích thước của tập dữ liệu huấn luyện luôn luôn nhỏ hơn 100 dòng."
+      },
+      {
+        "key": "C",
+        "text": "Các thuộc tính được giả định là độc lập với nhau khi biết nhãn lớp."
+      },
+      {
+        "key": "D",
+        "text": "Giả định rằng không có bất kỳ sai số nào xuất hiện trong quá trình tính toán xác suất."
+      },
+      {
+        "key": "E",
+        "text": "Các nhãn lớp luôn luôn có tỷ lệ xuất hiện bằng nhau trong mọi bài toán."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Thuật toán được gọi là \"ngây thơ\" vì nó đưa ra một giả định cực kỳ đơn giản hóa (và hiếm khi đúng hoàn toàn trong thực tế): tất cả các đặc trưng/thuộc tính đầu vào hoàn toàn độc lập và không có mối quan hệ ràng buộc nào với nhau khi xét trong một lớp cụ thể. Việc đơn giản hóa này giúp thuật toán tính toán cực nhanh và hiệu quả trên các tập dữ liệu lớn (như phân loại thư rác).",
+    "raw": "**Câu 52:**\n\n\"Giả định ngây thơ\" (Naive) trong thuật toán Naive Bayes có nghĩa là gì về mặt toán học và thuộc tính dữ liệu?\n\n- A. Giả định rằng tất cả người dùng hệ thống đều không biết lập trình.\n- B. Giả định rằng kích thước của tập dữ liệu huấn luyện luôn luôn nhỏ hơn 100 dòng.\n- C. Các thuộc tính được giả định là độc lập với nhau khi biết nhãn lớp.\n- D. Giả định rằng không có bất kỳ sai số nào xuất hiện trong quá trình tính toán xác suất.\n- E. Các nhãn lớp luôn luôn có tỷ lệ xuất hiện bằng nhau trong mọi bài toán.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Thuật toán được gọi là \"ngây thơ\" vì nó đưa ra một giả định cực kỳ đơn giản hóa (và hiếm khi đúng hoàn toàn trong thực tế): tất cả các đặc trưng/thuộc tính đầu vào hoàn toàn độc lập và không có mối quan hệ ràng buộc nào với nhau khi xét trong một lớp cụ thể. Việc đơn giản hóa này giúp thuật toán tính toán cực nhanh và hiệu quả trên các tập dữ liệu lớn (như phân loại thư rác)."
+  },
+  {
+    "id": 53,
+    "question": "Khoảng cách Manhattan (Manhattan distance) giữa hai điểm $A(1, 6)$ và $B(3, 5)$ trong không gian hai chiều được tính ra kết quả là bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1"
+      },
+      {
+        "key": "B",
+        "text": "2"
+      },
+      {
+        "key": "C",
+        "text": "3"
+      },
+      {
+        "key": "D",
+        "text": "4"
+      },
+      {
+        "key": "E",
+        "text": "5"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Khoảng cách Manhattan tính bằng tổng giá trị tuyệt đối của hiệu các tọa độ tương ứng giữa hai điểm. Công thức tính là:\n\n$$d_{\\text{Manhattan}}(A, B) = |x_A - x_B| + |y_A - y_B|$$\n\nThay số vào công thức:\n\n$$d_{\\text{Manhattan}}(A, B) = |1 - 3| + |6 - 5| = |-2| + |1| = 2 + 1 = 3$$",
+    "raw": "**Câu 53:**\n\nKhoảng cách Manhattan (Manhattan distance) giữa hai điểm $A(1, 6)$ và $B(3, 5)$ trong không gian hai chiều được tính ra kết quả là bao nhiêu?\n\n- A. 1\n- B. 2\n- C. 3\n- D. 4\n- E. 5\n\n**Đáp án đúng:** C\n\n**Giải thích:** Khoảng cách Manhattan tính bằng tổng giá trị tuyệt đối của hiệu các tọa độ tương ứng giữa hai điểm. Công thức tính là:\n\n$$d_{\\text{Manhattan}}(A, B) = |x_A - x_B| + |y_A - y_B|$$\n\nThay số vào công thức:\n\n$$d_{\\text{Manhattan}}(A, B) = |1 - 3| + |6 - 5| = |-2| + |1| = 2 + 1 = 3$$"
+  },
+  {
+    "id": 54,
+    "question": "Khoảng cách Euclid (Euclidean distance) giữa hai điểm gốc tọa độ $P1(0, 0)$ và điểm $P2(3, 4)$ là bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "7"
+      },
+      {
+        "key": "B",
+        "text": "5"
+      },
+      {
+        "key": "C",
+        "text": "25"
+      },
+      {
+        "key": "D",
+        "text": "12"
+      },
+      {
+        "key": "E",
+        "text": "1"
+      }
+    ],
+    "answer": "B",
+    "explanation": "Khoảng cách Euclid tính theo đường thẳng ngắn nhất nối hai điểm (áp dụng định lý Pitago). Công thức tính là:\n\n$$d_{\\text{Euclid}}(P1, P2) = \\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}$$\n\nThay số vào công thức:\n\n$$d_{\\text{Euclid}}(P1, P2) = \\sqrt{(0 - 3)^2 + (0 - 4)^2} = \\sqrt{(-3)^2 + (-4)^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$$",
+    "raw": "**Câu 54:**\n\nKhoảng cách Euclid (Euclidean distance) giữa hai điểm gốc tọa độ $P1(0, 0)$ và điểm $P2(3, 4)$ là bao nhiêu?\n\n- A. 7\n- B. 5\n- C. 25\n- D. 12\n- E. 1\n\n**Đáp án đúng:** B\n\n**Giải thích:** Khoảng cách Euclid tính theo đường thẳng ngắn nhất nối hai điểm (áp dụng định lý Pitago). Công thức tính là:\n\n$$d_{\\text{Euclid}}(P1, P2) = \\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}$$\n\nThay số vào công thức:\n\n$$d_{\\text{Euclid}}(P1, P2) = \\sqrt{(0 - 3)^2 + (0 - 4)^2} = \\sqrt{(-3)^2 + (-4)^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$$"
+  },
+  {
+    "id": 55,
+    "question": "Trong thuật toán Gom cụm K-means, nếu một cụm hiện tại đang chứa 3 điểm dữ liệu có giá trị một chiều lần lượt là 10, 20 và 30, thì vị trí trọng tâm (centroid) mới của cụm này sẽ dịch chuyển về giá trị nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "10"
+      },
+      {
+        "key": "B",
+        "text": "15"
+      },
+      {
+        "key": "C",
+        "text": "20"
+      },
+      {
+        "key": "D",
+        "text": "25"
+      },
+      {
+        "key": "E",
+        "text": "30"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Trọng tâm (centroid) của một cụm trong thuật toán K-means được xác định bằng cách tính giá trị trung bình cộng tọa độ của tất cả các điểm dữ liệu thuộc cụm đó. Công thức là:\n\n$$\\text{Centroid} = \\frac{10 + 20 + 30}{3} = \\frac{60}{3} = 20$$",
+    "raw": "**Câu 55:**\n\nTrong thuật toán Gom cụm K-means, nếu một cụm hiện tại đang chứa 3 điểm dữ liệu có giá trị một chiều lần lượt là 10, 20 và 30, thì vị trí trọng tâm (centroid) mới của cụm này sẽ dịch chuyển về giá trị nào?\n\n- A. 10\n- B. 15\n- C. 20\n- D. 25\n- E. 30\n\n**Đáp án đúng:** C\n\n**Giải thích:** Trọng tâm (centroid) của một cụm trong thuật toán K-means được xác định bằng cách tính giá trị trung bình cộng tọa độ của tất cả các điểm dữ liệu thuộc cụm đó. Công thức là:\n\n$$\\text{Centroid} = \\frac{10 + 20 + 30}{3} = \\frac{60}{3} = 20$$"
+  },
+  {
+    "id": 56,
+    "question": "Mục tiêu cốt lõi của kỹ thuật Gom cụm (Clustering) trong khai phá dữ liệu là:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Gán một nhãn lớp đã biết trước cho từng dòng dữ liệu mới."
+      },
+      {
+        "key": "B",
+        "text": "Tìm ra phương trình đường thẳng mô tả xu hướng biến động của thị trường."
+      },
+      {
+        "key": "C",
+        "text": "Nhóm các đối tượng tương tự nhau vào cùng một cụm và các đối tượng khác nhau vào các cụm khác nhau."
+      },
+      {
+        "key": "D",
+        "text": "Sắp xếp dữ liệu theo thứ tự tăng dần của các giá trị số."
+      },
+      {
+        "key": "E",
+        "text": "Loại bỏ toàn bộ các cột dữ liệu không chứa giá trị số khỏi bảng."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Gom cụm (Clustering) thuộc nhóm Học không giám sát (Unsupervised Learning), tức là dữ liệu hoàn toàn chưa có nhãn từ trước. Mục tiêu của thuật toán là tự động phân tích cấu trúc nội tại của dữ liệu để nhóm chúng sao cho các phần tử trong cùng một nhóm có độ tương đồng tối đa (high intra-cluster similarity) và các nhóm khác nhau có độ tương đồng tối thiểu (low inter-cluster similarity).",
+    "raw": "**Câu 56:**\n\nMục tiêu cốt lõi của kỹ thuật Gom cụm (Clustering) trong khai phá dữ liệu là:\n\n- A. Gán một nhãn lớp đã biết trước cho từng dòng dữ liệu mới.\n- B. Tìm ra phương trình đường thẳng mô tả xu hướng biến động của thị trường.\n- C. Nhóm các đối tượng tương tự nhau vào cùng một cụm và các đối tượng khác nhau vào các cụm khác nhau.\n- D. Sắp xếp dữ liệu theo thứ tự tăng dần của các giá trị số.\n- E. Loại bỏ toàn bộ các cột dữ liệu không chứa giá trị số khỏi bảng.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Gom cụm (Clustering) thuộc nhóm Học không giám sát (Unsupervised Learning), tức là dữ liệu hoàn toàn chưa có nhãn từ trước. Mục tiêu của thuật toán là tự động phân tích cấu trúc nội tại của dữ liệu để nhóm chúng sao cho các phần tử trong cùng một nhóm có độ tương đồng tối đa (high intra-cluster similarity) và các nhóm khác nhau có độ tương đồng tối thiểu (low inter-cluster similarity)."
+  },
+  {
+    "id": 57,
+    "question": "Phép toán \"Euclidean distance\" (Khoảng cách Euclid) thường được các thuật toán gom cụm sử dụng để đo lường điều gì giữa các thực thể dữ liệu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Đo lường tốc độ xử lý của máy tính khi tính toán cụm."
+      },
+      {
+        "key": "B",
+        "text": "Đo lường độ tương tự - hoặc khoảng cách - giữa các đối tượng dữ liệu."
+      },
+      {
+        "key": "C",
+        "text": "Đo lường dung lượng bộ nhớ mà đối tượng đó chiếm dụng trên ổ đĩa."
+      },
+      {
+        "key": "D",
+        "text": "Đo lường mức độ bảo mật thông tin của dữ liệu đó."
+      },
+      {
+        "key": "E",
+        "text": "Đo lường thời gian mà dữ liệu được nạp vào hệ thống."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Trong không gian hình học dữ liệu, khoảng cách tỷ lệ nghịch với độ tương đồng. Khoảng cách giữa hai điểm dữ liệu tính bằng Euclid càng nhỏ nghĩa là các đặc trưng của chúng càng giống nhau (độ tương tự cao), và ngược lại, khoảng cách càng xa thì chúng càng khác nhau.",
+    "raw": "**Câu 57:**\n\nPhép toán \"Euclidean distance\" (Khoảng cách Euclid) thường được các thuật toán gom cụm sử dụng để đo lường điều gì giữa các thực thể dữ liệu?\n\n- A. Đo lường tốc độ xử lý của máy tính khi tính toán cụm.\n- B. Đo lường độ tương tự - hoặc khoảng cách - giữa các đối tượng dữ liệu.\n- C. Đo lường dung lượng bộ nhớ mà đối tượng đó chiếm dụng trên ổ đĩa.\n- D. Đo lường mức độ bảo mật thông tin của dữ liệu đó.\n- E. Đo lường thời gian mà dữ liệu được nạp vào hệ thống.\n\n**Đáp án đúng:** B\n\n**Giải thích:** Trong không gian hình học dữ liệu, khoảng cách tỷ lệ nghịch với độ tương đồng. Khoảng cách giữa hai điểm dữ liệu tính bằng Euclid càng nhỏ nghĩa là các đặc trưng của chúng càng giống nhau (độ tương tự cao), và ngược lại, khoảng cách càng xa thì chúng càng khác nhau."
+  },
+  {
+    "id": 58,
+    "question": "Nếu khoảng cách hình học giữa đối tượng dữ liệu X và trung tâm (centroid) của cụm 1 là 5, và khoảng cách từ X đến trung tâm của cụm 2 là 10. Theo nguyên lý vận hành của thuật toán K-means, đối tượng X sẽ được gán vào cụm nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Cụm 1"
+      },
+      {
+        "key": "B",
+        "text": "Cụm 2"
+      },
+      {
+        "key": "C",
+        "text": "Chia đều cho cả cụm 1 và cụm 2"
+      },
+      {
+        "key": "D",
+        "text": "Tạo thành một cụm mới độc lập (cụm 3)"
+      },
+      {
+        "key": "E",
+        "text": "Bị loại bỏ khỏi tập dữ liệu vì nằm quá xa trung tâm"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Quy tắc cốt lõi của bước gán nhãn trong thuật toán K-means là một điểm dữ liệu luôn luôn được xếp vào cụm có khoảng cách từ điểm đó đến trọng tâm (centroid) của cụm là ngắn nhất. Vì $5 < 10$, đối tượng X gần trung tâm cụm 1 hơn nên sẽ thuộc về cụm 1.",
+    "raw": "**Câu 58:**\n\nNếu khoảng cách hình học giữa đối tượng dữ liệu X và trung tâm (centroid) của cụm 1 là 5, và khoảng cách từ X đến trung tâm của cụm 2 là 10. Theo nguyên lý vận hành của thuật toán K-means, đối tượng X sẽ được gán vào cụm nào?\n\n- A. Cụm 1\n- B. Cụm 2\n- C. Chia đều cho cả cụm 1 và cụm 2\n- D. Tạo thành một cụm mới độc lập (cụm 3)\n- E. Bị loại bỏ khỏi tập dữ liệu vì nằm quá xa trung tâm\n\n**Đáp án đúng:** A\n\n**Giải thích:** Quy tắc cốt lõi của bước gán nhãn trong thuật toán K-means là một điểm dữ liệu luôn luôn được xếp vào cụm có khoảng cách từ điểm đó đến trọng tâm (centroid) của cụm là ngắn nhất. Vì $5 < 10$, đối tượng X gần trung tâm cụm 1 hơn nên sẽ thuộc về cụm 1."
+  },
+  {
+    "id": 59,
+    "question": "Thuật toán gom cụm phân tán K-means được xếp vào phân loại học tập nào trong cấu trúc của ngành Học máy (Machine Learning)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Học tập có giám sát (Supervised learning)."
+      },
+      {
+        "key": "B",
+        "text": "Học không giám sát (Unsupervised learning)."
+      },
+      {
+        "key": "C",
+        "text": "Học bán giám sát (Semi-supervised learning)."
+      },
+      {
+        "key": "D",
+        "text": "Học tăng cường (Reinforcement learning)."
+      },
+      {
+        "key": "E",
+        "text": "Học sâu (Deep learning)."
+      }
+    ],
+    "answer": "B",
+    "explanation": "K-means không cần dữ liệu mồi hay các tập dữ liệu mẫu đã được con người dán nhãn (label) hay phân lớp sẵn từ trước. Hệ thống hoàn toàn tự dò tìm cấu trúc, đặc trưng và mối liên hệ tự nhiên giữa các điểm dữ liệu để gom nhóm chúng, do đó nó thuộc phân hệ Học không giám sát (Unsupervised learning).",
+    "raw": "**Câu 59:**\n\nThuật toán gom cụm phân tán K-means được xếp vào phân loại học tập nào trong cấu trúc của ngành Học máy (Machine Learning)?\n\n- A. Học tập có giám sát (Supervised learning).\n- B. Học không giám sát (Unsupervised learning).\n- C. Học bán giám sát (Semi-supervised learning).\n- D. Học tăng cường (Reinforcement learning).\n- E. Học sâu (Deep learning).\n\n**Đáp án đúng:** B\n\n**Giải thích:** K-means không cần dữ liệu mồi hay các tập dữ liệu mẫu đã được con người dán nhãn (label) hay phân lớp sẵn từ trước. Hệ thống hoàn toàn tự dò tìm cấu trúc, đặc trưng và mối liên hệ tự nhiên giữa các điểm dữ liệu để gom nhóm chúng, do đó nó thuộc phân hệ Học không giám sát (Unsupervised learning)."
+  },
+  {
+    "id": 60,
+    "question": "Trong một siêu thị có tổng cộng 100 giao dịch (hóa đơn) mua sắm. Qua thống kê thấy mặt hàng \"Bánh mì\" xuất hiện trong 40 giao dịch. Chỉ số Độ hỗ trợ (Support) của mặt hàng \"Bánh mì\" trong bài toán Khai phá luật kết hợp là bao nhiêu?",
+    "options": [
+      {
+        "key": "A",
+        "text": "40"
+      },
+      {
+        "key": "B",
+        "text": "0.04"
+      },
+      {
+        "key": "C",
+        "text": "0.4"
+      },
+      {
+        "key": "D",
+        "text": "2.5"
+      },
+      {
+        "key": "E",
+        "text": "100"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Độ hỗ trợ (Support) của một tập mục từ (itemset) là tỷ lệ phần trăm số giao dịch có chứa tập mục từ đó trên tổng số giao dịch của toàn bộ cơ sở dữ liệu. Công thức tính là:\n\n$$Support(\\text{Bánh mì}) = \\frac{\\text{Số giao dịch chứa Bánh mì}}{\\text{Tổng số giao dịch}} = \\frac{40}{100} = 0.4 \\text{ (hoặc } 40\\%)$$\n\n================================\n\nDưới đây là **10 câu tiếp theo** (từ câu 61 đến câu 70) được định dạng đầy đủ, chuẩn hóa bao gồm: Câu hỏi, các lựa chọn (A, B, C, D, E), đáp án chính xác và phần giải thích chi tiết từ bài giảng trong video.",
+    "raw": "**Câu 60:**\n\nTrong một siêu thị có tổng cộng 100 giao dịch (hóa đơn) mua sắm. Qua thống kê thấy mặt hàng \"Bánh mì\" xuất hiện trong 40 giao dịch. Chỉ số Độ hỗ trợ (Support) của mặt hàng \"Bánh mì\" trong bài toán Khai phá luật kết hợp là bao nhiêu?\n\n- A. 40\n- B. 0.04\n- C. 0.4\n- D. 2.5\n- E. 100\n\n**Đáp án đúng:** C\n\n**Giải thích:** Độ hỗ trợ (Support) của một tập mục từ (itemset) là tỷ lệ phần trăm số giao dịch có chứa tập mục từ đó trên tổng số giao dịch của toàn bộ cơ sở dữ liệu. Công thức tính là:\n\n$$Support(\\text{Bánh mì}) = \\frac{\\text{Số giao dịch chứa Bánh mì}}{\\text{Tổng số giao dịch}} = \\frac{40}{100} = 0.4 \\text{ (hoặc } 40\\%)$$\n\n================================\n\nDưới đây là **10 câu tiếp theo** (từ câu 61 đến câu 70) được định dạng đầy đủ, chuẩn hóa bao gồm: Câu hỏi, các lựa chọn (A, B, C, D, E), đáp án chính xác và phần giải thích chi tiết từ bài giảng trong video."
+  },
+  {
+    "id": 61,
+    "question": "Xét luật kết hợp trong khai phá dữ liệu có dạng: $\\{A\\} \\rightarrow \\{B\\}$. Nếu hệ thống ghi nhận có 50 giao dịch chứa đồng thời cả hai mặt hàng A và B, và có tổng cộng 80 giao dịch chứa mặt hàng A. Hãy tính Độ tin cậy (Confidence) của luật kết hợp này.",
+    "options": [
+      {
+        "key": "A",
+        "text": "80/50"
+      },
+      {
+        "key": "B",
+        "text": "50/(80 + 50)"
+      },
+      {
+        "key": "C",
+        "text": "50/80"
+      },
+      {
+        "key": "D",
+        "text": "30/50"
+      },
+      {
+        "key": "E",
+        "text": "50/100"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Độ tin cậy (Confidence) của luật $\\{A\\} \\rightarrow \\{B\\}$ đo lường xác suất mặt hàng B được mua khi biết rằng mặt hàng A đã có trong giỏ hàng. Công thức tính là tỷ lệ giữa số giao dịch chứa cả A và B trên tổng số giao dịch chứa A:\n\n$$Confidence(\\{A\\} \\rightarrow \\{B\\}) = \\frac{Support(A \\cup B)}{Support(A)} = \\frac{50}{80}$$",
+    "raw": "**Câu 61:**\n\nXét luật kết hợp trong khai phá dữ liệu có dạng: $\\{A\\} \\rightarrow \\{B\\}$. Nếu hệ thống ghi nhận có 50 giao dịch chứa đồng thời cả hai mặt hàng A và B, và có tổng cộng 80 giao dịch chứa mặt hàng A. Hãy tính Độ tin cậy (Confidence) của luật kết hợp này.\n\n- A. 80/50\n- B. 50/(80 + 50)\n- C. 50/80\n- D. 30/50\n- E. 50/100\n\n**Đáp án đúng:** C\n\n**Giải thích:** Độ tin cậy (Confidence) của luật $\\{A\\} \\rightarrow \\{B\\}$ đo lường xác suất mặt hàng B được mua khi biết rằng mặt hàng A đã có trong giỏ hàng. Công thức tính là tỷ lệ giữa số giao dịch chứa cả A và B trên tổng số giao dịch chứa A:\n\n$$Confidence(\\{A\\} \\rightarrow \\{B\\}) = \\frac{Support(A \\cup B)}{Support(A)} = \\frac{50}{80}$$"
+  },
+  {
+    "id": 62,
+    "question": "Chỉ số Lift trong khai phá luật kết hợp dùng để đo lường mức độ độc lập xác suất xảy ra của B khi A xảy ra, so với trường hợp A và B độc lập với nhau. Nếu kết quả tính toán cho thấy chỉ số $Lift(\\{A\\} \\rightarrow \\{B\\}) = 1$, điều này có ý nghĩa gì?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Mặt hàng A và mặt hàng B luôn luôn được mua cùng nhau trong mọi hóa đơn."
+      },
+      {
+        "key": "B",
+        "text": "Khách hàng mua mặt hàng A chắc chắn sẽ không bao giờ mua mặt hàng B."
+      },
+      {
+        "key": "C",
+        "text": "Việc mua A và mua B là hoàn toàn độc lập với nhau – không có mối quan hệ đặc biệt nào."
+      },
+      {
+        "key": "D",
+        "text": "Mặt hàng A có giá trị doanh thu cao bằng hệ số của mặt hàng B."
+      },
+      {
+        "key": "E",
+        "text": "Luật kết hợp này có độ tin cậy đạt mức tối đa là 100%."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Chỉ số Lift đo lường sự phụ thuộc lẫn nhau giữa 2 vế của luật.\n\n- Nếu $Lift > 1$: Hai mặt hàng có sự xuất hiện cùng nhau mang tính tích cực (mua A kéo theo tăng khả năng mua B).\n- Nếu $Lift = 1$: Xác suất xuất hiện của A và B hoàn toàn độc lập về mặt thống kê. Việc khách hàng mua mặt hàng A không hề làm tăng hay giảm tỷ lệ mua mặt hàng B của họ.",
+    "raw": "**Câu 62:**\n\nChỉ số Lift trong khai phá luật kết hợp dùng để đo lường mức độ độc lập xác suất xảy ra của B khi A xảy ra, so với trường hợp A và B độc lập với nhau. Nếu kết quả tính toán cho thấy chỉ số $Lift(\\{A\\} \\rightarrow \\{B\\}) = 1$, điều này có ý nghĩa gì?\n\n- A. Mặt hàng A và mặt hàng B luôn luôn được mua cùng nhau trong mọi hóa đơn.\n- B. Khách hàng mua mặt hàng A chắc chắn sẽ không bao giờ mua mặt hàng B.\n- C. Việc mua A và mua B là hoàn toàn độc lập với nhau – không có mối quan hệ đặc biệt nào.\n- D. Mặt hàng A có giá trị doanh thu cao bằng hệ số của mặt hàng B.\n- E. Luật kết hợp này có độ tin cậy đạt mức tối đa là 100%.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Chỉ số Lift đo lường sự phụ thuộc lẫn nhau giữa 2 vế của luật.\n\n- Nếu $Lift > 1$: Hai mặt hàng có sự xuất hiện cùng nhau mang tính tích cực (mua A kéo theo tăng khả năng mua B).\n- Nếu $Lift = 1$: Xác suất xuất hiện của A và B hoàn toàn độc lập về mặt thống kê. Việc khách hàng mua mặt hàng A không hề làm tăng hay giảm tỷ lệ mua mặt hàng B của họ."
+  },
+  {
+    "id": 63,
+    "question": "Theo mô hình ra quyết định kinh điển của Herbert A. Simon (1977), một quy trình xử lý giải quyết vấn đề chuẩn chỉnh bao gồm các giai đoạn chính nào sau đây theo đúng thứ tự tuyến tính?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Intelligence, Design, Choice, Implementation"
+      },
+      {
+        "key": "B",
+        "text": "Input, Process, Output, Feedback"
+      },
+      {
+        "key": "C",
+        "text": "Plan, Do, Check, Act"
+      },
+      {
+        "key": "D",
+        "text": "Identification, Analysis, Selection, Evolution"
+      },
+      {
+        "key": "E",
+        "text": "Intelligence, Choice, Design, Evaluation"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Mô hình 4 giai đoạn của Simon mô tả chu trình tư duy của con người khi đối mặt với một vấn đề: (1) **Intelligence** (Tìm hiểu/Nhận diện vấn đề), (2) **Design** (Thiết kế/Xây dựng các giải pháp khả thi), (3) **Choice** (Lựa chọn phương án tối ưu), và (4) **Implementation** (Triển khai thực hiện phương án vào thực tế).",
+    "raw": "**Câu 63:**\n\nTheo mô hình ra quyết định kinh điển của Herbert A. Simon (1977), một quy trình xử lý giải quyết vấn đề chuẩn chỉnh bao gồm các giai đoạn chính nào sau đây theo đúng thứ tự tuyến tính?\n\n- A. Intelligence, Design, Choice, Implementation\n- B. Input, Process, Output, Feedback\n- C. Plan, Do, Check, Act\n- D. Identification, Analysis, Selection, Evolution\n- E. Intelligence, Choice, Design, Evaluation\n\n**Đáp án đúng:** A\n\n**Giải thích:** Mô hình 4 giai đoạn của Simon mô tả chu trình tư duy của con người khi đối mặt với một vấn đề: (1) **Intelligence** (Tìm hiểu/Nhận diện vấn đề), (2) **Design** (Thiết kế/Xây dựng các giải pháp khả thi), (3) **Choice** (Lựa chọn phương án tối ưu), và (4) **Implementation** (Triển khai thực hiện phương án vào thực tế)."
+  },
+  {
+    "id": 64,
+    "question": "Trong giai đoạn đầu tiên - Giai đoạn \"Intelligence\" (Tìm hiểu/Nhận diện vấn đề) của quá trình ra quyết định theo Simon, hoạt động trọng tâm của nhà quản lý là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tiến hành bỏ phiếu để lựa chọn ra phương án hành động cuối cùng."
+      },
+      {
+        "key": "B",
+        "text": "Quét môi trường bên trong và bên ngoài để xác định các vấn đề, triệu chứng bất thường hoặc cơ hội tiềm ẩn."
+      },
+      {
+        "key": "C",
+        "text": "Viết các đoạn mã lập trình nhằm xây dựng mô hình giả lập."
+      },
+      {
+        "key": "D",
+        "text": "Đo lường hiệu quả kinh tế sau khi dự án đã được nghiệm thu."
+      },
+      {
+        "key": "E",
+        "text": "Ký kết các hợp đồng kinh tế với các đối tác chiến lược."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Giai đoạn \"Intelligence\" bắt đầu bằng việc thu thập, phân tích thông tin từ môi trường (quét dữ liệu doanh nghiệp, thị trường) nhằm phát hiện xem có vấn đề gì đang xảy ra (ví dụ: doanh số sụt giảm) hoặc có cơ hội mới nào xuất hiện (ví dụ: thị trường ngách mới) để làm tiền đề cho việc ra quyết định.",
+    "raw": "**Câu 64:**\n\nTrong giai đoạn đầu tiên - Giai đoạn \"Intelligence\" (Tìm hiểu/Nhận diện vấn đề) của quá trình ra quyết định theo Simon, hoạt động trọng tâm của nhà quản lý là gì?\n\n- A. Tiến hành bỏ phiếu để lựa chọn ra phương án hành động cuối cùng.\n- B. Quét môi trường bên trong và bên ngoài để xác định các vấn đề, triệu chứng bất thường hoặc cơ hội tiềm ẩn.\n- C. Viết các đoạn mã lập trình nhằm xây dựng mô hình giả lập.\n- D. Đo lường hiệu quả kinh tế sau khi dự án đã được nghiệm thu.\n- E. Ký kết các hợp đồng kinh tế với các đối tác chiến lược.\n\n**Đáp án đúng:** B\n\n**Giải thích:** Giai đoạn \"Intelligence\" bắt đầu bằng việc thu thập, phân tích thông tin từ môi trường (quét dữ liệu doanh nghiệp, thị trường) nhằm phát hiện xem có vấn đề gì đang xảy ra (ví dụ: doanh số sụt giảm) hoặc có cơ hội mới nào xuất hiện (ví dụ: thị trường ngách mới) để làm tiền đề cho việc ra quyết định."
+  },
+  {
+    "id": 65,
+    "question": "Giai đoạn thứ hai - Giai đoạn \"Design\" (Thiết kế) trong mô hình ra quyết định của Simon được hiểu là quá trình thực hiện công việc gì?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Thiết kế giao diện đồ họa cho phần mềm báo cáo của doanh nghiệp."
+      },
+      {
+        "key": "B",
+        "text": "Vẽ sơ đồ tổ chức phòng ban và tuyển dụng nhân sự mới."
+      },
+      {
+        "key": "C",
+        "text": "Tìm kiếm, phát triển và phân tích các phương án hành động khả thi để giải quyết vấn đề."
+      },
+      {
+        "key": "D",
+        "text": "Lên cấu trúc mặt bằng vật lý cho việc xây dựng nhà kho mới."
+      },
+      {
+        "key": "E",
+        "text": "Chuyển giao các tài liệu kỹ thuật cho đội ngũ kỹ sư phân xưởng."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Ở giai đoạn \"Design\", sau khi đã xác định rõ bài toán ở bước trước, người ra quyết định sẽ tập trung vào việc tư duy sáng tạo hoặc sử dụng các mô hình toán học để xây dựng lên danh sách các giải pháp khả thi, đồng thời phân tích, đánh giá sơ bộ ưu - nhược điểm của từng giải pháp đó.",
+    "raw": "**Câu 65:**\n\nGiai đoạn thứ hai - Giai đoạn \"Design\" (Thiết kế) trong mô hình ra quyết định của Simon được hiểu là quá trình thực hiện công việc gì?\n\n- A. Thiết kế giao diện đồ họa cho phần mềm báo cáo của doanh nghiệp.\n- B. Vẽ sơ đồ tổ chức phòng ban và tuyển dụng nhân sự mới.\n- C. Tìm kiếm, phát triển và phân tích các phương án hành động khả thi để giải quyết vấn đề.\n- D. Lên cấu trúc mặt bằng vật lý cho việc xây dựng nhà kho mới.\n- E. Chuyển giao các tài liệu kỹ thuật cho đội ngũ kỹ sư phân xưởng.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Ở giai đoạn \"Design\", sau khi đã xác định rõ bài toán ở bước trước, người ra quyết định sẽ tập trung vào việc tư duy sáng tạo hoặc sử dụng các mô hình toán học để xây dựng lên danh sách các giải pháp khả thi, đồng thời phân tích, đánh giá sơ bộ ưu - nhược điểm của từng giải pháp đó."
+  },
+  {
+    "id": 66,
+    "question": "Trong giai đoạn thứ ba - Giai đoạn \"Choice\" (Lựa chọn), đâu là hành động then chốt mang tính quyết định của một nhà quản trị?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tiếp tục đi thu thập thêm dữ liệu thô từ các hệ thống nguồn bên ngoài."
+      },
+      {
+        "key": "B",
+        "text": "Xây dựng thêm các phương án dự phòng khác ngoài danh sách cũ."
+      },
+      {
+        "key": "C",
+        "text": "Cam kết thực hiện một kế hoạch hành động cụ thể sau khi đã đánh giá, so sánh các phương án."
+      },
+      {
+        "key": "D",
+        "text": "Ủy quyền toàn bộ việc ra quyết định cho các nhân viên cấp dưới xử lý."
+      },
+      {
+        "key": "E",
+        "text": "Hủy bỏ bài toán phân tích để chuyển sang một dự án kinh doanh mới."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Giai đoạn \"Choice\" là thời điểm người ra quyết định phải đưa ra một lựa chọn dứt khoát: So sánh các phương án đã thiết kế dựa trên các tiêu chí (chi phí, rủi ro, lợi nhuận) để chọn ra giải pháp tối ưu nhất và cam kết đổ nguồn lực thực hiện giải pháp đó.",
+    "raw": "**Câu 66:**\n\nTrong giai đoạn thứ ba - Giai đoạn \"Choice\" (Lựa chọn), đâu là hành động then chốt mang tính quyết định của một nhà quản trị?\n\n- A. Tiếp tục đi thu thập thêm dữ liệu thô từ các hệ thống nguồn bên ngoài.\n- B. Xây dựng thêm các phương án dự phòng khác ngoài danh sách cũ.\n- C. Cam kết thực hiện một kế hoạch hành động cụ thể sau khi đã đánh giá, so sánh các phương án.\n- D. Ủy quyền toàn bộ việc ra quyết định cho các nhân viên cấp dưới xử lý.\n- E. Hủy bỏ bài toán phân tích để chuyển sang một dự án kinh doanh mới.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Giai đoạn \"Choice\" là thời điểm người ra quyết định phải đưa ra một lựa chọn dứt khoát: So sánh các phương án đã thiết kế dựa trên các tiêu chí (chi phí, rủi ro, lợi nhuận) để chọn ra giải pháp tối ưu nhất và cam kết đổ nguồn lực thực hiện giải pháp đó."
+  },
+  {
+    "id": 67,
+    "question": "Trong một số tài liệu mở rộng của quy trình ra quyết định dựa trên nền tảng của Simon, các giai đoạn chính đầy đủ của chu trình tiến hóa này bao gồm:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Input, Coding, Testing, Debugging, Deployment"
+      },
+      {
+        "key": "B",
+        "text": "Identification, Formatting, Integration, Storage, Mining"
+      },
+      {
+        "key": "C",
+        "text": "Intelligence, Design, Choice, Implementation, Evaluation"
+      },
+      {
+        "key": "D",
+        "text": "Strategic, Tactical, Operational, Clerical, Technical"
+      },
+      {
+        "key": "E",
+        "text": "Collecting, Clearing, Transforming, Loading, Updating"
+      }
+    ],
+    "answer": "C",
+    "explanation": "Mô hình mở rộng bổ sung thêm bước **Evaluation** (Đánh giá) vào sau bước Implementation. Bước này cực kỳ quan trọng vì nó giúp nhà quản trị nhìn nhận lại kết quả thực tế sau khi triển khai xem có đạt kỳ vọng không, từ đó rút kinh nghiệm hoặc tạo vòng lặp phản hồi (feedback loop) cải tiến hệ thống.",
+    "raw": "**Câu 67:**\n\nTrong một số tài liệu mở rộng của quy trình ra quyết định dựa trên nền tảng của Simon, các giai đoạn chính đầy đủ của chu trình tiến hóa này bao gồm:\n\n- A. Input, Coding, Testing, Debugging, Deployment\n- B. Identification, Formatting, Integration, Storage, Mining\n- C. Intelligence, Design, Choice, Implementation, Evaluation\n- D. Strategic, Tactical, Operational, Clerical, Technical\n- E. Collecting, Clearing, Transforming, Loading, Updating\n\n**Đáp án đúng:** C\n\n**Giải thích:** Mô hình mở rộng bổ sung thêm bước **Evaluation** (Đánh giá) vào sau bước Implementation. Bước này cực kỳ quan trọng vì nó giúp nhà quản trị nhìn nhận lại kết quả thực tế sau khi triển khai xem có đạt kỳ vọng không, từ đó rút kinh nghiệm hoặc tạo vòng lặp phản hồi (feedback loop) cải tiến hệ thống."
+  },
+  {
+    "id": 68,
+    "question": "Điểm khác biệt cốt lõi giữa cách tiếp cận xem toàn bộ quá trình là \"giải quyết vấn đề\" (problem-solving) so với \"ra quyết định\" (decision-making) đơn thuần là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Giải quyết vấn đề chỉ áp dụng cho máy tính, còn ra quyết định áp dụng cho con người."
+      },
+      {
+        "key": "B",
+        "text": "Ra quyết định chỉ bao gồm giai đoạn Lựa chọn (Choice), trong khi Giải quyết vấn đề là một quy trình rộng hơn, bao gồm tất cả các giai đoạn bao gồm cả Thực hiện (Implementation)."
+      },
+      {
+        "key": "C",
+        "text": "Ra quyết định đòi hỏi chi phí đắt đỏ hơn rất nhiều so với giải quyết vấn đề."
+      },
+      {
+        "key": "D",
+        "text": "Giải quyết vấn đề không bao giờ cần sử dụng đến dữ liệu lịch sử trong kho dữ liệu."
+      },
+      {
+        "key": "E",
+        "text": "Cả hai khái niệm hoàn toàn trái ngược nhau và không có điểm chung nào."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Nhiều người thường nhầm lẫn hai thuật ngữ này. Về mặt học thuật, \"ra quyết định\" (Decision-making) tập trung mạnh vào thời điểm chọn lựa phương án hành động (giai đoạn Choice). Trong khi đó, \"giải quyết vấn đề\" (Problem-solving) mang nghĩa rộng hơn, bao quát toàn chu trình từ lúc tìm nguyên nhân cho đến khi thực thi và đánh giá kết quả cuối cùng.",
+    "raw": "**Câu 68:**\n\nĐiểm khác biệt cốt lõi giữa cách tiếp cận xem toàn bộ quá trình là \"giải quyết vấn đề\" (problem-solving) so với \"ra quyết định\" (decision-making) đơn thuần là gì?\n\n- A. Giải quyết vấn đề chỉ áp dụng cho máy tính, còn ra quyết định áp dụng cho con người.\n- B. Ra quyết định chỉ bao gồm giai đoạn Lựa chọn (Choice), trong khi Giải quyết vấn đề là một quy trình rộng hơn, bao gồm tất cả các giai đoạn bao gồm cả Thực hiện (Implementation).\n- C. Ra quyết định đòi hỏi chi phí đắt đỏ hơn rất nhiều so với giải quyết vấn đề.\n- D. Giải quyết vấn đề không bao giờ cần sử dụng đến dữ liệu lịch sử trong kho dữ liệu.\n- E. Cả hai khái niệm hoàn toàn trái ngược nhau và không có điểm chung nào.\n\n**Đáp án đúng:** B\n\n**Giải thích:** Nhiều người thường nhầm lẫn hai thuật ngữ này. Về mặt học thuật, \"ra quyết định\" (Decision-making) tập trung mạnh vào thời điểm chọn lựa phương án hành động (giai đoạn Choice). Trong khi đó, \"giải quyết vấn đề\" (Problem-solving) mang nghĩa rộng hơn, bao quát toàn chu trình từ lúc tìm nguyên nhân cho đến khi thực thi và đánh giá kết quả cuối cùng."
+  },
+  {
+    "id": 69,
+    "question": "Trong kiến trúc vận hành của quá trình ra quyết định, tại sao hệ thống cần phải thiết lập các vòng lặp phản hồi (Feedback loops) giữa các giai đoạn?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nhằm mục đích làm chậm tiến độ ra quyết định để tránh các rủi ro pháp lý."
+      },
+      {
+        "key": "B",
+        "text": "Để cho phép người ra quyết định quay lại các giai đoạn trước nếu phương án hiện tại không khả thi hoặc vấn đề cần được định nghĩa lại."
+      },
+      {
+        "key": "C",
+        "text": "Để hệ thống tự động xóa bỏ các dữ liệu trùng lặp trong cơ sở dữ liệu."
+      },
+      {
+        "key": "D",
+        "text": "Bắt buộc nhà quản lý phải thực hiện lại quy trình từ đầu sau mỗi 24 tiếng."
+      },
+      {
+        "key": "E",
+        "text": "Nhằm gửi thông báo nhắc nhở cho các nhân viên nhập liệu qua ứng dụng di động."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Quá trình tư duy ra quyết định không phải là một đường thẳng tuyệt đối. Trong thực tế, khi đang ở giai đoạn Lựa chọn hoặc Triển khai, nhà quản lý có thể phát hiện ra phương án bị lỗi hoặc môi trường thay đổi đột ngột. Vòng lặp phản hồi cho phép họ linh hoạt quay ngược lại bước Thiết kế hoặc Tìm hiểu để điều chỉnh kịp thời thông tin.",
+    "raw": "**Câu 69:**\n\nTrong kiến trúc vận hành của quá trình ra quyết định, tại sao hệ thống cần phải thiết lập các vòng lặp phản hồi (Feedback loops) giữa các giai đoạn?\n\n- A. Nhằm mục đích làm chậm tiến độ ra quyết định để tránh các rủi ro pháp lý.\n- B. Để cho phép người ra quyết định quay lại các giai đoạn trước nếu phương án hiện tại không khả thi hoặc vấn đề cần được định nghĩa lại.\n- C. Để hệ thống tự động xóa bỏ các dữ liệu trùng lặp trong cơ sở dữ liệu.\n- D. Bắt buộc nhà quản lý phải thực hiện lại quy trình từ đầu sau mỗi 24 tiếng.\n- E. Nhằm gửi thông báo nhắc nhở cho các nhân viên nhập liệu qua ứng dụng di động.\n\n**Đáp án đúng:** B\n\n**Giải thích:** Quá trình tư duy ra quyết định không phải là một đường thẳng tuyệt đối. Trong thực tế, khi đang ở giai đoạn Lựa chọn hoặc Triển khai, nhà quản lý có thể phát hiện ra phương án bị lỗi hoặc môi trường thay đổi đột ngột. Vòng lặp phản hồi cho phép họ linh hoạt quay ngược lại bước Thiết kế hoặc Tìm hiểu để điều chỉnh kịp thời thông tin."
+  },
+  {
+    "id": 70,
+    "question": "Việc ứng dụng các công cụ công nghệ hiện đại như phân tích đa chiều OLAP, Khai phá dữ liệu (Data Mining) và Kho dữ liệu (DW) mang lại sự hỗ trợ mạnh mẽ nhất cho giai đoạn nào trong mô hình ra quyết định của Simon?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Chỉ hỗ trợ duy nhất cho giai đoạn ký kết văn bản (Implementation)."
+      },
+      {
+        "key": "B",
+        "text": "Không hỗ trợ được giai đoạn nào vì máy tính không có tư duy như con người."
+      },
+      {
+        "key": "C",
+        "text": "Hỗ trợ mạnh mẽ cho cả giai đoạn Intelligence (Nhận diện vấn đề) và Design (Thiết kế phương án)."
+      },
+      {
+        "key": "D",
+        "text": "Chỉ dùng để tự động đưa ra quyết định ở giai đoạn Choice thay cho giám đốc."
+      },
+      {
+        "key": "E",
+        "text": "Chỉ hỗ trợ giai đoạn tính toán bảng lương cho nhân viên vận hành."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Các công nghệ dữ liệu lớn giúp nhà quản lý xử lý thông tin thông minh: DW và Data Mining giúp tìm ra các xu hướng ẩn, các bất thường trong kinh doanh (phục vụ giai đoạn **Intelligence**). Sau đó, các mô hình giả lập, phân tích \"What-if\" trên OLAP giúp họ tính toán nhanh các kịch bản của từng phương án (phục vụ giai đoạn **Design**).\n\n=======================\n\nDưới đây là **18 câu cuối cùng** (từ câu 71 đến câu 88) để hoàn thành trọn vẹn toàn bộ danh sách câu hỏi trong video của bạn, được định dạng đầy đủ và chuẩn hóa:",
+    "raw": "**Câu 70:**\n\nViệc ứng dụng các công cụ công nghệ hiện đại như phân tích đa chiều OLAP, Khai phá dữ liệu (Data Mining) và Kho dữ liệu (DW) mang lại sự hỗ trợ mạnh mẽ nhất cho giai đoạn nào trong mô hình ra quyết định của Simon?\n\n- A. Chỉ hỗ trợ duy nhất cho giai đoạn ký kết văn bản (Implementation).\n- B. Không hỗ trợ được giai đoạn nào vì máy tính không có tư duy như con người.\n- C. Hỗ trợ mạnh mẽ cho cả giai đoạn Intelligence (Nhận diện vấn đề) và Design (Thiết kế phương án).\n- D. Chỉ dùng để tự động đưa ra quyết định ở giai đoạn Choice thay cho giám đốc.\n- E. Chỉ hỗ trợ giai đoạn tính toán bảng lương cho nhân viên vận hành.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Các công nghệ dữ liệu lớn giúp nhà quản lý xử lý thông tin thông minh: DW và Data Mining giúp tìm ra các xu hướng ẩn, các bất thường trong kinh doanh (phục vụ giai đoạn **Intelligence**). Sau đó, các mô hình giả lập, phân tích \"What-if\" trên OLAP giúp họ tính toán nhanh các kịch bản của từng phương án (phục vụ giai đoạn **Design**).\n\n=======================\n\nDưới đây là **18 câu cuối cùng** (từ câu 71 đến câu 88) để hoàn thành trọn vẹn toàn bộ danh sách câu hỏi trong video của bạn, được định dạng đầy đủ và chuẩn hóa:"
+  },
+  {
+    "id": 71,
+    "question": "Theo định nghĩa kinh điển của Gorry và Scott Morton, hệ hỗ trợ ra quyết định (DSS) được xem là các hệ thống máy tính có tính tương tác, hỗ trợ người ra quyết định khai thác dữ liệu và mô hình nhằm giải quyết loại vấn đề nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Các vấn đề cấu trúc hoàn toàn (structured)."
+      },
+      {
+        "key": "B",
+        "text": "Các vấn đề hành chính lặp đi lặp lại hàng ngày."
+      },
+      {
+        "key": "C",
+        "text": "Các vấn đề phi cấu trúc hoặc bán cấu trúc (unstructured / semistructured)."
+      },
+      {
+        "key": "D",
+        "text": "Các vấn đề chỉ liên quan đến việc tính toán bảng lương."
+      },
+      {
+        "key": "E",
+        "text": "Các bài toán lập trình hệ điều hành."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Bản chất cốt lõi của DSS là hỗ trợ con người giải quyết các bài toán khó, không có quy trình xử lý định sẵn một cách tuyệt đối (bán cấu trúc hoặc phi cấu trúc). Đối với các bài toán đã có cấu trúc rõ ràng, người ta sẽ dùng các hệ thống tự động hóa (TPS) để máy tính tự giải quyết thay vì cần đến DSS.",
+    "raw": "**Câu 71:**\n\nTheo định nghĩa kinh điển của Gorry và Scott Morton, hệ hỗ trợ ra quyết định (DSS) được xem là các hệ thống máy tính có tính tương tác, hỗ trợ người ra quyết định khai thác dữ liệu và mô hình nhằm giải quyết loại vấn đề nào?\n\n- A. Các vấn đề cấu trúc hoàn toàn (structured).\n- B. Các vấn đề hành chính lặp đi lặp lại hàng ngày.\n- C. Các vấn đề phi cấu trúc hoặc bán cấu trúc (unstructured / semistructured).\n- D. Các vấn đề chỉ liên quan đến việc tính toán bảng lương.\n- E. Các bài toán lập trình hệ điều hành.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Bản chất cốt lõi của DSS là hỗ trợ con người giải quyết các bài toán khó, không có quy trình xử lý định sẵn một cách tuyệt đối (bán cấu trúc hoặc phi cấu trúc). Đối với các bài toán đã có cấu trúc rõ ràng, người ta sẽ dùng các hệ thống tự động hóa (TPS) để máy tính tự giải quyết thay vì cần đến DSS."
+  },
+  {
+    "id": 72,
+    "question": "Đặc điểm nào giúp phân biệt rõ ràng nhất giữa hệ hỗ trợ ra quyết định (DSS) và các hệ thống xử lý dữ liệu hay báo cáo truyền thống?",
+    "options": [
+      {
+        "key": "A",
+        "text": "DSS chạy nhanh hơn và tốn ít bộ nhớ hơn."
+      },
+      {
+        "key": "B",
+        "text": "DSS tập trung vào tính hiệu quả (Effectiveness) nhằm cải thiện chất lượng của các quyết định."
+      },
+      {
+        "key": "C",
+        "text": "DSS chỉ cho phép những người biết lập trình sử dụng."
+      },
+      {
+        "key": "D",
+        "text": "DSS không bao giờ cần kết nối với cơ sở dữ liệu."
+      },
+      {
+        "key": "E",
+        "text": "DSS tự động đưa ra hành động mà không cần con người phê duyệt."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Các hệ thống thông tin truyền thống tập trung vào tính hiệu năng (Efficiency) – tức là làm thế nào để xử lý dữ liệu nhanh nhất, tốn ít chi phí nhất. Trong khi đó, DSS hướng tới tính hiệu quả (Effectiveness) – tức là làm sao giúp nhà quản lý nhìn nhận vấn đề sáng suốt hơn để đưa ra quyết định chính xác và chất lượng hơn.",
+    "raw": "**Câu 72:**\n\nĐặc điểm nào giúp phân biệt rõ ràng nhất giữa hệ hỗ trợ ra quyết định (DSS) và các hệ thống xử lý dữ liệu hay báo cáo truyền thống?\n\n- A. DSS chạy nhanh hơn và tốn ít bộ nhớ hơn.\n- B. DSS tập trung vào tính hiệu quả (Effectiveness) nhằm cải thiện chất lượng của các quyết định.\n- C. DSS chỉ cho phép những người biết lập trình sử dụng.\n- D. DSS không bao giờ cần kết nối với cơ sở dữ liệu.\n- E. DSS tự động đưa ra hành động mà không cần con người phê duyệt.\n\n**Đáp án đúng:** B\n\n**Giải thích:** Các hệ thống thông tin truyền thống tập trung vào tính hiệu năng (Efficiency) – tức là làm thế nào để xử lý dữ liệu nhanh nhất, tốn ít chi phí nhất. Trong khi đó, DSS hướng tới tính hiệu quả (Effectiveness) – tức là làm sao giúp nhà quản lý nhìn nhận vấn đề sáng suốt hơn để đưa ra quyết định chính xác và chất lượng hơn."
+  },
+  {
+    "id": 73,
+    "question": "Thành phần nào sau đây là một phần hệ tùy chọn (optional) trong kiến trúc cơ bản của một DSS nhưng giúp hệ thống trở nên thông minh và có khả năng suy diễn tốt hơn?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Phần hệ quản lý dữ liệu (Data management subsystem)."
+      },
+      {
+        "key": "B",
+        "text": "Giao diện người dùng (User interface)."
+      },
+      {
+        "key": "C",
+        "text": "Phần hệ quản lý mô hình (Model management subsystem)."
+      },
+      {
+        "key": "D",
+        "text": "Phần hệ quản lý tri thức (Knowledge-based management subsystem)."
+      },
+      {
+        "key": "E",
+        "text": "Phần hệ quản lý phần cứng (Hardware management subsystem)."
+      }
+    ],
+    "answer": "D",
+    "explanation": "Ba thành phần bắt buộc của một DSS là Dữ liệu, Mô hình và Giao diện. Tuy nhiên, các hệ DSS hiện đại (Intelligent DSS) thường tích hợp thêm phần hệ quản lý tri thức (chứa các luật của chuyên gia, AI) để cung cấp khả năng tư vấn, giải thích và suy diễn thông minh cho người dùng.",
+    "raw": "**Câu 73:**\n\nThành phần nào sau đây là một phần hệ tùy chọn (optional) trong kiến trúc cơ bản của một DSS nhưng giúp hệ thống trở nên thông minh và có khả năng suy diễn tốt hơn?\n\n- A. Phần hệ quản lý dữ liệu (Data management subsystem).\n- B. Giao diện người dùng (User interface).\n- C. Phần hệ quản lý mô hình (Model management subsystem).\n- D. Phần hệ quản lý tri thức (Knowledge-based management subsystem).\n- E. Phần hệ quản lý phần cứng (Hardware management subsystem).\n\n**Đáp án đúng:** D\n\n**Giải thích:** Ba thành phần bắt buộc của một DSS là Dữ liệu, Mô hình và Giao diện. Tuy nhiên, các hệ DSS hiện đại (Intelligent DSS) thường tích hợp thêm phần hệ quản lý tri thức (chứa các luật của chuyên gia, AI) để cung cấp khả năng tư vấn, giải thích và suy diễn thông minh cho người dùng."
+  },
+  {
+    "id": 74,
+    "question": "Một đặc điểm cốt lõi của DSS liên quan đến vai trò kiểm soát của con người trong quá trình vận hành là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Máy tính sẽ kiểm soát 100% và con người chỉ nhận kết quả."
+      },
+      {
+        "key": "B",
+        "text": "Hệ thống sẽ tự động tắt nếu con người không tương tác sau 5 phút."
+      },
+      {
+        "key": "C",
+        "text": "Người ra quyết định có quyền kiểm soát hoàn toàn đối với mọi bước của quy trình giải quyết vấn đề."
+      },
+      {
+        "key": "D",
+        "text": "Quyền kiểm soát thuộc về lập trình viên xây dựng hệ thống."
+      },
+      {
+        "key": "E",
+        "text": "Hệ thống hoạt động độc lập và không cho phép con người thay đổi tham số."
+      }
+    ],
+    "answer": "C",
+    "explanation": "DSS được thiết kế với triết lý làm \"trợ lý\" hỗ trợ chứ không phải để \"thay thế\" con người. Do đó, người ra quyết định luôn giữ quyền kiểm soát tối cao, họ có thể linh hoạt thay đổi các giả định, lựa chọn mô hình và đưa ra phán đoán dựa trên trực giác của mình.",
+    "raw": "**Câu 74:**\n\nMột đặc điểm cốt lõi của DSS liên quan đến vai trò kiểm soát của con người trong quá trình vận hành là gì?\n\n- A. Máy tính sẽ kiểm soát 100% và con người chỉ nhận kết quả.\n- B. Hệ thống sẽ tự động tắt nếu con người không tương tác sau 5 phút.\n- C. Người ra quyết định có quyền kiểm soát hoàn toàn đối với mọi bước của quy trình giải quyết vấn đề.\n- D. Quyền kiểm soát thuộc về lập trình viên xây dựng hệ thống.\n- E. Hệ thống hoạt động độc lập và không cho phép con người thay đổi tham số.\n\n**Đáp án đúng:** C\n\n**Giải thích:** DSS được thiết kế với triết lý làm \"trợ lý\" hỗ trợ chứ không phải để \"thay thế\" con người. Do đó, người ra quyết định luôn giữ quyền kiểm soát tối cao, họ có thể linh hoạt thay đổi các giả định, lựa chọn mô hình và đưa ra phán đoán dựa trên trực giác của mình."
+  },
+  {
+    "id": 75,
+    "question": "Theo mô hình của Herbert A. Simon, DSS có khả năng hỗ trợ quy trình ra quyết định ở những giai đoạn nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Chỉ hỗ trợ duy nhất giai đoạn tìm dữ liệu thô (Intelligence)."
+      },
+      {
+        "key": "B",
+        "text": "Chỉ hỗ trợ giai đoạn chọn phương án cuối cùng (Choice)."
+      },
+      {
+        "key": "C",
+        "text": "Chỉ hỗ trợ giai đoạn lập trình và chạy thử (Implementation)."
+      },
+      {
+        "key": "D",
+        "text": "Chỉ hỗ trợ hai giai đoạn đầu là Intelligence và Design."
+      },
+      {
+        "key": "E",
+        "text": "Tất cả các giai đoạn: Tìm hiểu, Thiết kế, Lựa chọn và Thực hiện."
+      }
+    ],
+    "answer": "E",
+    "explanation": "Một hệ DSS toàn diện cung cấp các công cụ trải dài toàn bộ chu trình ra quyết định: từ việc thu thập dữ liệu (Intelligence), xây dựng kịch bản giả lập (Design), đánh giá so sánh các phương án (Choice) cho đến việc theo dõi tiến độ triển khai (Implementation).",
+    "raw": "**Câu 75:**\n\nTheo mô hình của Herbert A. Simon, DSS có khả năng hỗ trợ quy trình ra quyết định ở những giai đoạn nào?\n\n- A. Chỉ hỗ trợ duy nhất giai đoạn tìm dữ liệu thô (Intelligence).\n- B. Chỉ hỗ trợ giai đoạn chọn phương án cuối cùng (Choice).\n- C. Chỉ hỗ trợ giai đoạn lập trình và chạy thử (Implementation).\n- D. Chỉ hỗ trợ hai giai đoạn đầu là Intelligence và Design.\n- E. Tất cả các giai đoạn: Tìm hiểu, Thiết kế, Lựa chọn và Thực hiện.\n\n**Đáp án đúng:** E\n\n**Giải thích:** Một hệ DSS toàn diện cung cấp các công cụ trải dài toàn bộ chu trình ra quyết định: từ việc thu thập dữ liệu (Intelligence), xây dựng kịch bản giả lập (Design), đánh giá so sánh các phương án (Choice) cho đến việc theo dõi tiến độ triển khai (Implementation)."
+  },
+  {
+    "id": 76,
+    "question": "Đối tượng người dùng nào trong tổ chức mà hệ thống DSS hướng đến để cung cấp sự hỗ trợ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Chỉ dành riêng cho các nhân viên bảo vệ và lễ tân."
+      },
+      {
+        "key": "B",
+        "text": "Chỉ dành cho các lập trình viên của phòng IT."
+      },
+      {
+        "key": "C",
+        "text": "Tất cả các cấp quản lý, từ quản lý cấp cơ sở đến các giám đốc điều hành cấp cao."
+      },
+      {
+        "key": "D",
+        "text": "Chỉ dành cho khách hàng vãng lai bên ngoài doanh nghiệp."
+      },
+      {
+        "key": "E",
+        "text": "Chỉ phục vụ cho các cơ quan kiểm toán của chính phủ."
+      }
+    ],
+    "answer": "C",
+    "explanation": "DSS được thiết kế linh hoạt với nhiều góc nhìn dữ liệu và mô hình phân tích khác nhau để phục vụ cho mọi đối tượng có thẩm quyền ra quyết định trong doanh nghiệp, từ các tổ trưởng sản xuất (quản lý tác nghiệp) cho đến các tổng giám đốc (quản lý chiến lược).",
+    "raw": "**Câu 76:**\n\nĐối tượng người dùng nào trong tổ chức mà hệ thống DSS hướng đến để cung cấp sự hỗ trợ?\n\n- A. Chỉ dành riêng cho các nhân viên bảo vệ và lễ tân.\n- B. Chỉ dành cho các lập trình viên của phòng IT.\n- C. Tất cả các cấp quản lý, từ quản lý cấp cơ sở đến các giám đốc điều hành cấp cao.\n- D. Chỉ dành cho khách hàng vãng lai bên ngoài doanh nghiệp.\n- E. Chỉ phục vụ cho các cơ quan kiểm toán của chính phủ.\n\n**Đáp án đúng:** C\n\n**Giải thích:** DSS được thiết kế linh hoạt với nhiều góc nhìn dữ liệu và mô hình phân tích khác nhau để phục vụ cho mọi đối tượng có thẩm quyền ra quyết định trong doanh nghiệp, từ các tổ trưởng sản xuất (quản lý tác nghiệp) cho đến các tổng giám đốc (quản lý chiến lược)."
+  },
+  {
+    "id": 77,
+    "question": "Đặc tính \"thích nghi và linh hoạt\" (adaptivity and flexibility) của DSS được hiểu là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hệ thống có thể tự động thay đổi màu sắc giao diện theo thời tiết."
+      },
+      {
+        "key": "B",
+        "text": "Hệ thống có thể chạy được trên tất cả các loại máy tính cũ từ thập niên 90."
+      },
+      {
+        "key": "C",
+        "text": "Người dùng có thể thay đổi, thêm, xóa hoặc sắp xếp lại các thành phần cơ bản để đáp ứng sự thay đổi của môi trường kinh doanh."
+      },
+      {
+        "key": "D",
+        "text": "Hệ thống tự động giảm dung lượng lưu trữ khi ổ đĩa bị đầy."
+      },
+      {
+        "key": "E",
+        "text": "Có thể dịch tự động sang 100 ngôn ngữ khác nhau mà không bị lỗi font."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Môi trường kinh doanh luôn biến động liên tục, các bài toán hôm nay có thể ngày mai đã thay đổi. Vì vậy, một hệ DSS tốt phải có tính thích nghi cao, cho phép người dùng dễ dàng cấu hình lại các tham số, thêm thắt các mô hình toán học mới mà không cần phải đập đi xây lại toàn bộ hệ thống phần mềm.",
+    "raw": "**Câu 77:**\n\nĐặc tính \"thích nghi và linh hoạt\" (adaptivity and flexibility) của DSS được hiểu là gì?\n\n- A. Hệ thống có thể tự động thay đổi màu sắc giao diện theo thời tiết.\n- B. Hệ thống có thể chạy được trên tất cả các loại máy tính cũ từ thập niên 90.\n- C. Người dùng có thể thay đổi, thêm, xóa hoặc sắp xếp lại các thành phần cơ bản để đáp ứng sự thay đổi của môi trường kinh doanh.\n- D. Hệ thống tự động giảm dung lượng lưu trữ khi ổ đĩa bị đầy.\n- E. Có thể dịch tự động sang 100 ngôn ngữ khác nhau mà không bị lỗi font.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Môi trường kinh doanh luôn biến động liên tục, các bài toán hôm nay có thể ngày mai đã thay đổi. Vì vậy, một hệ DSS tốt phải có tính thích nghi cao, cho phép người dùng dễ dàng cấu hình lại các tham số, thêm thắt các mô hình toán học mới mà không cần phải đập đi xây lại toàn bộ hệ thống phần mềm."
+  },
+  {
+    "id": 78,
+    "question": "Theo định nghĩa của William H. Inmon, quy trình xử lý trong môi trường DSS thường bao gồm đặc điểm nào sau đây?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Chỉ xử lý các giao dịch đơn lẻ và lặp đi lặp lại một cách máy móc."
+      },
+      {
+        "key": "B",
+        "text": "Phân tích nhiều đơn vị dữ liệu theo phương thức tìm kiếm giải pháp (heuristic)."
+      },
+      {
+        "key": "C",
+        "text": "Bắt buộc dữ liệu đầu vào phải được định dạng dưới dạng tệp tin phẳng."
+      },
+      {
+        "key": "D",
+        "text": "Hệ thống chỉ hoạt động vào ban đêm khi các văn phòng đã đóng cửa."
+      },
+      {
+        "key": "E",
+        "text": "Quá trình xử lý hoàn toàn không sử dụng đến các phép toán cộng trừ."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Xử lý DSS mang tính chất khám phá (heuristic). Người dùng không đi theo một thuật toán tuần tự cố định như lập trình truyền thống mà sẽ đưa ra các câu hỏi, nhận kết quả, rồi dựa trên kết quả đó để tiếp tục đào sâu hoặc rẽ hướng phân tích nhằm tìm ra giải pháp tối ưu cho bài toán.",
+    "raw": "**Câu 78:**\n\nTheo định nghĩa của William H. Inmon, quy trình xử lý trong môi trường DSS thường bao gồm đặc điểm nào sau đây?\n\n- A. Chỉ xử lý các giao dịch đơn lẻ và lặp đi lặp lại một cách máy móc.\n- B. Phân tích nhiều đơn vị dữ liệu theo phương thức tìm kiếm giải pháp (heuristic).\n- C. Bắt buộc dữ liệu đầu vào phải được định dạng dưới dạng tệp tin phẳng.\n- D. Hệ thống chỉ hoạt động vào ban đêm khi các văn phòng đã đóng cửa.\n- E. Quá trình xử lý hoàn toàn không sử dụng đến các phép toán cộng trừ.\n\n**Đáp án đúng:** B\n\n**Giải thích:** Xử lý DSS mang tính chất khám phá (heuristic). Người dùng không đi theo một thuật toán tuần tự cố định như lập trình truyền thống mà sẽ đưa ra các câu hỏi, nhận kết quả, rồi dựa trên kết quả đó để tiếp tục đào sâu hoặc rẽ hướng phân tích nhằm tìm ra giải pháp tối ưu cho bài toán."
+  },
+  {
+    "id": 79,
+    "question": "Theo phân loại của Steven Alter (1980), các loại DSS được chia thành 7 danh mục cụ thể dựa trên tiêu chí cốt lõi nào sau đây?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dựa trên giá thành mua bản quyền phần mềm đắt hay rẻ."
+      },
+      {
+        "key": "B",
+        "text": "Dựa trên số lượng dòng code mà lập trình viên đã viết."
+      },
+      {
+        "key": "C",
+        "text": "Mức độ mà đầu ra của hệ thống hỗ trợ trực tiếp hoặc xác định quyết định (từ hướng dữ liệu đến hướng mô hình)."
+      },
+      {
+        "key": "D",
+        "text": "Dựa trên tổng số lượng nhân viên sử dụng hệ thống hàng ngày."
+      },
+      {
+        "key": "E",
+        "text": "Dựa trên việc hệ thống chạy trên máy chủ đám mây hay máy chủ vật lý."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Alter phân loại DSS dọc theo một trục liên tục: từ các hệ thống đơn giản chỉ hỗ trợ truy xuất dữ liệu thô (Data-oriented), báo cáo tĩnh, cho đến các hệ thống phức tạp có khả năng chạy các mô hình toán học nặng để trực tiếp đưa ra các đề xuất phương án hành động tối ưu cho người dùng (Model-oriented).",
+    "raw": "**Câu 79:**\n\nTheo phân loại của Steven Alter (1980), các loại DSS được chia thành 7 danh mục cụ thể dựa trên tiêu chí cốt lõi nào sau đây?\n\n- A. Dựa trên giá thành mua bản quyền phần mềm đắt hay rẻ.\n- B. Dựa trên số lượng dòng code mà lập trình viên đã viết.\n- C. Mức độ mà đầu ra của hệ thống hỗ trợ trực tiếp hoặc xác định quyết định (từ hướng dữ liệu đến hướng mô hình).\n- D. Dựa trên tổng số lượng nhân viên sử dụng hệ thống hàng ngày.\n- E. Dựa trên việc hệ thống chạy trên máy chủ đám mây hay máy chủ vật lý.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Alter phân loại DSS dọc theo một trục liên tục: từ các hệ thống đơn giản chỉ hỗ trợ truy xuất dữ liệu thô (Data-oriented), báo cáo tĩnh, cho đến các hệ thống phức tạp có khả năng chạy các mô hình toán học nặng để trực tiếp đưa ra các đề xuất phương án hành động tối ưu cho người dùng (Model-oriented)."
+  },
+  {
+    "id": 80,
+    "question": "Trong khung phân loại các hệ thống của Holsapple và Whinston (1996), loại DSS nào chuyên hỗ trợ người ra quyết định bằng cách quản lý và khai thác các thông tin được lưu trữ dưới dạng tài liệu điện tử, văn bản thô hoặc hình ảnh?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Solver-oriented DSS (DSS hướng bộ giải)."
+      },
+      {
+        "key": "B",
+        "text": "Rule-oriented DSS (DSS hướng luật)."
+      },
+      {
+        "key": "C",
+        "text": "Text-oriented DSS (DSS hướng văn bản)."
+      },
+      {
+        "key": "D",
+        "text": "Database-oriented DSS (DSS hướng cơ sở dữ liệu)."
+      },
+      {
+        "key": "E",
+        "text": "Compound DSS (DSS hỗn hợp)."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Text-oriented DSS tập trung vào việc quản lý, tìm kiếm và phân tích các nguồn tri thức không cấu trúc dạng văn bản (như tài liệu pháp lý, điều khoản hợp đồng, biên bản họp) để cung cấp thông tin nền tảng cho nhà quản lý đưa ra quyết định.",
+    "raw": "**Câu 80:**\n\nTrong khung phân loại các hệ thống của Holsapple và Whinston (1996), loại DSS nào chuyên hỗ trợ người ra quyết định bằng cách quản lý và khai thác các thông tin được lưu trữ dưới dạng tài liệu điện tử, văn bản thô hoặc hình ảnh?\n\n- A. Solver-oriented DSS (DSS hướng bộ giải).\n- B. Rule-oriented DSS (DSS hướng luật).\n- C. Text-oriented DSS (DSS hướng văn bản).\n- D. Database-oriented DSS (DSS hướng cơ sở dữ liệu).\n- E. Compound DSS (DSS hỗn hợp).\n\n**Đáp án đúng:** C\n\n**Giải thích:** Text-oriented DSS tập trung vào việc quản lý, tìm kiếm và phân tích các nguồn tri thức không cấu trúc dạng văn bản (như tài liệu pháp lý, điều khoản hợp đồng, biên bản họp) để cung cấp thông tin nền tảng cho nhà quản lý đưa ra quyết định."
+  },
+  {
+    "id": 81,
+    "question": "Loại hệ hỗ trợ ra quyết định nào được thiết kế và triển khai nhằm xử lý các vấn đề mang tính định kỳ, lặp lại và có tính chất quy chuẩn chung của toàn bộ tập đoàn?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ad-hoc DSS (DSS đột xuất)."
+      },
+      {
+        "key": "B",
+        "text": "Institutional DSS (DSS tổ chức)."
+      },
+      {
+        "key": "C",
+        "text": "Personal DSS (DSS cá nhân)."
+      },
+      {
+        "key": "D",
+        "text": "Desktop DSS (DSS máy tính bàn)."
+      },
+      {
+        "key": "E",
+        "text": "Private DSS (DSS riêng tư)."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Institutional DSS (DSS tổ chức) là hệ thống quy mô lớn, được duy trì lâu dài để xử lý các bài toán định kỳ của doanh nghiệp (ví dụ: lập ngân sách hàng năm, phân tích báo cáo tài chính hàng quý). Ngược lại với nó là Ad-hoc DSS, chỉ được dựng lên nhanh chóng để giải quyết một bài toán phát sinh một lần duy nhất.",
+    "raw": "**Câu 81:**\n\nLoại hệ hỗ trợ ra quyết định nào được thiết kế và triển khai nhằm xử lý các vấn đề mang tính định kỳ, lặp lại và có tính chất quy chuẩn chung của toàn bộ tập đoàn?\n\n- A. Ad-hoc DSS (DSS đột xuất).\n- B. Institutional DSS (DSS tổ chức).\n- C. Personal DSS (DSS cá nhân).\n- D. Desktop DSS (DSS máy tính bàn).\n- E. Private DSS (DSS riêng tư).\n\n**Đáp án đúng:** B\n\n**Giải thích:** Institutional DSS (DSS tổ chức) là hệ thống quy mô lớn, được duy trì lâu dài để xử lý các bài toán định kỳ của doanh nghiệp (ví dụ: lập ngân sách hàng năm, phân tích báo cáo tài chính hàng quý). Ngược lại với nó là Ad-hoc DSS, chỉ được dựng lên nhanh chóng để giải quyết một bài toán phát sinh một lần duy nhất."
+  },
+  {
+    "id": 82,
+    "question": "Theo Sprague (1980), trong cấu trúc phân cấp công nghệ gồm 3 cấp độ, khái niệm \"Specific DSS\" được định nghĩa là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Một ngôn ngữ lập trình thế hệ mới chuyên dùng để viết thuật toán."
+      },
+      {
+        "key": "B",
+        "text": "Hệ điều hành máy tính được tối ưu hóa cho các tác vụ đồ họa."
+      },
+      {
+        "key": "C",
+        "text": "Một ứng dụng DSS thực tế (kết hợp cả phần cứng và phần mềm) được xây dựng để hỗ trợ giải quyết một bài toán cụ thể trong thế giới thực."
+      },
+      {
+        "key": "D",
+        "text": "Một bộ các công cụ phát triển phần mềm (SDK) do bên thứ ba cung cấp."
+      },
+      {
+        "key": "E",
+        "text": "Giao diện đăng nhập tài khoản của người dùng cuối."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Khung lý thuyết của Sprague chia công nghệ DSS thành 3 tầng: (1) **Specific DSS** (Ứng dụng cụ thể chạy được ngay trong thực tế), (2) **DSS Generators** (Bộ công cụ/Hạ tầng dùng để xây dựng ra nhiều Specific DSS khác nhau), và (3) **DSS Tools** (Các công cụ nhỏ lẻ cấu thành như phần mềm vẽ biểu đồ, thư viện toán học).",
+    "raw": "**Câu 82:**\n\nTheo Sprague (1980), trong cấu trúc phân cấp công nghệ gồm 3 cấp độ, khái niệm \"Specific DSS\" được định nghĩa là gì?\n\n- A. Một ngôn ngữ lập trình thế hệ mới chuyên dùng để viết thuật toán.\n- B. Hệ điều hành máy tính được tối ưu hóa cho các tác vụ đồ họa.\n- C. Một ứng dụng DSS thực tế (kết hợp cả phần cứng và phần mềm) được xây dựng để hỗ trợ giải quyết một bài toán cụ thể trong thế giới thực.\n- D. Một bộ các công cụ phát triển phần mềm (SDK) do bên thứ ba cung cấp.\n- E. Giao diện đăng nhập tài khoản của người dùng cuối.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Khung lý thuyết của Sprague chia công nghệ DSS thành 3 tầng: (1) **Specific DSS** (Ứng dụng cụ thể chạy được ngay trong thực tế), (2) **DSS Generators** (Bộ công cụ/Hạ tầng dùng để xây dựng ra nhiều Specific DSS khác nhau), và (3) **DSS Tools** (Các công cụ nhỏ lẻ cấu thành như phần mềm vẽ biểu đồ, thư viện toán học)."
+  },
+  {
+    "id": 83,
+    "question": "Hệ thống thông tin hỗ trợ các nhóm làm việc cộng tác làm việc cùng nhau, không bị giới hạn bởi khoảng cách thời gian và địa điểm, thường thông qua các môi trường Web, được gọi là gì?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Personal DSS (DSS cá nhân)."
+      },
+      {
+        "key": "B",
+        "text": "Group Support Systems (GSS - Hệ hỗ trợ nhóm làm việc)."
+      },
+      {
+        "key": "C",
+        "text": "Transaction Processing Systems (TPS)."
+      },
+      {
+        "key": "D",
+        "text": "Expert Systems (Hệ chuyên gia)."
+      },
+      {
+        "key": "E",
+        "text": "Automated Clearing House (ACH)."
+      }
+    ],
+    "answer": "B",
+    "explanation": "GSS (hoặc GDSS) là phân nhánh của DSS tập trung vào việc cải thiện quy trình làm việc nhóm. Nó cung cấp các công cụ như bỏ phiếu điện tử, động não (brainstorming) ẩn danh, chia sẻ tài liệu trực tuyến để giúp một hội đồng hoặc một ban giám đốc cùng nhau thảo luận và thống nhất quyết định một cách khoa học.",
+    "raw": "**Câu 83:**\n\nHệ thống thông tin hỗ trợ các nhóm làm việc cộng tác làm việc cùng nhau, không bị giới hạn bởi khoảng cách thời gian và địa điểm, thường thông qua các môi trường Web, được gọi là gì?\n\n- A. Personal DSS (DSS cá nhân).\n- B. Group Support Systems (GSS - Hệ hỗ trợ nhóm làm việc).\n- C. Transaction Processing Systems (TPS).\n- D. Expert Systems (Hệ chuyên gia).\n- E. Automated Clearing House (ACH).\n\n**Đáp án đúng:** B\n\n**Giải thích:** GSS (hoặc GDSS) là phân nhánh của DSS tập trung vào việc cải thiện quy trình làm việc nhóm. Nó cung cấp các công cụ như bỏ phiếu điện tử, động não (brainstorming) ẩn danh, chia sẻ tài liệu trực tuyến để giúp một hội đồng hoặc một ban giám đốc cùng nhau thảo luận và thống nhất quyết định một cách khoa học."
+  },
+  {
+    "id": 84,
+    "question": "\"Active DSS\" (DSS chủ động) khác biệt với các hệ DSS truyền thống (Passive DSS) ở điểm cốt lõi nào?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nó tiêu tốn nhiều điện năng hơn khi vận hành."
+      },
+      {
+        "key": "B",
+        "text": "Nó chỉ hoạt động khi người dùng di chuyển chuột liên tục."
+      },
+      {
+        "key": "C",
+        "text": "Nó có thể đóng vai trò như một trợ lý thông minh, chủ động đưa ra các đề xuất giải pháp hoặc cảnh báo vấn đề mà không cần người dùng ra lệnh trước."
+      },
+      {
+        "key": "D",
+        "text": "Nó không cần có giao diện đồ họa hiển thị trên màn hình."
+      },
+      {
+        "key": "E",
+        "text": "Nó tự động xóa bỏ dữ liệu cũ mà không cần xin phép quản trị viên."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Passive DSS chỉ ngồi yên và phản hồi khi người dùng nhập câu lệnh truy vấn (chế độ phản ứng). Trong khi đó, Active DSS liên tục chạy ngầm, tự động phân tích dữ liệu và khi phát hiện dấu hiệu bất thường (hoặc cơ hội tốt), nó sẽ chủ động gửi đề xuất, gợi ý giải pháp lên màn hình cho nhà quản lý.",
+    "raw": "**Câu 84:**\n\n\"Active DSS\" (DSS chủ động) khác biệt với các hệ DSS truyền thống (Passive DSS) ở điểm cốt lõi nào?\n\n- A. Nó tiêu tốn nhiều điện năng hơn khi vận hành.\n- B. Nó chỉ hoạt động khi người dùng di chuyển chuột liên tục.\n- C. Nó có thể đóng vai trò như một trợ lý thông minh, chủ động đưa ra các đề xuất giải pháp hoặc cảnh báo vấn đề mà không cần người dùng ra lệnh trước.\n- D. Nó không cần có giao diện đồ họa hiển thị trên màn hình.\n- E. Nó tự động xóa bỏ dữ liệu cũ mà không cần xin phép quản trị viên.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Passive DSS chỉ ngồi yên và phản hồi khi người dùng nhập câu lệnh truy vấn (chế độ phản ứng). Trong khi đó, Active DSS liên tục chạy ngầm, tự động phân tích dữ liệu và khi phát hiện dấu hiệu bất thường (hoặc cơ hội tốt), nó sẽ chủ động gửi đề xuất, gợi ý giải pháp lên màn hình cho nhà quản lý."
+  },
+  {
+    "id": 85,
+    "question": "Phân loại DSS dựa trên khung lý thuyết kiến trúc của Holsapple và Whinston (1996) bao gồm bao nhiêu loại chính?",
+    "options": [
+      {
+        "key": "A",
+        "text": "3 loại"
+      },
+      {
+        "key": "B",
+        "text": "4 loại"
+      },
+      {
+        "key": "C",
+        "text": "5 loại"
+      },
+      {
+        "key": "D",
+        "text": "6 loại"
+      },
+      {
+        "key": "E",
+        "text": "7 loại"
+      }
+    ],
+    "answer": "D",
+    "explanation": "Khung phân loại này chia DSS thành 6 loại dựa trên bản chất của thực thể tri thức mà hệ thống tập trung quản lý và xử lý, bao gồm: Text-oriented (văn bản), Database-oriented (cơ sở dữ liệu), Spreadsheet-oriented (bảng tính), Solver-oriented (bộ giải toán), Rule-oriented (luật suy diễn), và Compound DSS (hỗn hợp).",
+    "raw": "**Câu 85:**\n\nPhân loại DSS dựa trên khung lý thuyết kiến trúc của Holsapple và Whinston (1996) bao gồm bao nhiêu loại chính?\n\n- A. 3 loại\n- B. 4 loại\n- C. 5 loại\n- D. 6 loại\n- E. 7 loại\n\n**Đáp án đúng:** D\n\n**Giải thích:** Khung phân loại này chia DSS thành 6 loại dựa trên bản chất của thực thể tri thức mà hệ thống tập trung quản lý và xử lý, bao gồm: Text-oriented (văn bản), Database-oriented (cơ sở dữ liệu), Spreadsheet-oriented (bảng tính), Solver-oriented (bộ giải toán), Rule-oriented (luật suy diễn), và Compound DSS (hỗn hợp)."
+  },
+  {
+    "id": 86,
+    "question": "Hệ thống thông tin nào chuyên cung cấp quyền truy cập nhanh chóng vào các chỉ số dữ liệu quan trọng trên toàn doanh nghiệp (KPIs) nhằm hỗ trợ riêng cho các nhà quản lý cấp cao nhất (CEO, CFO, Chủ tịch)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Transaction Processing Systems (TPS)."
+      },
+      {
+        "key": "B",
+        "text": "Executive Information Systems (EIS - Hệ thống thông tin điều hành)."
+      },
+      {
+        "key": "C",
+        "text": "Knowledge Work Systems (KWS)."
+      },
+      {
+        "key": "D",
+        "text": "Supply Chain Management (SCM)."
+      },
+      {
+        "key": "E",
+        "text": "Customer Relationship Management (CRM)."
+      }
+    ],
+    "answer": "B",
+    "explanation": "EIS (hoặc ESS) là một dạng DSS đặc biệt được may đo riêng cho các lãnh đạo cấp cao. Giao diện của EIS thường rất tối giản, trực quan dưới dạng các bảng điều khiển (Dashboards) với các biểu đồ đồ họa sắc nét, cho phép họ nhìn thấy ngay sức khỏe của doanh nghiệp mà không cần sa đà vào các bảng số liệu chi tiết phức tạp.",
+    "raw": "**Câu 86:**\n\nHệ thống thông tin nào chuyên cung cấp quyền truy cập nhanh chóng vào các chỉ số dữ liệu quan trọng trên toàn doanh nghiệp (KPIs) nhằm hỗ trợ riêng cho các nhà quản lý cấp cao nhất (CEO, CFO, Chủ tịch)?\n\n- A. Transaction Processing Systems (TPS).\n- B. Executive Information Systems (EIS - Hệ thống thông tin điều hành).\n- C. Knowledge Work Systems (KWS).\n- D. Supply Chain Management (SCM).\n- E. Customer Relationship Management (CRM).\n\n**Đáp án đúng:** B\n\n**Giải thích:** EIS (hoặc ESS) là một dạng DSS đặc biệt được may đo riêng cho các lãnh đạo cấp cao. Giao diện của EIS thường rất tối giản, trực quan dưới dạng các bảng điều khiển (Dashboards) với các biểu đồ đồ họa sắc nét, cho phép họ nhìn thấy ngay sức khỏe của doanh nghiệp mà không cần sa đà vào các bảng số liệu chi tiết phức tạp."
+  },
+  {
+    "id": 87,
+    "question": "Cấp độ công nghệ DSS nào cung cấp một nền tảng, một bộ công cụ tích hợp (ví dụ như phần mềm gộp dữ liệu, thiết kế mô hình tài chính) nhằm giúp các kỹ sư phần mềm phát triển các ứng dụng DSS cụ thể một cách nhanh chóng và thuận tiện nhất?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Specific DSS."
+      },
+      {
+        "key": "B",
+        "text": "DSS Integrated Tools - Generators (Bộ sinh DSS)."
+      },
+      {
+        "key": "C",
+        "text": "Database Management Systems."
+      },
+      {
+        "key": "D",
+        "text": "Operating Systems (Hệ điều hành)."
+      },
+      {
+        "key": "E",
+        "text": "Compiler Theory Software."
+      }
+    ],
+    "answer": "B",
+    "explanation": "Theo Sprague, \"DSS Generators\" đóng vai trò như một bộ khung, một nhà máy lắp ráp (ví dụ như phần mềm Microsoft Excel hay các nền tảng Low-code hiện đại). Từ bộ khung Generator này, các nhà phát triển có thể cấu hình nhanh để tạo ra rất nhiều ứng dụng phân tích cụ thể (Specific DSS) cho các phòng ban khác nhau mà không phải viết lại code từ con số 0.",
+    "raw": "**Câu 87:**\n\nCấp độ công nghệ DSS nào cung cấp một nền tảng, một bộ công cụ tích hợp (ví dụ như phần mềm gộp dữ liệu, thiết kế mô hình tài chính) nhằm giúp các kỹ sư phần mềm phát triển các ứng dụng DSS cụ thể một cách nhanh chóng và thuận tiện nhất?\n\n- A. Specific DSS.\n- B. DSS Integrated Tools - Generators (Bộ sinh DSS).\n- C. Database Management Systems.\n- D. Operating Systems (Hệ điều hành).\n- E. Compiler Theory Software.\n\n**Đáp án đúng:** B\n\n**Giải thích:** Theo Sprague, \"DSS Generators\" đóng vai trò như một bộ khung, một nhà máy lắp ráp (ví dụ như phần mềm Microsoft Excel hay các nền tảng Low-code hiện đại). Từ bộ khung Generator này, các nhà phát triển có thể cấu hình nhanh để tạo ra rất nhiều ứng dụng phân tích cụ thể (Specific DSS) cho các phòng ban khác nhau mà không phải viết lại code từ con số 0."
+  },
+  {
+    "id": 88,
+    "question": "Khái niệm \"Personal DSS\" được hiểu là loại hệ thống có đặc điểm như thế nào về quy mô và đối tượng phục vụ?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hệ thống thuộc sở hữu cá nhân của lập trình viên viết ra nó."
+      },
+      {
+        "key": "B",
+        "text": "Hệ thống được phát triển chủ yếu để hỗ trợ cá nhân một người ra quyết định duy nhất xử lý bài toán riêng của họ."
+      },
+      {
+        "key": "C",
+        "text": "Hệ thống chỉ chạy được trên các máy tính xách tay cá nhân và không thể kết nối mạng mạng."
+      },
+      {
+        "key": "D",
+        "text": "Hệ thống chuyên dùng để lưu trữ thông tin gia đình của nhân viên công ty."
+      },
+      {
+        "key": "E",
+        "text": "Phần mềm quản lý lịch làm việc và nhắc hẹn cá nhân."
+      }
+    ],
+    "answer": "C",
+    "explanation": "Personal DSS là các ứng dụng quy mô nhỏ, mang tính cục bộ. Nó được xây dựng hoặc cấu hình riêng để phục vụ cho tư duy và cách làm việc của một nhà quản lý cụ thể (ví dụ: một file Excel phân tích rủi ro đầu tư được một giám đốc tài chính tự thiết kế riêng cho mình). Nó có tính linh hoạt cá nhân cao nhưng không mang tính chuẩn hóa quy trình như Institutional DSS.",
+    "raw": "**Câu 88:**\n\nKhái niệm \"Personal DSS\" được hiểu là loại hệ thống có đặc điểm như thế nào về quy mô và đối tượng phục vụ?\n\n- A. Hệ thống thuộc sở hữu cá nhân của lập trình viên viết ra nó.\n- B. Hệ thống được phát triển chủ yếu để hỗ trợ cá nhân một người ra quyết định duy nhất xử lý bài toán riêng của họ.\n- C. Hệ thống chỉ chạy được trên các máy tính xách tay cá nhân và không thể kết nối mạng mạng.\n- D. Hệ thống chuyên dùng để lưu trữ thông tin gia đình của nhân viên công ty.\n- E. Phần mềm quản lý lịch làm việc và nhắc hẹn cá nhân.\n\n**Đáp án đúng:** C\n\n**Giải thích:** Personal DSS là các ứng dụng quy mô nhỏ, mang tính cục bộ. Nó được xây dựng hoặc cấu hình riêng để phục vụ cho tư duy và cách làm việc của một nhà quản lý cụ thể (ví dụ: một file Excel phân tích rủi ro đầu tư được một giám đốc tài chính tự thiết kế riêng cho mình). Nó có tính linh hoạt cá nhân cao nhưng không mang tính chuẩn hóa quy trình như Institutional DSS."
+  }
+]
