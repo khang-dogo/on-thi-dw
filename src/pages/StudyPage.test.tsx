@@ -1,11 +1,19 @@
 import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { MemoryRouter } from "react-router-dom";
-import { describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { makeData, makeProgress } from "./pageTestUtils";
 import { StudyPage } from "./StudyPage";
 
 describe("StudyPage", () => {
+  beforeEach(() => {
+    vi.spyOn(window, "scrollTo").mockImplementation(() => undefined);
+  });
+
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
   it("renders questions and supports no-diacritic search with an empty state", async () => {
     const user = userEvent.setup();
     render(
@@ -47,6 +55,13 @@ describe("StudyPage", () => {
     expect(screen.queryByText("Câu 1")).not.toBeInTheDocument();
     expect(screen.getByText("Câu 11")).toBeInTheDocument();
     expect(screen.getByText("Câu 12")).toBeInTheDocument();
+    expect(window.scrollTo).toHaveBeenCalledWith({ top: 0, behavior: "smooth" });
+
+    await user.click(screen.getByRole("button", { name: "Trước" }));
+
+    expect(screen.getAllByText("Trang 1/2")).toHaveLength(2);
+    expect(screen.getByText("Câu 1")).toBeInTheDocument();
+    expect(window.scrollTo).toHaveBeenCalledTimes(2);
   });
 
   it("reveals study feedback only after an option is selected and can reset that card", async () => {

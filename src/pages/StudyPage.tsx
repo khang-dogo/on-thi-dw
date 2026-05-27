@@ -312,12 +312,17 @@ function PaginationControls({
   totalPages: number;
   setPage: (page: number) => void;
 }) {
+  function goToPage(page: number) {
+    setPage(page);
+    scrollToPageTop();
+  }
+
   return (
     <nav className="pagination" aria-label="Phân trang câu hỏi ôn tập">
       <button
         className="secondary-button compact"
         disabled={currentPage <= 1}
-        onClick={() => setPage(currentPage - 1)}
+        onClick={() => goToPage(currentPage - 1)}
         type="button"
       >
         <ChevronLeft size={16} />
@@ -329,7 +334,7 @@ function PaginationControls({
       <button
         className="secondary-button compact"
         disabled={currentPage >= totalPages}
-        onClick={() => setPage(currentPage + 1)}
+        onClick={() => goToPage(currentPage + 1)}
         type="button"
       >
         Sau
@@ -340,6 +345,13 @@ function PaginationControls({
       </button>
     </nav>
   );
+}
+
+function scrollToPageTop() {
+  if (typeof window === "undefined" || typeof window.scrollTo !== "function") {
+    return;
+  }
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function getStudyOptionClass(input: {
